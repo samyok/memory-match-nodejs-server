@@ -1,0 +1,18 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-07T02:34:24.889Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-07T02:34:26.089Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-07T02:34:26.149Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-07T02:34:26.150Z"}
+{"level":"info","message":"+1 user! Key: 3wopb1JX0P6X6nBxAAAA Total: 1","timestamp":"2018-03-07T02:34:26.419Z"}
+{"level":"silly","message":"{\"3wopb1JX0P6X6nBxAAAA\":{\"logged_in\":false}}","timestamp":"2018-03-07T02:34:26.419Z"}
+{"level":"info","message":"-1 user. Key: 3wopb1JX0P6X6nBxAAAA Total: 0","timestamp":"2018-03-07T02:34:27.044Z"}
+{"level":"info","message":"+1 user! Key: NlzGHG1MVUg4Gf22AAAB Total: 1","timestamp":"2018-03-07T02:34:27.628Z"}
+{"level":"silly","message":"{\"NlzGHG1MVUg4Gf22AAAB\":{\"logged_in\":false}}","timestamp":"2018-03-07T02:34:27.628Z"}
+{"level":"info","message":"-1 user. Key: NlzGHG1MVUg4Gf22AAAB Total: 0","timestamp":"2018-03-07T02:35:30.563Z"}
+{"level":"info","message":"+1 user! Key: SOf_9XC45hU9Vg-OAAAC Total: 1","timestamp":"2018-03-07T02:35:31.055Z"}
+{"level":"silly","message":"{\"SOf_9XC45hU9Vg-OAAAC\":{\"logged_in\":false}}","timestamp":"2018-03-07T02:35:31.056Z"}
+{"level":"info","message":"-1 user. Key: SOf_9XC45hU9Vg-OAAAC Total: 0","timestamp":"2018-03-07T02:36:09.132Z"}
+{"level":"info","message":"+1 user! Key: oMfe5hLNbfE15Si8AAAD Total: 1","timestamp":"2018-03-07T02:36:09.681Z"}
+{"level":"silly","message":"{\"oMfe5hLNbfE15Si8AAAD\":{\"logged_in\":false}}","timestamp":"2018-03-07T02:36:09.682Z"}
+{"level":"info","message":"+1 user! Key: 5CyZeY5K6gvppkQqAAAE Total: 2","timestamp":"2018-03-07T02:36:17.881Z"}
+{"level":"silly","message":"{\"oMfe5hLNbfE15Si8AAAD\":{\"logged_in\":false},\"5CyZeY5K6gvppkQqAAAE\":{\"logged_in\":false}}","timestamp":"2018-03-07T02:36:17.881Z"}
+{"level":"info","message":"-1 user. Key: 5CyZeY5K6gvppkQqAAAE Total: 1","timestamp":"2018-03-07T02:36:24.818Z"}

@@ -1,0 +1,10 @@
+{"level":"error","message":"Debug test","timestamp":"2018-03-06T18:59:26.646Z"}
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-06T18:59:26.889Z"}
+{"level":"silly","message":"vars done","timestamp":"2018-03-06T18:59:26.990Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-06T18:59:27.003Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-06T18:59:27.004Z"}
+{"level":"info","message":"+1 user! Key: zhT1LRI2_NJPnjWKAAAA Total: undefined","timestamp":"2018-03-06T18:59:28.356Z"}
+{"level":"silly","message":"{\"zhT1LRI2_NJPnjWKAAAA\":{\"logged_in\":false}}","timestamp":"2018-03-06T18:59:28.356Z"}
+{"level":"info","message":"-1 user. Key: zhT1LRI2_NJPnjWKAAAA Total: undefined","timestamp":"2018-03-06T18:59:46.048Z"}
+{"level":"info","message":"+1 user! Key: sNn_F-kLm0qWiuZhAAAB Total: undefined","timestamp":"2018-03-06T18:59:46.654Z"}
+{"level":"silly","message":"{\"sNn_F-kLm0qWiuZhAAAB\":{\"logged_in\":false}}","timestamp":"2018-03-06T18:59:46.654Z"}

@@ -1,0 +1,3 @@
+{"level":"silly","message":"vars done","timestamp":"2018-03-06T15:55:12.093Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-06T15:55:12.212Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-06T15:55:12.213Z"}

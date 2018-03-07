@@ -1,0 +1,362 @@
+/* main css  */
+/* DO NOT PUT PAGE SPECIFIC STUFF HERE! PUT THEM IN COMMON OR SOME OTHER CSS FILE */
+/*
++-------TABLE OF CONTENTS--------+
+|	0. Override W3 CSS			 |
+|	1. Set Default Elements      |
+|	2. Cards / Playing Area	     |
+|	3. Login Modals				 |
+| 4. Navigation Bar              |
+| 5. Footer                      |
++--------------------------------+
+*/
+/* |	0. Override W3 CSS			| */
+:focus{
+    outline: 1px solid green;
+}
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+body, html{
+  background-color: #fffaf2;
+  padding: 0; margin: 0; /* Set these two so it won't interfere with the nav-bar */
+}
+/* |	1. Set Default Elements		| */
+button{
+	background-color: #19841A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+button:hover:not(":disabled") {
+	opacity: 0.8;
+}
+a:link, a:visited, a:active {
+  /* unvisited, visited, and selected link */
+    color: white;
+}
+a:hover { /* mouse over link */
+    color: hotpink;
+    background-color: #eee;
+}
+#refresh-btn{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    padding: 2px;
+    color: white;
+    background-color: red;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+#snackbar{
+  visibility:hidden; /*hide on load */
+  min-width:500px; /* min width 500px */
+  margin-left:-250px; /* move left 250 px */
+  background-color:#333; /* set background color to a gray in case js goes wrong. */
+  color:#fff; /* text color = white, js doesn't change so make sure color is dark */
+  text-align:center; /* obvious */
+  border-radius:2px; /* makes curves of 2px */
+  padding:16px; /* space between text and border all sides */
+  position:fixed; /* EXACTLY 50 px down. Don't change this */
+  z-index:999; /* on top of every thing else */
+  left:50%; top:50px; /* where it is on page */
+  font-size:17px; /* also obvious */
+}
+#snackbar.show{ /* on show */
+  visibility:visible; /* become visible */
+  /* play animation "fadein" for 0.5s, then play "fadeout" for 0.5s
+    with a delay of 2.5s */
+  -webkit-animation: fadein .5s, fadeout .5s 2.5s; /* chrome */
+  animation: fadein .5s, fadeout .5s 2.5s;
+}
+/* define animations */
+@-webkit-keyframes fadein{from{top:0;opacity:0}to{top:50px;opacity:1}} /* top and transparent to 50 px down and opaque */
+@keyframes fadein{from{top:0;opacity:0}to{top:50px;opacity:1}}
+@-webkit-keyframes fadeout{from{top:50px;opacity:1}to{top:0;opacity:0}}
+@keyframes fadeout{from{top:50px;opacity:1}to{top:0;opacity:0}}
+
+/* |	2. Cards / Playing Area		| */
+.card-wrapper{
+	padding: 10px !important;
+}
+.card {
+	position: relative;
+	float: left;
+	margin: 5px;
+	text-align: center;
+	width: 100%; /*width set by w3 css*/
+	cursor: pointer;
+	height: 100px;
+	padding-right: 5px;
+}
+.card-front, .card-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%; /*width set by w3 css*/
+}
+.card-front, .card-back {
+	-webkit-backface-visibility: hidden; /*webkit stuff for webkit browsers*/
+        backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+		transition: transform 0.3s;
+	border-radius: 5%;
+}
+.card-front {
+	background-color: #DDD;
+}
+.card-back {
+	background-color: #f00;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg); /* rotate around when class added */
+}
+.card.flipped .card-front {
+	-webkit-transform: rotateY(-180deg);
+		transform: rotateY(-180deg);
+}
+.card.flipped .card-back {
+	-webkit-transform: rotateY(0);
+		transform: rotateY(0);
+}
+.card.remove { /*Does not work yet (probably because I don't know what I am doing.*/
+	width: 100%;
+}
+.card.remove .card-front, .card.remove .card-back{
+  display: none; /* when remove class is added, hide front and back */
+  cursor: context-menu;
+}
+/* |	3. Login Modals				| */
+.submitBTN:disabled {
+    cursor: wait;
+    opacity: 0.4;
+}
+.cancelbtn{
+	background-color: red;
+}
+.modal input[type=text], .modal input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.modal .header{
+	position: relative;
+	text-align: center;
+}
+.modal{ /*	technically background */
+	display: none;
+	position: fixed;
+	z-index: 5;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background-color: rgba(0,0,0,0.35);
+	padding-top:60px;
+}
+.modal .error {
+	color: #f00;
+	background-color: rgba(255,0,0,0.29);
+	padding: 20px;
+	border: 1px solid #f00;
+	margin-bottom: 20px;
+}
+.modal-content {
+	background-color: #eee; /* main background */
+	margin: 5% auto 5% auto; /* auto left and right give center */
+	border: 4px solid #777;
+	width: 100%;
+	max-width: 600px;
+	padding: 20px;
+}
+.close { /* close btn */
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #777;
+    width: 50px;
+    height: 50px;
+	line-height: 50px; /*make the line the entire div */
+	vertical-align: middle;
+	text-align: center;
+}
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer; /* make it look like a button */
+    background-color: #CCC;
+}
+
+.psw a, .newAccount a {
+	color: black;
+}
+.psw a:hover, .newAccount a:hover{
+	background-color: white;
+	color: #444;
+}
+/*| 4. Navigation Bar              |*/
+
+#nav-bar{margin: 0; padding: 0;} /* this will come with the a */
+#nav-bar ul {
+    list-style-type: none; /* no bullets */
+    margin: 0;
+    padding: 0;
+    overflow: visible; /* hide overflow (no scroll) */
+    background-color: #f0e8db;
+    height:64px;
+}
+
+#nav-bar li {
+    float: left; /* float left. :P */
+}
+
+#nav-bar li a {
+  font-size: 16px;
+    display: block; /* make block for clickeyness all over. Also for consistency and force ul to be this high.*/
+    color: black;
+    text-align: center;
+    padding: 20px; /* 14 left/right  16 up/down */
+    text-decoration: none; /* remove underline */
+    height: 100%;
+    cursor: pointer
+}
+#logo-nav-bar {
+  background-image: url("https://s3.us-east-2.amazonaws.com/samyoks-cdn/pics/website/memory-t-logo-3.png");
+  background-repeat: no-repeat;
+  background-position: -1px -20px;
+  background-size: 200px 100px;
+  height: 64px;
+  width: 200px;
+  opacity: 1;
+}
+#logo-nav-bar:hover {
+  opacity: 0.95;
+}
+/* Change the link color to slightly darker on hover */
+#nav-bar li:not(#logo-nav-bar) a:hover:not(.active) {
+    background-color: #ebe0cb;
+}
+#nav-bar a.active{
+  background-color: #e6F9d1;
+  cursor: default; /* make it look unclickable */
+}
+
+#logo-nav-bar a:hover {
+  opacity: 0.7;
+  background-color: #f0e8db;
+  background-image: url("/assets/img/memory-t-logo-3.png");
+}
+.dropbtn {
+    background-color: #ff9b00;
+    color: white;
+    margin: 0;
+    height: 64px;
+    font-size: 16px;
+    border: none;
+}
+
+.nav-dropdown-logout {
+    position: relative;
+    float: right!important;
+    display: inline-block;
+    margin: 0;
+}
+
+.dropdown-content {
+	margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.nav-dropdown-logout:hover .dropdown-content {
+    display: block;
+}
+
+.nav-dropdown-logout:hover .dropbtn {
+    background-color: #eb8f01;
+}
+/* | 5. Footer                      | */
+
+footer {
+  width: 100%;
+  background-color: #999;
+  color: white;
+  margin: 0;
+}
+footer .w3-col {
+    padding: 5px 10% 0px 10%;
+}
+footer h3{
+  padding-left: 40px;
+}
+footer ul {
+  list-style-type: none;
+}
+footer .dark-footer {
+  background-color: #666;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1px;
+}
+#snackbar{
+  visibility:hidden; /*hide on load */
+  min-width:500px; /* min width 500px */
+  margin-left:-250px; /* move left 250 px */
+  background-color:#333; /* set background color to a gray in case js goes wrong. */
+  color:#fff; /* text color = white, js doesn't change so make sure color is dark */
+  text-align:center; /* obvious */
+  border-radius:2px; /* makes curves of 2px */
+  padding:16px; /* space between text and border all sides */
+  position:fixed; /* EXACTLY 50 px down. Don't change this */
+  z-index:999; /* on top of every thing else */
+  left:50%; top:50px; /* where it is on page */
+  font-size:17px; /* also obvious */
+}
+#snackbar.show{ /* on show */
+  visibility:visible; /* become visible */
+  /* play animation "fadein" for 0.5s, then play "fadeout" for 0.5s
+    with a delay of 2.5s */
+  -webkit-animation: fadein .5s, fadeout .5s 2.5s; /* chrome */
+  animation: fadein .5s, fadeout .5s 2.5s;
+}
+/* define animations */
+@-webkit-keyframes fadein{from{top:0;opacity:0}to{top:50px;opacity:1}} /* top and transparent to 50 px down and opaque */
+@keyframes fadein{from{top:0;opacity:0}to{top:50px;opacity:1}}
+@-webkit-keyframes fadeout{from{top:50px;opacity:1}to{top:0;opacity:0}}
+@keyframes fadeout{from{top:50px;opacity:1}to{top:0;opacity:0}}
+
+#overlayLoading {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #f00;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: -5px 0 0 0;
+}

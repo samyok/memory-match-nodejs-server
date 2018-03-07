@@ -1,0 +1,4 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-06T18:31:45.766Z"}
+{"level":"silly","message":"vars done","timestamp":"2018-03-06T18:31:45.860Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-06T18:31:45.873Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-06T18:31:45.874Z"}

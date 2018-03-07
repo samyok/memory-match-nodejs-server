@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test Server</title>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="jquery.min.js"></script>
+        <!-- @TODO! Change these back to cdns.  -->
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="/otherstuff.css">
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <div id="overlayLoading" class="w3-display-container">
+        <div class="w3-display-middle">
+            <div class="spinner"></div>
+            <h2 class="loading">Loading<span>...</span></h2>
+        </div>
+    </div>
+    <body>
+        <div id="id"></div>
+        <h1><span id="placeType">Lobby</span>: <span id="placeName">[NULL]</span></h1>
+        <button class="w3-button" id="button1">Button 1</button>
+        <button class="w3-button" id="button2">Button 2</button>
+        <button class="w3-button" id="button3">Button 3</button>
+        <div class=w3-modal id=original-modal> <div class=w3-modal-content>
+            <header class=w3-container> <span class="w3-button w3-display-topright x-out">×</span><h2></h2></header>
+            <div class="w3-container body"> <p></p> <input class="w3-input w3-margin-bottom"style=outline:0> <button class="w3-button w3-right"></button> </div>
+            <footer class=w3-container> <p></p> </footer>
+        </div> </div>
+        <script src="client.js"></script>
+    </body>
+</html>
