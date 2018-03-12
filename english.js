@@ -26,7 +26,7 @@ app.get('/restart_code=' + restart_code, function(req, res, next) { // restart f
 
 logger.silly("Imports done.");
 
-var server = app.listen(4000, function() {
+var server = app.listen(80, function() {
     logger.info("Started " + APP_NAME + "'s express server. Listening to port 4000.");
 });
 app.use(express.static("public"));
