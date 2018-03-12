@@ -1,0 +1,11 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-12T04:50:13.508Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-12T04:50:13.864Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-12T04:50:13.906Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-12T04:50:13.909Z"}
+{"level":"info","message":"+1 user! Key: axJUjD9uGi_Pl6ldAAAA Total: 1","timestamp":"2018-03-12T04:50:18.291Z"}
+{"axJUjD9uGi_Pl6ldAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T04:50:18.291Z"}
+{"axJUjD9uGi_Pl6ldAAAA":{"logged_in":true,"username":"samyok"},"level":"silly","message":"","timestamp":"2018-03-12T04:50:22.487Z"}
+{"level":"info","message":"Login: samyok","timestamp":"2018-03-12T04:50:22.488Z"}
+{"level":"info","message":"Move samyok to lobby 'main'.","timestamp":"2018-03-12T04:50:22.488Z"}
+{"main":{"axJUjD9uGi_Pl6ldAAAA":"samyok"},"level":"silly","message":"","timestamp":"2018-03-12T04:50:22.489Z"}
+{"room16":{"type":"double","gameInfo":{"leader":"axJUjD9uGi_Pl6ldAAAA","player2":null},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-12T04:50:24.475Z"}

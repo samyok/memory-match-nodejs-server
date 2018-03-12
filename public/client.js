@@ -126,11 +126,11 @@ var LOGGER = {
 }
 var username = null;
 // connection
-var socket = io.connect('http://10.42.0.1:4000');
+var socket = io.connect('/');
 var username_modal = null;
 var already_connected = false;
 socket.on("connected", function(data){
-	if(data.connected && !already_connected){
+if(data.connected && !already_connected){
 		already_connected = true;
 		setTimeout(function(){
 			$("#overlayLoading").fadeOut(750, function(){});

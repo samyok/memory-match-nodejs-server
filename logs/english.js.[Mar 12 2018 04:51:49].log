@@ -1,0 +1,18 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-12T04:51:49.616Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-12T04:51:49.760Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-12T04:51:49.775Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-12T04:51:49.777Z"}
+{"level":"info","message":"+1 user! Key: dUPbG5RbiLYFHUOaAAAA Total: 1","timestamp":"2018-03-12T04:51:51.410Z"}
+{"dUPbG5RbiLYFHUOaAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T04:51:51.411Z"}
+{"level":"info","message":"-1 user. Key: dUPbG5RbiLYFHUOaAAAA Total: 1","timestamp":"2018-03-12T04:52:16.907Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-12T04:52:16.908Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-12T04:52:16.908Z"}
+{"level":"info","message":"+1 user! Key: zffgXjv5VQcvBNroAAAB Total: 1","timestamp":"2018-03-12T04:52:17.422Z"}
+{"zffgXjv5VQcvBNroAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T04:52:17.423Z"}
+{"level":"info","message":"+1 user! Key: ydLYd5hHCNhoVqcMAAAC Total: 2","timestamp":"2018-03-12T04:54:20.514Z"}
+{"zffgXjv5VQcvBNroAAAB":{"logged_in":false},"ydLYd5hHCNhoVqcMAAAC":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T04:54:20.514Z"}
+{"zffgXjv5VQcvBNroAAAB":{"logged_in":false},"ydLYd5hHCNhoVqcMAAAC":{"logged_in":true,"username":"Samyok"},"level":"silly","message":"","timestamp":"2018-03-12T04:54:34.270Z"}
+{"level":"info","message":"Login: Samyok","timestamp":"2018-03-12T04:54:34.271Z"}
+{"level":"info","message":"Move Samyok to lobby 'main'.","timestamp":"2018-03-12T04:54:34.271Z"}
+{"main":{"ydLYd5hHCNhoVqcMAAAC":"Samyok"},"level":"silly","message":"","timestamp":"2018-03-12T04:54:34.271Z"}
+{"room14":{"type":"double","gameInfo":{"leader":"ydLYd5hHCNhoVqcMAAAC","player2":null},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-12T04:54:37.713Z"}
