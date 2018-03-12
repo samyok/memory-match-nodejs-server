@@ -11,6 +11,9 @@
 +--------------------------------+
 */
 /* |	0. Override W3 CSS			| */
+*{
+	@include user-select(none);	
+}
 :focus{
     outline: 1px solid green;
 }
