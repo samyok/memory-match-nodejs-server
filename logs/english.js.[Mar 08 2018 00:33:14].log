@@ -1,0 +1,23 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-08T06:33:14.921Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-08T06:33:16.185Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-08T06:33:16.260Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-08T06:33:16.262Z"}
+{"level":"info","message":"+1 user! Key: O6PcQ8TwSa7D4LaHAAAA Total: 1","timestamp":"2018-03-08T06:33:16.999Z"}
+{"level":"silly","message":"{\"O6PcQ8TwSa7D4LaHAAAA\":{\"logged_in\":false}}","timestamp":"2018-03-08T06:33:17.000Z"}
+{"level":"info","message":"+1 user! Key: JgDGuXVDWRfPPmzIAAAB Total: 2","timestamp":"2018-03-08T06:33:19.340Z"}
+{"level":"silly","message":"{\"O6PcQ8TwSa7D4LaHAAAA\":{\"logged_in\":false},\"JgDGuXVDWRfPPmzIAAAB\":{\"logged_in\":false}}","timestamp":"2018-03-08T06:33:19.341Z"}
+{"level":"info","message":"-1 user. Key: JgDGuXVDWRfPPmzIAAAB Total: 1","timestamp":"2018-03-08T06:35:03.121Z"}
+{"level":"info","message":"-1 user. Key: O6PcQ8TwSa7D4LaHAAAA Total: 0","timestamp":"2018-03-09T00:07:26.317Z"}
+{"level":"info","message":"+1 user! Key: 7iJ1sCbOJIVovVp2AAAC Total: 1","timestamp":"2018-03-09T02:39:59.889Z"}
+{"level":"silly","message":"{\"7iJ1sCbOJIVovVp2AAAC\":{\"logged_in\":false}}","timestamp":"2018-03-09T02:39:59.890Z"}
+{"level":"silly","message":"{\"7iJ1sCbOJIVovVp2AAAC\":{\"logged_in\":true,\"username\":\"samtok\"}}","timestamp":"2018-03-09T02:40:08.839Z"}
+{"level":"info","message":"Login: samtok","timestamp":"2018-03-09T02:40:08.839Z"}
+{"level":"info","message":"Move samtok to lobby 'main'.","timestamp":"2018-03-09T02:40:08.839Z"}
+{"level":"silly","message":"{\"main\":{\"7iJ1sCbOJIVovVp2AAAC\":\"samtok\"}}","timestamp":"2018-03-09T02:40:08.839Z"}
+{"level":"silly","message":"{\"room9\":{\"type\":\"double\",\"gameInfo\":{\"leader\":\"7iJ1sCbOJIVovVp2AAAC\",\"player2\":null},\"started\":false,\"abandoned\":false}}","timestamp":"2018-03-09T02:40:25.552Z"}
+{"level":"info","message":"+1 user! Key: 59FJtAThnto9_mP6AAAD Total: 2","timestamp":"2018-03-09T02:40:50.595Z"}
+{"level":"silly","message":"{\"7iJ1sCbOJIVovVp2AAAC\":{\"logged_in\":true,\"username\":\"samtok\"},\"59FJtAThnto9_mP6AAAD\":{\"logged_in\":false}}","timestamp":"2018-03-09T02:40:50.595Z"}
+{"level":"silly","message":"{\"7iJ1sCbOJIVovVp2AAAC\":{\"logged_in\":true,\"username\":\"samtok\"},\"59FJtAThnto9_mP6AAAD\":{\"logged_in\":true,\"username\":\"samyok\"}}","timestamp":"2018-03-09T02:40:54.954Z"}
+{"level":"info","message":"Login: samyok","timestamp":"2018-03-09T02:40:54.955Z"}
+{"level":"info","message":"Move samyok to lobby 'main'.","timestamp":"2018-03-09T02:40:54.955Z"}
+{"level":"silly","message":"{\"main\":{\"59FJtAThnto9_mP6AAAD\":\"samyok\"}}","timestamp":"2018-03-09T02:40:54.956Z"}

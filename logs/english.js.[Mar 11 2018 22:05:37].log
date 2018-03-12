@@ -1,0 +1,13 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-12T03:05:37.432Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-12T03:05:37.533Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-12T03:05:37.545Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-12T03:05:37.546Z"}
+{"level":"info","message":"+1 user! Key: EP7KV7yhTnOmlobaAAAA Total: 1","timestamp":"2018-03-12T03:05:37.976Z"}
+{"EP7KV7yhTnOmlobaAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T03:05:37.976Z"}
+{"level":"info","message":"-1 user. Key: EP7KV7yhTnOmlobaAAAA Total: 1","timestamp":"2018-03-12T03:05:39.548Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-12T03:05:39.548Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-12T03:05:39.548Z"}
+{"level":"info","message":"+1 user! Key: FgTCdv4-7LVqBrqMAAAB Total: 1","timestamp":"2018-03-12T03:05:40.042Z"}
+{"FgTCdv4-7LVqBrqMAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T03:05:40.042Z"}
+{"level":"warn","message":"Restart code Requested by FgTCdv4-7LVqBrqMAAAB","timestamp":"2018-03-12T03:10:42.845Z"}
+{"level":"error","message":"/restart HIT! RESTART NOOoOooOOOOO","timestamp":"2018-03-12T03:10:42.855Z"}

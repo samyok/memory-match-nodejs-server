@@ -1,0 +1,33 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-11T21:29:50.546Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-11T21:29:50.645Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-11T21:29:50.657Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-11T21:29:50.658Z"}
+{"level":"info","message":"+1 user! Key: 1O-8figb4h4v_7BRAAAA Total: 1","timestamp":"2018-03-11T21:29:51.266Z"}
+{"1O-8figb4h4v_7BRAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:29:51.267Z"}
+{"level":"info","message":"+1 user! Key: TsNr0o6ISi-zOXxUAAAB Total: 2","timestamp":"2018-03-11T21:29:51.552Z"}
+{"1O-8figb4h4v_7BRAAAA":{"logged_in":false},"TsNr0o6ISi-zOXxUAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:29:51.553Z"}
+{"level":"error","message":"Deleted room clean, the room's info was undefined or no other player was in it. ","timestamp":"2018-03-11T21:31:46.360Z"}
+{"level":"silly","message":"","timestamp":"2018-03-11T21:31:46.360Z"}
+{"level":"info","message":"-1 user. Key: TsNr0o6ISi-zOXxUAAAB Total: 2","timestamp":"2018-03-11T21:31:46.360Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T21:31:46.360Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T21:31:46.361Z"}
+{"level":"info","message":"+1 user! Key: 4EDurDQfL5hYuG59AAAC Total: 2","timestamp":"2018-03-11T21:31:46.868Z"}
+{"1O-8figb4h4v_7BRAAAA":{"logged_in":false},"4EDurDQfL5hYuG59AAAC":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:31:46.868Z"}
+{"level":"info","message":"-1 user. Key: 1O-8figb4h4v_7BRAAAA Total: 2","timestamp":"2018-03-11T21:31:48.533Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T21:31:48.533Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T21:31:48.534Z"}
+{"level":"info","message":"+1 user! Key: Z3WyaulAmp4u8ArvAAAD Total: 2","timestamp":"2018-03-11T21:31:49.048Z"}
+{"4EDurDQfL5hYuG59AAAC":{"logged_in":false},"Z3WyaulAmp4u8ArvAAAD":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:31:49.048Z"}
+{"4EDurDQfL5hYuG59AAAC":{"logged_in":true,"username":"asd"},"Z3WyaulAmp4u8ArvAAAD":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:32:35.127Z"}
+{"level":"info","message":"Login: asd","timestamp":"2018-03-11T21:32:35.129Z"}
+{"level":"info","message":"Move asd to lobby 'main'.","timestamp":"2018-03-11T21:32:35.130Z"}
+{"main":{"4EDurDQfL5hYuG59AAAC":"asd"},"level":"silly","message":"","timestamp":"2018-03-11T21:32:35.130Z"}
+{"room9":{"type":"double","gameInfo":{"leader":"4EDurDQfL5hYuG59AAAC","player2":null},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:32:36.695Z"}
+{"4EDurDQfL5hYuG59AAAC":{"logged_in":true,"username":"asd"},"Z3WyaulAmp4u8ArvAAAD":{"logged_in":true,"username":"asdaasd"},"level":"silly","message":"","timestamp":"2018-03-11T21:32:38.542Z"}
+{"level":"info","message":"Login: asdaasd","timestamp":"2018-03-11T21:32:38.544Z"}
+{"level":"info","message":"Move asdaasd to lobby 'main'.","timestamp":"2018-03-11T21:32:38.545Z"}
+{"main":{"Z3WyaulAmp4u8ArvAAAD":"asdaasd"},"level":"silly","message":"","timestamp":"2018-03-11T21:32:38.545Z"}
+{"room9":{"type":"double","gameInfo":{"leader":"4EDurDQfL5hYuG59AAAC","player2":"Z3WyaulAmp4u8ArvAAAD"},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:32:45.634Z"}
+{"level":"info","message":"Marked asd as ready to play in room room9.","timestamp":"2018-03-11T21:32:45.638Z"}
+{"room9":{"type":"double","gameInfo":{"leader":"4EDurDQfL5hYuG59AAAC","player2":"Z3WyaulAmp4u8ArvAAAD"},"game":{},"ready":{"leader":true,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:32:45.638Z"}
+{"level":"info","message":"Marked asdaasd as ready to play in room room9.","timestamp":"2018-03-11T21:32:46.241Z"}

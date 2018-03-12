@@ -1,0 +1,11 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-07T23:54:05.544Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-07T23:54:05.642Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-07T23:54:05.656Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-07T23:54:05.657Z"}
+{"level":"info","message":"+1 user! Key: NpmjHIaiYlewZRhxAAAA Total: 1","timestamp":"2018-03-07T23:54:09.102Z"}
+{"level":"silly","message":"{\"NpmjHIaiYlewZRhxAAAA\":{\"logged_in\":false}}","timestamp":"2018-03-07T23:54:09.103Z"}
+{"level":"silly","message":"{\"NpmjHIaiYlewZRhxAAAA\":{\"logged_in\":true,\"username\":\"sad\"}}","timestamp":"2018-03-07T23:54:11.201Z"}
+{"level":"info","message":"Login: sad","timestamp":"2018-03-07T23:54:11.201Z"}
+{"level":"info","message":"Move sad to lobby 'main'.","timestamp":"2018-03-07T23:54:11.201Z"}
+{"level":"silly","message":"{\"main\":{\"NpmjHIaiYlewZRhxAAAA\":\"sad\"}}","timestamp":"2018-03-07T23:54:11.202Z"}
+{"level":"silly","message":"{\"main\":{\"NpmjHIaiYlewZRhxAAAA\":\"sad\"}}","timestamp":"2018-03-07T23:54:12.143Z"}

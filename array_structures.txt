@@ -1,0 +1,31 @@
+Rooms:
+{
+    "room13":{
+        "type":"double",
+        "gameInfo":{
+            "leader":"5v3GsjuLdE5Wxy_UAAAC",
+            "player2": "dyKkX6AthUbsmF26AAAB"
+        },
+        "started":false,
+        "abandoned":false
+    },
+    "room28":{
+        "type":"double",
+        "gameInfo":{
+            "leader":"o7eYp9p40kQM2UXTAAAD",
+            "player2":null
+        },
+        "started":false,
+        "abandoned":false
+    }
+}
+users :
+{
+    "5v3GsjuLdE5Wxy_UAAAC":{
+        "logged_in":true,
+        "username":"asdasd"
+    },
+    "o7eYp9p40kQM2UXTAAAD":{
+        "logged_in":false
+    }
+}

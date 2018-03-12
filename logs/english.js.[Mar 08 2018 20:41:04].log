@@ -1,0 +1,17 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-09T02:41:05.359Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-09T02:41:07.454Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-09T02:41:07.795Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-09T02:41:07.799Z"}
+{"level":"info","message":"+1 user! Key: 41FYOlhya9DtJiiyAAAA Total: 1","timestamp":"2018-03-09T02:41:08.360Z"}
+{"level":"silly","message":"{\"41FYOlhya9DtJiiyAAAA\":{\"logged_in\":false}}","timestamp":"2018-03-09T02:41:08.361Z"}
+{"level":"info","message":"+1 user! Key: pd2vgBv0JEdSAw4sAAAB Total: 2","timestamp":"2018-03-09T02:41:09.713Z"}
+{"level":"silly","message":"{\"41FYOlhya9DtJiiyAAAA\":{\"logged_in\":false},\"pd2vgBv0JEdSAw4sAAAB\":{\"logged_in\":false}}","timestamp":"2018-03-09T02:41:09.713Z"}
+{"level":"info","message":"-1 user. Key: pd2vgBv0JEdSAw4sAAAB Total: 1","timestamp":"2018-03-09T02:41:39.598Z"}
+{"level":"info","message":"+1 user! Key: Ybi-Dv_qQ-qRVNMPAAAC Total: 2","timestamp":"2018-03-09T02:41:40.165Z"}
+{"level":"silly","message":"{\"41FYOlhya9DtJiiyAAAA\":{\"logged_in\":false},\"Ybi-Dv_qQ-qRVNMPAAAC\":{\"logged_in\":false}}","timestamp":"2018-03-09T02:41:40.166Z"}
+{"level":"info","message":"-1 user. Key: 41FYOlhya9DtJiiyAAAA Total: 1","timestamp":"2018-03-09T02:41:40.843Z"}
+{"level":"info","message":"+1 user! Key: rQDzL-C6IPJRt-__AAAD Total: 2","timestamp":"2018-03-09T02:41:41.446Z"}
+{"level":"silly","message":"{\"Ybi-Dv_qQ-qRVNMPAAAC\":{\"logged_in\":false},\"rQDzL-C6IPJRt-__AAAD\":{\"logged_in\":false}}","timestamp":"2018-03-09T02:41:41.446Z"}
+{"level":"info","message":"-1 user. Key: rQDzL-C6IPJRt-__AAAD Total: 1","timestamp":"2018-03-09T02:41:45.373Z"}
+{"level":"info","message":"+1 user! Key: mjIFxQ_Y2WAI3OPkAAAE Total: 2","timestamp":"2018-03-09T02:41:47.419Z"}
+{"level":"silly","message":"{\"Ybi-Dv_qQ-qRVNMPAAAC\":{\"logged_in\":false},\"mjIFxQ_Y2WAI3OPkAAAE\":{\"logged_in\":false}}","timestamp":"2018-03-09T02:41:47.419Z"}

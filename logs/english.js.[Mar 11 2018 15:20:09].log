@@ -1,0 +1,17 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-11T20:20:10.012Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-11T20:20:11.163Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-11T20:20:11.217Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-11T20:20:11.219Z"}
+{"level":"info","message":"+1 user! Key: B5V6wNrjGoQBgQQ3AAAA Total: 1","timestamp":"2018-03-11T20:20:12.357Z"}
+{"B5V6wNrjGoQBgQQ3AAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T20:20:12.357Z"}
+{"level":"info","message":"+1 user! Key: ElnyJa4tn0q9fqgvAAAB Total: 2","timestamp":"2018-03-11T20:20:15.801Z"}
+{"B5V6wNrjGoQBgQQ3AAAA":{"logged_in":false},"ElnyJa4tn0q9fqgvAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T20:20:15.802Z"}
+{"level":"info","message":"+1 user! Key: 6W6rt99t7k_JKWpgAAAC Total: 3","timestamp":"2018-03-11T20:25:06.866Z"}
+{"B5V6wNrjGoQBgQQ3AAAA":{"logged_in":false},"ElnyJa4tn0q9fqgvAAAB":{"logged_in":false},"6W6rt99t7k_JKWpgAAAC":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T20:25:06.866Z"}
+{"level":"error","message":"Deleted room clean, the room's info was undefined or no other player was in it. ","timestamp":"2018-03-11T20:25:08.463Z"}
+{"level":"silly","message":"","timestamp":"2018-03-11T20:25:08.463Z"}
+{"level":"info","message":"-1 user. Key: 6W6rt99t7k_JKWpgAAAC Total: 3","timestamp":"2018-03-11T20:25:08.463Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T20:25:08.464Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T20:25:08.464Z"}
+{"level":"info","message":"+1 user! Key: 01hmXQcPd9__SQC1AAAD Total: 3","timestamp":"2018-03-11T20:25:09.982Z"}
+{"B5V6wNrjGoQBgQQ3AAAA":{"logged_in":false},"ElnyJa4tn0q9fqgvAAAB":{"logged_in":false},"01hmXQcPd9__SQC1AAAD":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T20:25:09.982Z"}

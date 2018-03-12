@@ -1,0 +1,61 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-11T06:11:41.470Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-11T06:11:41.583Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-11T06:11:41.596Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-11T06:11:41.597Z"}
+{"level":"info","message":"+1 user! Key: Zr1vNdEPpachgHdbAAAA Total: 1","timestamp":"2018-03-11T06:11:42.043Z"}
+{"Zr1vNdEPpachgHdbAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T06:11:42.044Z"}
+{"level":"info","message":"+1 user! Key: h19aoBqwaSqEAEKKAAAB Total: 2","timestamp":"2018-03-11T06:11:43.448Z"}
+{"Zr1vNdEPpachgHdbAAAA":{"logged_in":false},"h19aoBqwaSqEAEKKAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T06:11:43.448Z"}
+{"level":"error","message":"Deleted room clean, the room's info was undefined or no other player was in it. ","timestamp":"2018-03-11T06:11:44.371Z"}
+{"level":"silly","message":"","timestamp":"2018-03-11T06:11:44.372Z"}
+{"level":"info","message":"-1 user. Key: h19aoBqwaSqEAEKKAAAB Total: 2","timestamp":"2018-03-11T06:11:44.372Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T06:11:44.372Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T06:11:44.372Z"}
+{"level":"info","message":"+1 user! Key: Z7LzXiHIvslO6ufPAAAC Total: 2","timestamp":"2018-03-11T06:11:44.931Z"}
+{"Zr1vNdEPpachgHdbAAAA":{"logged_in":false},"Z7LzXiHIvslO6ufPAAAC":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T06:11:44.931Z"}
+{"level":"info","message":"-1 user. Key: Z7LzXiHIvslO6ufPAAAC Total: 2","timestamp":"2018-03-11T06:11:48.043Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T06:11:48.043Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T06:11:48.043Z"}
+{"level":"info","message":"+1 user! Key: dWbsPbmrRPzzJTxyAAAD Total: 2","timestamp":"2018-03-11T06:11:48.597Z"}
+{"Zr1vNdEPpachgHdbAAAA":{"logged_in":false},"dWbsPbmrRPzzJTxyAAAD":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T06:11:48.597Z"}
+{"level":"info","message":"-1 user. Key: dWbsPbmrRPzzJTxyAAAD Total: 2","timestamp":"2018-03-11T06:11:50.205Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T06:11:50.206Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T06:11:50.206Z"}
+{"level":"info","message":"+1 user! Key: vv6-XluxOabm0hbmAAAE Total: 2","timestamp":"2018-03-11T06:11:50.690Z"}
+{"Zr1vNdEPpachgHdbAAAA":{"logged_in":false},"vv6-XluxOabm0hbmAAAE":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T06:11:50.690Z"}
+{"level":"info","message":"-1 user. Key: vv6-XluxOabm0hbmAAAE Total: 2","timestamp":"2018-03-11T06:11:53.166Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T06:11:53.167Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T06:11:53.167Z"}
+{"level":"info","message":"+1 user! Key: UPIGjeiWqVj-DdUzAAAF Total: 2","timestamp":"2018-03-11T06:11:53.747Z"}
+{"Zr1vNdEPpachgHdbAAAA":{"logged_in":false},"UPIGjeiWqVj-DdUzAAAF":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T06:11:53.747Z"}
+{"level":"info","message":"-1 user. Key: UPIGjeiWqVj-DdUzAAAF Total: 2","timestamp":"2018-03-11T06:12:03.277Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T06:12:03.277Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T06:12:03.278Z"}
+{"level":"info","message":"+1 user! Key: D-yGLH5L9QSgjf7kAAAG Total: 2","timestamp":"2018-03-11T06:12:03.837Z"}
+{"Zr1vNdEPpachgHdbAAAA":{"logged_in":false},"D-yGLH5L9QSgjf7kAAAG":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T06:12:03.837Z"}
+{"level":"info","message":"-1 user. Key: Zr1vNdEPpachgHdbAAAA Total: 2","timestamp":"2018-03-11T06:12:08.918Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T06:12:08.918Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T06:12:08.918Z"}
+{"level":"info","message":"+1 user! Key: _3XHvxy4m4OyqY1AAAAH Total: 2","timestamp":"2018-03-11T06:12:09.334Z"}
+{"D-yGLH5L9QSgjf7kAAAG":{"logged_in":false},"_3XHvxy4m4OyqY1AAAAH":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T06:12:09.334Z"}
+{"D-yGLH5L9QSgjf7kAAAG":{"logged_in":false},"_3XHvxy4m4OyqY1AAAAH":{"logged_in":true,"username":"asdas"},"level":"silly","message":"","timestamp":"2018-03-11T06:12:12.136Z"}
+{"level":"info","message":"Login: asdas","timestamp":"2018-03-11T06:12:12.138Z"}
+{"level":"info","message":"Move asdas to lobby 'main'.","timestamp":"2018-03-11T06:12:12.138Z"}
+{"main":{"_3XHvxy4m4OyqY1AAAAH":"asdas"},"level":"silly","message":"","timestamp":"2018-03-11T06:12:12.139Z"}
+{"D-yGLH5L9QSgjf7kAAAG":{"logged_in":true,"username":"asdasd"},"_3XHvxy4m4OyqY1AAAAH":{"logged_in":true,"username":"asdas"},"level":"silly","message":"","timestamp":"2018-03-11T06:12:14.293Z"}
+{"level":"info","message":"Login: asdasd","timestamp":"2018-03-11T06:12:14.295Z"}
+{"level":"info","message":"Move asdasd to lobby 'main'.","timestamp":"2018-03-11T06:12:14.296Z"}
+{"main":{"_3XHvxy4m4OyqY1AAAAH":"asdas","D-yGLH5L9QSgjf7kAAAG":"asdasd"},"level":"silly","message":"","timestamp":"2018-03-11T06:12:14.296Z"}
+{"room11":{"type":"double","gameInfo":{"leader":"_3XHvxy4m4OyqY1AAAAH","player2":null},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T06:12:17.800Z"}
+{"room11":{"type":"double","gameInfo":{"leader":"_3XHvxy4m4OyqY1AAAAH","player2":"D-yGLH5L9QSgjf7kAAAG"},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T06:12:21.038Z"}
+{"level":"info","message":"asdasd just left room room11, marked as abandoned.","timestamp":"2018-03-11T06:12:30.738Z"}
+{"level":"info","message":"Sent abandoned, win notification to asdas","timestamp":"2018-03-11T06:12:30.739Z"}
+{"room11":{"type":"double","gameInfo":{"leader":"_3XHvxy4m4OyqY1AAAAH","player2":null},"started":false,"abandoned":true},"level":"silly","message":"","timestamp":"2018-03-11T06:12:30.739Z"}
+{"level":"info","message":"-1 user. Key: D-yGLH5L9QSgjf7kAAAG Total: 2","timestamp":"2018-03-11T06:12:30.740Z"}
+{"level":"info","message":"Removed user asdasd from lobby clean","timestamp":"2018-03-11T06:12:30.740Z"}
+{"level":"info","message":"Removed user asdasd from lobby main","timestamp":"2018-03-11T06:12:30.740Z"}
+{"level":"info","message":"Deleting asdasd","timestamp":"2018-03-11T06:12:30.740Z"}
+{"level":"info","message":"+1 user! Key: YipQ79y4hyaj205gAAAI Total: 2","timestamp":"2018-03-11T06:12:31.348Z"}
+{"_3XHvxy4m4OyqY1AAAAH":{"logged_in":true,"username":"asdas"},"YipQ79y4hyaj205gAAAI":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T06:12:31.348Z"}
+{"level":"warn","message":"Restart code Requested by YipQ79y4hyaj205gAAAI","timestamp":"2018-03-11T06:12:39.386Z"}
+{"level":"error","message":"/restart HIT! RESTART NOOoOooOOOOO","timestamp":"2018-03-11T06:12:39.404Z"}

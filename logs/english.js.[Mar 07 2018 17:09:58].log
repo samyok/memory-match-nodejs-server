@@ -1,0 +1,62 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-07T23:09:58.173Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-07T23:09:58.271Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-07T23:09:58.284Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-07T23:09:58.285Z"}
+{"level":"info","message":"+1 user! Key: VeatiHWweF7ndwPvAAAA Total: 1","timestamp":"2018-03-07T23:09:58.501Z"}
+{"level":"silly","message":"{\"VeatiHWweF7ndwPvAAAA\":{\"logged_in\":false}}","timestamp":"2018-03-07T23:09:58.501Z"}
+{"level":"info","message":"-1 user. Key: VeatiHWweF7ndwPvAAAA Total: 0","timestamp":"2018-03-07T23:10:02.795Z"}
+{"level":"info","message":"+1 user! Key: 8ktUHi5yfRiJyvtnAAAB Total: 1","timestamp":"2018-03-07T23:10:03.042Z"}
+{"level":"silly","message":"{\"8ktUHi5yfRiJyvtnAAAB\":{\"logged_in\":false}}","timestamp":"2018-03-07T23:10:03.043Z"}
+{"level":"silly","message":"{\"8ktUHi5yfRiJyvtnAAAB\":{\"logged_in\":true,\"username\":\"asd\"}}","timestamp":"2018-03-07T23:10:05.583Z"}
+{"level":"info","message":"Login: asd","timestamp":"2018-03-07T23:10:05.583Z"}
+{"level":"info","message":"Move asd to lobby 'main'.","timestamp":"2018-03-07T23:10:05.585Z"}
+{"level":"silly","message":"{\"main\":[\"8ktUHi5yfRiJyvtnAAAB\"]}","timestamp":"2018-03-07T23:10:05.585Z"}
+{"level":"info","message":"-1 user. Key: 8ktUHi5yfRiJyvtnAAAB Total: 0","timestamp":"2018-03-07T23:16:30.541Z"}
+{"level":"info","message":"+1 user! Key: 6bjqBoeKpgLy4-bFAAAC Total: 1","timestamp":"2018-03-07T23:16:30.817Z"}
+{"level":"silly","message":"{\"6bjqBoeKpgLy4-bFAAAC\":{\"logged_in\":false}}","timestamp":"2018-03-07T23:16:30.817Z"}
+{"level":"silly","message":"{\"6bjqBoeKpgLy4-bFAAAC\":{\"logged_in\":true,\"username\":\"asd\"}}","timestamp":"2018-03-07T23:16:33.256Z"}
+{"level":"info","message":"Login: asd","timestamp":"2018-03-07T23:16:33.256Z"}
+{"level":"info","message":"Move asd to lobby 'main'.","timestamp":"2018-03-07T23:16:33.256Z"}
+{"level":"silly","message":"{\"main\":[\"8ktUHi5yfRiJyvtnAAAB\",\"6bjqBoeKpgLy4-bFAAAC\"]}","timestamp":"2018-03-07T23:16:33.256Z"}
+{"level":"info","message":"-1 user. Key: 6bjqBoeKpgLy4-bFAAAC Total: 0","timestamp":"2018-03-07T23:16:43.553Z"}
+{"level":"info","message":"+1 user! Key: aAAmbfCKde18QUEyAAAD Total: 1","timestamp":"2018-03-07T23:16:43.804Z"}
+{"level":"silly","message":"{\"aAAmbfCKde18QUEyAAAD\":{\"logged_in\":false}}","timestamp":"2018-03-07T23:16:43.804Z"}
+{"level":"silly","message":"{\"aAAmbfCKde18QUEyAAAD\":{\"logged_in\":true,\"username\":\"sad\"}}","timestamp":"2018-03-07T23:16:47.288Z"}
+{"level":"info","message":"Login: sad","timestamp":"2018-03-07T23:16:47.289Z"}
+{"level":"info","message":"Move sad to lobby 'main'.","timestamp":"2018-03-07T23:16:47.289Z"}
+{"level":"silly","message":"{\"main\":[\"8ktUHi5yfRiJyvtnAAAB\",\"6bjqBoeKpgLy4-bFAAAC\",\"aAAmbfCKde18QUEyAAAD\"]}","timestamp":"2018-03-07T23:16:47.289Z"}
+{"level":"info","message":"-1 user. Key: aAAmbfCKde18QUEyAAAD Total: 0","timestamp":"2018-03-07T23:17:57.957Z"}
+{"level":"info","message":"+1 user! Key: PlivIPN6vIF1A5D5AAAE Total: 1","timestamp":"2018-03-07T23:17:58.206Z"}
+{"level":"silly","message":"{\"PlivIPN6vIF1A5D5AAAE\":{\"logged_in\":false}}","timestamp":"2018-03-07T23:17:58.206Z"}
+{"level":"silly","message":"{\"PlivIPN6vIF1A5D5AAAE\":{\"logged_in\":true,\"username\":\"sad\"}}","timestamp":"2018-03-07T23:18:00.776Z"}
+{"level":"info","message":"Login: sad","timestamp":"2018-03-07T23:18:00.777Z"}
+{"level":"info","message":"Move sad to lobby 'main'.","timestamp":"2018-03-07T23:18:00.777Z"}
+{"level":"silly","message":"{\"main\":[\"8ktUHi5yfRiJyvtnAAAB\",\"6bjqBoeKpgLy4-bFAAAC\",\"aAAmbfCKde18QUEyAAAD\",\"PlivIPN6vIF1A5D5AAAE\"]}","timestamp":"2018-03-07T23:18:00.777Z"}
+{"level":"info","message":"-1 user. Key: PlivIPN6vIF1A5D5AAAE Total: 0","timestamp":"2018-03-07T23:18:12.355Z"}
+{"level":"info","message":"+1 user! Key: BdJ40Zopu4FfQ3uCAAAF Total: 1","timestamp":"2018-03-07T23:18:12.620Z"}
+{"level":"silly","message":"{\"BdJ40Zopu4FfQ3uCAAAF\":{\"logged_in\":false}}","timestamp":"2018-03-07T23:18:12.622Z"}
+{"level":"silly","message":"{\"BdJ40Zopu4FfQ3uCAAAF\":{\"logged_in\":true,\"username\":\"das\"}}","timestamp":"2018-03-07T23:18:15.423Z"}
+{"level":"info","message":"Login: das","timestamp":"2018-03-07T23:18:15.424Z"}
+{"level":"info","message":"Move das to lobby 'main'.","timestamp":"2018-03-07T23:18:15.424Z"}
+{"level":"silly","message":"{\"main\":[\"8ktUHi5yfRiJyvtnAAAB\",\"6bjqBoeKpgLy4-bFAAAC\",\"aAAmbfCKde18QUEyAAAD\",\"PlivIPN6vIF1A5D5AAAE\",\"BdJ40Zopu4FfQ3uCAAAF\"]}","timestamp":"2018-03-07T23:18:15.425Z"}
+{"level":"info","message":"-1 user. Key: BdJ40Zopu4FfQ3uCAAAF Total: 0","timestamp":"2018-03-07T23:21:24.249Z"}
+{"level":"info","message":"+1 user! Key: rZn2xnejzBdQP1tnAAAG Total: 1","timestamp":"2018-03-07T23:21:24.507Z"}
+{"level":"silly","message":"{\"rZn2xnejzBdQP1tnAAAG\":{\"logged_in\":false}}","timestamp":"2018-03-07T23:21:24.507Z"}
+{"level":"silly","message":"{\"rZn2xnejzBdQP1tnAAAG\":{\"logged_in\":true,\"username\":\"ads\"}}","timestamp":"2018-03-07T23:21:26.555Z"}
+{"level":"info","message":"Login: ads","timestamp":"2018-03-07T23:21:26.555Z"}
+{"level":"info","message":"Move ads to lobby 'main'.","timestamp":"2018-03-07T23:21:26.556Z"}
+{"level":"silly","message":"{\"main\":[\"8ktUHi5yfRiJyvtnAAAB\",\"6bjqBoeKpgLy4-bFAAAC\",\"aAAmbfCKde18QUEyAAAD\",\"PlivIPN6vIF1A5D5AAAE\",\"BdJ40Zopu4FfQ3uCAAAF\",\"rZn2xnejzBdQP1tnAAAG\"]}","timestamp":"2018-03-07T23:21:26.556Z"}
+{"level":"info","message":"-1 user. Key: rZn2xnejzBdQP1tnAAAG Total: 0","timestamp":"2018-03-07T23:21:53.115Z"}
+{"level":"info","message":"+1 user! Key: QpGpQ0xsuuNtpBG5AAAH Total: 1","timestamp":"2018-03-07T23:21:53.373Z"}
+{"level":"silly","message":"{\"QpGpQ0xsuuNtpBG5AAAH\":{\"logged_in\":false}}","timestamp":"2018-03-07T23:21:53.373Z"}
+{"level":"silly","message":"{\"QpGpQ0xsuuNtpBG5AAAH\":{\"logged_in\":true,\"username\":\"sad\"}}","timestamp":"2018-03-07T23:21:57.135Z"}
+{"level":"info","message":"Login: sad","timestamp":"2018-03-07T23:21:57.135Z"}
+{"level":"info","message":"Move sad to lobby 'main'.","timestamp":"2018-03-07T23:21:57.136Z"}
+{"level":"silly","message":"{\"main\":[\"8ktUHi5yfRiJyvtnAAAB\",\"6bjqBoeKpgLy4-bFAAAC\",\"aAAmbfCKde18QUEyAAAD\",\"PlivIPN6vIF1A5D5AAAE\",\"BdJ40Zopu4FfQ3uCAAAF\",\"rZn2xnejzBdQP1tnAAAG\",\"QpGpQ0xsuuNtpBG5AAAH\"]}","timestamp":"2018-03-07T23:21:57.136Z"}
+{"level":"info","message":"-1 user. Key: QpGpQ0xsuuNtpBG5AAAH Total: 0","timestamp":"2018-03-07T23:22:39.264Z"}
+{"level":"info","message":"+1 user! Key: glcy1G5CBZwAhFYTAAAI Total: 1","timestamp":"2018-03-07T23:22:39.531Z"}
+{"level":"silly","message":"{\"glcy1G5CBZwAhFYTAAAI\":{\"logged_in\":false}}","timestamp":"2018-03-07T23:22:39.532Z"}
+{"level":"silly","message":"{\"glcy1G5CBZwAhFYTAAAI\":{\"logged_in\":true,\"username\":\"sad\"}}","timestamp":"2018-03-07T23:22:56.644Z"}
+{"level":"info","message":"Login: sad","timestamp":"2018-03-07T23:22:56.644Z"}
+{"level":"info","message":"Move sad to lobby 'main'.","timestamp":"2018-03-07T23:22:56.645Z"}
+{"level":"silly","message":"{\"main\":[\"8ktUHi5yfRiJyvtnAAAB\",\"6bjqBoeKpgLy4-bFAAAC\",\"aAAmbfCKde18QUEyAAAD\",\"PlivIPN6vIF1A5D5AAAE\",\"BdJ40Zopu4FfQ3uCAAAF\",\"rZn2xnejzBdQP1tnAAAG\",\"QpGpQ0xsuuNtpBG5AAAH\",\"glcy1G5CBZwAhFYTAAAI\"]}","timestamp":"2018-03-07T23:22:56.645Z"}

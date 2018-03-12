@@ -1,0 +1,10 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-11T20:55:41.728Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-11T20:55:41.840Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-11T20:55:41.854Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-11T20:55:41.855Z"}
+{"level":"info","message":"+1 user! Key: 90aLsoPdGk1Akw0FAAAA Total: 1","timestamp":"2018-03-11T20:55:42.343Z"}
+{"90aLsoPdGk1Akw0FAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T20:55:42.343Z"}
+{"level":"info","message":"+1 user! Key: UQrSyvfoZ7NNexHbAAAB Total: 2","timestamp":"2018-03-11T20:55:42.911Z"}
+{"90aLsoPdGk1Akw0FAAAA":{"logged_in":false},"UQrSyvfoZ7NNexHbAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T20:55:42.911Z"}
+{"level":"warn","message":"Restart code Requested by UQrSyvfoZ7NNexHbAAAB","timestamp":"2018-03-11T20:56:51.454Z"}
+{"level":"error","message":"/restart HIT! RESTART NOOoOooOOOOO","timestamp":"2018-03-11T20:56:51.487Z"}

@@ -1,0 +1,14 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-09T04:26:21.401Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-09T04:26:21.517Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-09T04:26:21.530Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-09T04:26:21.531Z"}
+{"level":"info","message":"+1 user! Key: 3amZUm65Ry9Qsyj7AAAA Total: 1","timestamp":"2018-03-09T04:26:22.364Z"}
+{"level":"silly","message":"{\"3amZUm65Ry9Qsyj7AAAA\":{\"logged_in\":false}}","timestamp":"2018-03-09T04:26:22.365Z"}
+{"level":"info","message":"+1 user! Key: IpBygJZRuDuVzwrgAAAB Total: 2","timestamp":"2018-03-09T04:26:22.991Z"}
+{"level":"silly","message":"{\"3amZUm65Ry9Qsyj7AAAA\":{\"logged_in\":false},\"IpBygJZRuDuVzwrgAAAB\":{\"logged_in\":false}}","timestamp":"2018-03-09T04:26:22.991Z"}
+{"level":"silly","message":"{\"3amZUm65Ry9Qsyj7AAAA\":{\"logged_in\":false},\"IpBygJZRuDuVzwrgAAAB\":{\"logged_in\":true,\"username\":\"sadasd\"}}","timestamp":"2018-03-09T04:26:25.466Z"}
+{"level":"info","message":"Login: sadasd","timestamp":"2018-03-09T04:26:25.466Z"}
+{"level":"info","message":"Move sadasd to lobby 'main'.","timestamp":"2018-03-09T04:26:25.467Z"}
+{"level":"silly","message":"{\"main\":{\"IpBygJZRuDuVzwrgAAAB\":\"sadasd\"}}","timestamp":"2018-03-09T04:26:25.467Z"}
+{"level":"info","message":"IpBygJZRuDuVzwrgAAAB just tried to go to room ","timestamp":"2018-03-09T04:26:33.955Z"}
+{"level":"silly","message":"{}","timestamp":"2018-03-09T04:26:33.955Z"}

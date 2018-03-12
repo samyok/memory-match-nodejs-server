@@ -1,0 +1,10 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-11T21:52:07.292Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-11T21:52:07.406Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-11T21:52:07.419Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-11T21:52:07.420Z"}
+{"level":"info","message":"+1 user! Key: MQLaCE4PJswYc2t0AAAA Total: 1","timestamp":"2018-03-11T21:52:08.206Z"}
+{"MQLaCE4PJswYc2t0AAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:52:08.206Z"}
+{"level":"info","message":"+1 user! Key: Pyjtyo-H1uqXl3POAAAB Total: 2","timestamp":"2018-03-11T21:52:08.894Z"}
+{"MQLaCE4PJswYc2t0AAAA":{"logged_in":false},"Pyjtyo-H1uqXl3POAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:52:08.894Z"}
+{"level":"warn","message":"Restart code Requested by MQLaCE4PJswYc2t0AAAA","timestamp":"2018-03-11T21:52:10.673Z"}
+{"level":"error","message":"/restart HIT! RESTART NOOoOooOOOOO","timestamp":"2018-03-11T21:52:10.684Z"}

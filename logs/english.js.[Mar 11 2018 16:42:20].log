@@ -1,0 +1,73 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-11T21:42:20.312Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-11T21:42:20.434Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-11T21:42:20.447Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-11T21:42:20.448Z"}
+{"level":"info","message":"+1 user! Key: nN537Pa_3NkSZDc4AAAA Total: 1","timestamp":"2018-03-11T21:42:20.869Z"}
+{"nN537Pa_3NkSZDc4AAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:42:20.870Z"}
+{"level":"info","message":"+1 user! Key: yyqsjcqyzsph9ayMAAAB Total: 2","timestamp":"2018-03-11T21:42:21.667Z"}
+{"nN537Pa_3NkSZDc4AAAA":{"logged_in":false},"yyqsjcqyzsph9ayMAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:42:21.667Z"}
+{"level":"error","message":"Deleted room clean, the room's info was undefined or no other player was in it. ","timestamp":"2018-03-11T21:42:21.869Z"}
+{"level":"silly","message":"","timestamp":"2018-03-11T21:42:21.870Z"}
+{"level":"info","message":"-1 user. Key: nN537Pa_3NkSZDc4AAAA Total: 2","timestamp":"2018-03-11T21:42:21.870Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T21:42:21.870Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T21:42:21.870Z"}
+{"level":"info","message":"+1 user! Key: iEF13NGK8CtDWTtrAAAC Total: 2","timestamp":"2018-03-11T21:42:22.397Z"}
+{"yyqsjcqyzsph9ayMAAAB":{"logged_in":false},"iEF13NGK8CtDWTtrAAAC":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:42:22.398Z"}
+{"level":"info","message":"-1 user. Key: yyqsjcqyzsph9ayMAAAB Total: 2","timestamp":"2018-03-11T21:42:23.491Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T21:42:23.491Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T21:42:23.491Z"}
+{"level":"info","message":"+1 user! Key: Al517YavB5rAFAWoAAAD Total: 2","timestamp":"2018-03-11T21:42:23.733Z"}
+{"iEF13NGK8CtDWTtrAAAC":{"logged_in":false},"Al517YavB5rAFAWoAAAD":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:42:23.733Z"}
+{"iEF13NGK8CtDWTtrAAAC":{"logged_in":false},"Al517YavB5rAFAWoAAAD":{"logged_in":true,"username":"asda"},"level":"silly","message":"","timestamp":"2018-03-11T21:42:25.988Z"}
+{"level":"info","message":"Login: asda","timestamp":"2018-03-11T21:42:25.989Z"}
+{"level":"info","message":"Move asda to lobby 'main'.","timestamp":"2018-03-11T21:42:25.989Z"}
+{"main":{"Al517YavB5rAFAWoAAAD":"asda"},"level":"silly","message":"","timestamp":"2018-03-11T21:42:25.990Z"}
+{"iEF13NGK8CtDWTtrAAAC":{"logged_in":true,"username":"asdads"},"Al517YavB5rAFAWoAAAD":{"logged_in":true,"username":"asda"},"level":"silly","message":"","timestamp":"2018-03-11T21:42:27.912Z"}
+{"level":"info","message":"Login: asdads","timestamp":"2018-03-11T21:42:27.913Z"}
+{"level":"info","message":"Move asdads to lobby 'main'.","timestamp":"2018-03-11T21:42:27.914Z"}
+{"main":{"Al517YavB5rAFAWoAAAD":"asda","iEF13NGK8CtDWTtrAAAC":"asdads"},"level":"silly","message":"","timestamp":"2018-03-11T21:42:27.914Z"}
+{"room13":{"type":"double","gameInfo":{"leader":"iEF13NGK8CtDWTtrAAAC","player2":null},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:42:29.491Z"}
+{"room13":{"type":"double","gameInfo":{"leader":"iEF13NGK8CtDWTtrAAAC","player2":"Al517YavB5rAFAWoAAAD"},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:42:35.070Z"}
+{"level":"info","message":"Marked asdads as ready to play in room room13.","timestamp":"2018-03-11T21:42:35.074Z"}
+{"room13":{"type":"double","gameInfo":{"leader":"iEF13NGK8CtDWTtrAAAC","player2":"Al517YavB5rAFAWoAAAD"},"game":{},"ready":{"leader":true,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:42:35.075Z"}
+{"level":"info","message":"Marked asda as ready to play in room room13.","timestamp":"2018-03-11T21:42:35.683Z"}
+{"room13":{"type":"double","gameInfo":{"leader":"iEF13NGK8CtDWTtrAAAC","player2":"Al517YavB5rAFAWoAAAD"},"game":{},"ready":{"leader":true,"player2":true},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:42:35.683Z"}
+{"level":"info","message":"Started game in room room13.","timestamp":"2018-03-11T21:42:35.685Z"}
+{"room13":{"type":"double","gameInfo":{"leader":"iEF13NGK8CtDWTtrAAAC","player2":"Al517YavB5rAFAWoAAAD"},"game":{},"ready":{"leader":true,"player2":true},"started":1,"abandoned":false,"cards":["Montag's wife","Most important girl in the story","Guy Montag","Pleasing","Mildred ___, so techies were called. ","Dover Beach","The Hound's weapon","Black","The book Montag memorized","The Hound","Innocent","Captain Beatty","A machine that tries to kill Montag","Number of walls in Mildred's \"family\"","Montag convinced Faber to help him by...","Ate too many sleeping pills","Temperature at which paper burns","Happiness","Clarisse McClellan","Author of Fahrenheit 451 ","Ripping pages out of the Bible","Montag original thoughts on burning","Mildred","Poem that Montag reads","3","A procaine needle","451 degrees Farenheit","Clarisse makes Montag question this feeling","Last Person killed by Montag","A(n) ___ man is killed instead of Montag","Ray Bradbury","Granger","Book of Ecclesiastes","Name of fireman that Montag reported","Main character","Leader of so-called \"criminals\" "]},"level":"silly","message":"","timestamp":"2018-03-11T21:42:35.687Z"}
+{"level":"info","message":"asdads just left room room13, marked as abandoned.","timestamp":"2018-03-11T21:47:53.228Z"}
+{"level":"info","message":"Sent abandoned, win notification to asda","timestamp":"2018-03-11T21:47:53.229Z"}
+{"room13":{"type":"double","gameInfo":{"leader":null,"player2":"Al517YavB5rAFAWoAAAD"},"game":{},"ready":{"leader":true,"player2":true},"started":1,"abandoned":true,"cards":["Montag's wife","Most important girl in the story","Guy Montag","Pleasing","Mildred ___, so techies were called. ","Dover Beach","The Hound's weapon","Black","The book Montag memorized","The Hound","Innocent","Captain Beatty","A machine that tries to kill Montag","Number of walls in Mildred's \"family\"","Montag convinced Faber to help him by...","Ate too many sleeping pills","Temperature at which paper burns","Happiness","Clarisse McClellan","Author of Fahrenheit 451 ","Ripping pages out of the Bible","Montag original thoughts on burning","Mildred","Poem that Montag reads","3","A procaine needle","451 degrees Farenheit","Clarisse makes Montag question this feeling","Last Person killed by Montag","A(n) ___ man is killed instead of Montag","Ray Bradbury","Granger","Book of Ecclesiastes","Name of fireman that Montag reported","Main character","Leader of so-called \"criminals\" "]},"level":"silly","message":"","timestamp":"2018-03-11T21:47:53.229Z"}
+{"level":"info","message":"-1 user. Key: iEF13NGK8CtDWTtrAAAC Total: 2","timestamp":"2018-03-11T21:47:53.230Z"}
+{"level":"info","message":"Removed user asdads from lobby clean","timestamp":"2018-03-11T21:47:53.230Z"}
+{"level":"info","message":"Removed user asdads from lobby main","timestamp":"2018-03-11T21:47:53.230Z"}
+{"level":"info","message":"Deleting asdads","timestamp":"2018-03-11T21:47:53.230Z"}
+{"level":"info","message":"+1 user! Key: p-uk_TiV24B29U8HAAAE Total: 2","timestamp":"2018-03-11T21:47:53.720Z"}
+{"Al517YavB5rAFAWoAAAD":{"logged_in":true,"username":"asda"},"p-uk_TiV24B29U8HAAAE":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:47:53.720Z"}
+{"Al517YavB5rAFAWoAAAD":{"logged_in":true,"username":"asda"},"p-uk_TiV24B29U8HAAAE":{"logged_in":true,"username":"asdsad"},"level":"silly","message":"","timestamp":"2018-03-11T21:48:02.128Z"}
+{"level":"info","message":"Login: asdsad","timestamp":"2018-03-11T21:48:02.129Z"}
+{"level":"info","message":"Move asdsad to lobby 'main'.","timestamp":"2018-03-11T21:48:02.130Z"}
+{"main":{"Al517YavB5rAFAWoAAAD":"asda","p-uk_TiV24B29U8HAAAE":"asdsad"},"level":"silly","message":"","timestamp":"2018-03-11T21:48:02.130Z"}
+{"level":"info","message":"p-uk_TiV24B29U8HAAAE just tried to go to room room13","timestamp":"2018-03-11T21:48:07.218Z"}
+{"room13":{"type":"double","gameInfo":{"leader":null,"player2":"Al517YavB5rAFAWoAAAD"},"game":{},"ready":{"leader":true,"player2":true},"started":1,"abandoned":true,"cards":["Montag's wife","Most important girl in the story","Guy Montag","Pleasing","Mildred ___, so techies were called. ","Dover Beach","The Hound's weapon","Black","The book Montag memorized","The Hound","Innocent","Captain Beatty","A machine that tries to kill Montag","Number of walls in Mildred's \"family\"","Montag convinced Faber to help him by...","Ate too many sleeping pills","Temperature at which paper burns","Happiness","Clarisse McClellan","Author of Fahrenheit 451 ","Ripping pages out of the Bible","Montag original thoughts on burning","Mildred","Poem that Montag reads","3","A procaine needle","451 degrees Farenheit","Clarisse makes Montag question this feeling","Last Person killed by Montag","A(n) ___ man is killed instead of Montag","Ray Bradbury","Granger","Book of Ecclesiastes","Name of fireman that Montag reported","Main character","Leader of so-called \"criminals\" "]},"level":"silly","message":"","timestamp":"2018-03-11T21:48:07.218Z"}
+{"level":"error","message":"Deleted room room13, the room's info was undefined or no other player was in it. ","timestamp":"2018-03-11T21:48:15.592Z"}
+{"level":"silly","message":"","timestamp":"2018-03-11T21:48:15.593Z"}
+{"level":"info","message":"-1 user. Key: Al517YavB5rAFAWoAAAD Total: 2","timestamp":"2018-03-11T21:48:15.593Z"}
+{"level":"info","message":"Removed user asda from lobby clean","timestamp":"2018-03-11T21:48:15.593Z"}
+{"level":"info","message":"Removed user asda from lobby main","timestamp":"2018-03-11T21:48:15.593Z"}
+{"level":"info","message":"Deleting asda","timestamp":"2018-03-11T21:48:15.593Z"}
+{"level":"info","message":"+1 user! Key: 7mFyClpG1FlFvdIjAAAF Total: 2","timestamp":"2018-03-11T21:48:16.066Z"}
+{"p-uk_TiV24B29U8HAAAE":{"logged_in":true,"username":"asdsad"},"7mFyClpG1FlFvdIjAAAF":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T21:48:16.067Z"}
+{"p-uk_TiV24B29U8HAAAE":{"logged_in":true,"username":"asdsad"},"7mFyClpG1FlFvdIjAAAF":{"logged_in":true,"username":"asd"},"level":"silly","message":"","timestamp":"2018-03-11T21:48:19.049Z"}
+{"level":"info","message":"Login: asd","timestamp":"2018-03-11T21:48:19.050Z"}
+{"level":"info","message":"Move asd to lobby 'main'.","timestamp":"2018-03-11T21:48:19.051Z"}
+{"main":{"p-uk_TiV24B29U8HAAAE":"asdsad","7mFyClpG1FlFvdIjAAAF":"asd"},"level":"silly","message":"","timestamp":"2018-03-11T21:48:19.051Z"}
+{"room32":{"type":"double","gameInfo":{"leader":"7mFyClpG1FlFvdIjAAAF","player2":null},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:48:22.072Z"}
+{"room32":{"type":"double","gameInfo":{"leader":"7mFyClpG1FlFvdIjAAAF","player2":"p-uk_TiV24B29U8HAAAE"},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:48:25.261Z"}
+{"level":"info","message":"Marked asd as ready to play in room room32.","timestamp":"2018-03-11T21:48:25.267Z"}
+{"room32":{"type":"double","gameInfo":{"leader":"7mFyClpG1FlFvdIjAAAF","player2":"p-uk_TiV24B29U8HAAAE"},"game":{},"ready":{"leader":true,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:48:25.268Z"}
+{"level":"info","message":"Marked asdsad as ready to play in room room32.","timestamp":"2018-03-11T21:48:25.883Z"}
+{"room32":{"type":"double","gameInfo":{"leader":"7mFyClpG1FlFvdIjAAAF","player2":"p-uk_TiV24B29U8HAAAE"},"game":{},"ready":{"leader":true,"player2":true},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T21:48:25.883Z"}
+{"level":"info","message":"Started game in room room32.","timestamp":"2018-03-11T21:48:25.885Z"}
+{"room32":{"type":"double","gameInfo":{"leader":"7mFyClpG1FlFvdIjAAAF","player2":"p-uk_TiV24B29U8HAAAE"},"game":{},"ready":{"leader":true,"player2":true},"started":1,"abandoned":false,"cards":[]},"level":"silly","message":"","timestamp":"2018-03-11T21:48:25.887Z"}
+{"level":"warn","message":"Restart code Requested by 7mFyClpG1FlFvdIjAAAF","timestamp":"2018-03-11T21:49:25.801Z"}
+{"level":"error","message":"/restart HIT! RESTART NOOoOooOOOOO","timestamp":"2018-03-11T21:49:25.815Z"}

@@ -1,0 +1,24 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-12T00:04:31.700Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-12T00:04:31.817Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-12T00:04:31.830Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-12T00:04:31.831Z"}
+{"level":"info","message":"+1 user! Key: XXS4oDoqpCNkxyBTAAAA Total: 1","timestamp":"2018-03-12T00:04:33.729Z"}
+{"XXS4oDoqpCNkxyBTAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T00:04:33.730Z"}
+{"XXS4oDoqpCNkxyBTAAAA":{"logged_in":true,"username":"asddas"},"level":"silly","message":"","timestamp":"2018-03-12T00:04:36.333Z"}
+{"level":"info","message":"Login: asddas","timestamp":"2018-03-12T00:04:36.333Z"}
+{"level":"info","message":"Move asddas to lobby 'main'.","timestamp":"2018-03-12T00:04:36.334Z"}
+{"main":{"XXS4oDoqpCNkxyBTAAAA":"asddas"},"level":"silly","message":"","timestamp":"2018-03-12T00:04:36.334Z"}
+{"level":"info","message":"+1 user! Key: Hp4Jlokt8Df_E3klAAAB Total: 2","timestamp":"2018-03-12T00:04:39.399Z"}
+{"XXS4oDoqpCNkxyBTAAAA":{"logged_in":true,"username":"asddas"},"Hp4Jlokt8Df_E3klAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T00:04:39.400Z"}
+{"XXS4oDoqpCNkxyBTAAAA":{"logged_in":true,"username":"asddas"},"Hp4Jlokt8Df_E3klAAAB":{"logged_in":true,"username":"asd"},"level":"silly","message":"","timestamp":"2018-03-12T00:04:43.219Z"}
+{"level":"info","message":"Login: asd","timestamp":"2018-03-12T00:04:43.221Z"}
+{"level":"info","message":"Move asd to lobby 'main'.","timestamp":"2018-03-12T00:04:43.222Z"}
+{"main":{"XXS4oDoqpCNkxyBTAAAA":"asddas","Hp4Jlokt8Df_E3klAAAB":"asd"},"level":"silly","message":"","timestamp":"2018-03-12T00:04:43.222Z"}
+{"room20":{"type":"double","gameInfo":{"leader":"Hp4Jlokt8Df_E3klAAAB","player2":null},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-12T00:04:45.936Z"}
+{"room20":{"type":"double","gameInfo":{"leader":"Hp4Jlokt8Df_E3klAAAB","player2":"XXS4oDoqpCNkxyBTAAAA"},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-12T00:04:50.524Z"}
+{"level":"error","message":"Deleted room clean, the room's info was undefined.","timestamp":"2018-03-12T00:04:50.528Z"}
+{"room20":{"type":"double","gameInfo":{"leader":"Hp4Jlokt8Df_E3klAAAB","player2":"XXS4oDoqpCNkxyBTAAAA"},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-12T00:04:50.529Z"}
+{"level":"info","message":"Marked asd as ready to play in room room20.","timestamp":"2018-03-12T00:04:50.529Z"}
+{"room20":{"type":"double","gameInfo":{"leader":"Hp4Jlokt8Df_E3klAAAB","player2":"XXS4oDoqpCNkxyBTAAAA"},"game":{},"ready":{"leader":true,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-12T00:04:50.529Z"}
+[{"question":"Main character","answer":"Guy Montag"},{"question":"Montag's wife","answer":"Mildred"},{"question":"Last Person killed by Montag","answer":"Captain Beatty"},{"question":"A machine that tries to kill Montag","answer":"The Hound"},{"question":"The book Montag memorized","answer":"Book of Ecclesiastes"},{"question":"Poem that Montag reads","answer":"Dover Beach"},{"question":"Temperature at which paper burns","answer":"451 degrees Farenheit"},{"question":"Most important girl in the story","answer":"Clarisse McClellan"},{"question":"Author of Fahrenheit 451 ","answer":"Ray Bradbury"},{"question":"Number of walls in Mildred's \"family\"","answer":"3"},{"question":"Clarisse makes Montag question this feeling","answer":"Happiness"},{"question":"Mildred ___, so techies were called. ","answer":"Ate too many sleeping pills"},{"question":"Leader of so-called \"criminals\" ","answer":"Granger"},{"question":"Montag original thoughts on burning","answer":"Pleasing"},{"question":"Montag convinced Faber to help him by...","answer":"Ripping pages out of the Bible"},{"question":"The Hound's weapon","answer":"A procaine needle"},{"question":"Name of fireman that Montag reported","answer":"Black"},{"question":"A(n) ___ man is killed instead of Montag","answer":"Innocent"}]
+{"level":"info","message":"Marked asddas as ready to play in room room20.","timestamp":"2018-03-12T00:04:51.144Z"}

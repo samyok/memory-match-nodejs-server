@@ -1,0 +1,13 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-12T00:02:59.361Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-12T00:02:59.472Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-12T00:02:59.502Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-12T00:02:59.504Z"}
+{"level":"info","message":"+1 user! Key: KlMItn7slhU8b6WDAAAA Total: 1","timestamp":"2018-03-12T00:03:00.123Z"}
+{"KlMItn7slhU8b6WDAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T00:03:00.123Z"}
+{"level":"info","message":"+1 user! Key: wH0gooPiRUWk1dapAAAB Total: 2","timestamp":"2018-03-12T00:03:01.317Z"}
+{"KlMItn7slhU8b6WDAAAA":{"logged_in":false},"wH0gooPiRUWk1dapAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T00:03:01.318Z"}
+{"KlMItn7slhU8b6WDAAAA":{"logged_in":false},"wH0gooPiRUWk1dapAAAB":{"logged_in":true,"username":"asd"},"level":"silly","message":"","timestamp":"2018-03-12T00:03:05.286Z"}
+{"level":"info","message":"Login: asd","timestamp":"2018-03-12T00:03:05.293Z"}
+{"level":"info","message":"Move asd to lobby 'main'.","timestamp":"2018-03-12T00:03:05.293Z"}
+{"main":{"wH0gooPiRUWk1dapAAAB":"asd"},"level":"silly","message":"","timestamp":"2018-03-12T00:03:05.293Z"}
+{"room19":{"type":"double","gameInfo":{"leader":"wH0gooPiRUWk1dapAAAB","player2":null},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-12T00:03:07.144Z"}

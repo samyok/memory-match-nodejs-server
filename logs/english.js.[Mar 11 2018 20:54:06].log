@@ -1,0 +1,12 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-12T01:54:07.352Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-12T01:54:09.436Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-12T01:54:09.852Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-12T01:54:09.853Z"}
+{"level":"info","message":"+1 user! Key: 1hZMZHqRHG9W1FZQAAAA Total: 1","timestamp":"2018-03-12T03:02:23.845Z"}
+{"1hZMZHqRHG9W1FZQAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T03:02:23.845Z"}
+{"1hZMZHqRHG9W1FZQAAAA":{"logged_in":true,"username":"sad"},"level":"silly","message":"","timestamp":"2018-03-12T03:02:36.219Z"}
+{"level":"info","message":"Login: sad","timestamp":"2018-03-12T03:02:36.220Z"}
+{"level":"info","message":"Move sad to lobby 'main'.","timestamp":"2018-03-12T03:02:36.221Z"}
+{"main":{"1hZMZHqRHG9W1FZQAAAA":"sad"},"level":"silly","message":"","timestamp":"2018-03-12T03:02:36.221Z"}
+{"level":"info","message":"1hZMZHqRHG9W1FZQAAAA just tried to go to room asd","timestamp":"2018-03-12T03:02:42.690Z"}
+{"level":"silly","message":"","timestamp":"2018-03-12T03:02:42.690Z"}

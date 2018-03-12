@@ -1,0 +1,11 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-08T05:42:31.566Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-08T05:42:31.679Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-08T05:42:31.691Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-08T05:42:31.693Z"}
+{"level":"info","message":"+1 user! Key: feIoEPAcgJJo0gTTAAAA Total: 1","timestamp":"2018-03-08T05:43:35.143Z"}
+{"level":"silly","message":"{\"feIoEPAcgJJo0gTTAAAA\":{\"logged_in\":false}}","timestamp":"2018-03-08T05:43:35.144Z"}
+{"level":"info","message":"-1 user. Key: feIoEPAcgJJo0gTTAAAA Total: 0","timestamp":"2018-03-08T05:43:36.835Z"}
+{"level":"info","message":"+1 user! Key: shaf-h4uha5id59uAAAB Total: 1","timestamp":"2018-03-08T05:43:37.330Z"}
+{"level":"silly","message":"{\"shaf-h4uha5id59uAAAB\":{\"logged_in\":false}}","timestamp":"2018-03-08T05:43:37.331Z"}
+{"level":"warn","message":"Code Requested by shaf-h4uha5id59uAAAB","timestamp":"2018-03-08T05:43:38.665Z"}
+{"level":"error","message":"/restart HIT! RESTART NOOoOooOOOOO","timestamp":"2018-03-08T05:43:38.692Z"}

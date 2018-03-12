@@ -1,0 +1,19 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-11T05:43:26.320Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-11T05:43:26.435Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-11T05:43:26.449Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-11T05:43:26.451Z"}
+{"level":"info","message":"+1 user! Key: ng4uvQSacCi0wairAAAA Total: 1","timestamp":"2018-03-11T05:43:26.723Z"}
+{"level":"silly","message":"{\"ng4uvQSacCi0wairAAAA\":{\"logged_in\":false}}","timestamp":"2018-03-11T05:43:26.723Z"}
+{"level":"info","message":"+1 user! Key: K9GBc-3LDrWa1PALAAAB Total: 2","timestamp":"2018-03-11T05:43:27.515Z"}
+{"level":"silly","message":"{\"ng4uvQSacCi0wairAAAA\":{\"logged_in\":false},\"K9GBc-3LDrWa1PALAAAB\":{\"logged_in\":false}}","timestamp":"2018-03-11T05:43:27.515Z"}
+{"level":"silly","message":"{\"ng4uvQSacCi0wairAAAA\":{\"logged_in\":false},\"K9GBc-3LDrWa1PALAAAB\":{\"logged_in\":true,\"username\":\"asdasd\"}}","timestamp":"2018-03-11T05:43:34.178Z"}
+{"level":"info","message":"Login: asdasd","timestamp":"2018-03-11T05:43:34.179Z"}
+{"level":"info","message":"Move asdasd to lobby 'main'.","timestamp":"2018-03-11T05:43:34.180Z"}
+{"level":"silly","message":"{\"main\":{\"K9GBc-3LDrWa1PALAAAB\":\"asdasd\"}}","timestamp":"2018-03-11T05:43:34.180Z"}
+{"level":"silly","message":"{\"ng4uvQSacCi0wairAAAA\":{\"logged_in\":true,\"username\":\"adasd\"},\"K9GBc-3LDrWa1PALAAAB\":{\"logged_in\":true,\"username\":\"asdasd\"}}","timestamp":"2018-03-11T05:43:36.972Z"}
+{"level":"info","message":"Login: adasd","timestamp":"2018-03-11T05:43:36.972Z"}
+{"level":"info","message":"Move adasd to lobby 'main'.","timestamp":"2018-03-11T05:43:36.973Z"}
+{"level":"silly","message":"{\"main\":{\"K9GBc-3LDrWa1PALAAAB\":\"asdasd\",\"ng4uvQSacCi0wairAAAA\":\"adasd\"}}","timestamp":"2018-03-11T05:43:36.973Z"}
+{"level":"silly","message":"{\"room14\":{\"type\":\"double\",\"gameInfo\":{\"leader\":\"ng4uvQSacCi0wairAAAA\",\"player2\":null},\"started\":false,\"abandoned\":false}}","timestamp":"2018-03-11T05:43:38.700Z"}
+{"level":"silly","message":"{\"room14\":{\"type\":\"double\",\"gameInfo\":{\"leader\":\"ng4uvQSacCi0wairAAAA\",\"player2\":\"K9GBc-3LDrWa1PALAAAB\"},\"started\":false,\"abandoned\":false}}","timestamp":"2018-03-11T05:43:43.421Z"}
+{"level":"error","message":"Deleted room clean, the room's info was undefined. ","timestamp":"2018-03-11T05:43:45.785Z"}

@@ -1,0 +1,19 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-12T01:27:37.863Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-12T01:27:37.970Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-12T01:27:37.983Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-12T01:27:37.984Z"}
+{"level":"info","message":"+1 user! Key: Z84ul8gnzrrPvNVRAAAA Total: 1","timestamp":"2018-03-12T01:27:39.346Z"}
+{"Z84ul8gnzrrPvNVRAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T01:27:39.346Z"}
+{"level":"info","message":"+1 user! Key: ZHSzVAMsBeW3xsNwAAAB Total: 2","timestamp":"2018-03-12T01:27:40.055Z"}
+{"Z84ul8gnzrrPvNVRAAAA":{"logged_in":false},"ZHSzVAMsBeW3xsNwAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T01:27:40.055Z"}
+{"level":"info","message":"+1 user! Key: BXeMLVc7XQjcm2oDAAAC Total: 3","timestamp":"2018-03-12T01:27:42.280Z"}
+{"Z84ul8gnzrrPvNVRAAAA":{"logged_in":false},"ZHSzVAMsBeW3xsNwAAAB":{"logged_in":false},"BXeMLVc7XQjcm2oDAAAC":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-12T01:27:42.280Z"}
+{"level":"info","message":"-1 user. Key: BXeMLVc7XQjcm2oDAAAC Total: 3","timestamp":"2018-03-12T01:29:59.706Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-12T01:29:59.706Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-12T01:29:59.706Z"}
+{"level":"info","message":"-1 user. Key: ZHSzVAMsBeW3xsNwAAAB Total: 2","timestamp":"2018-03-12T01:30:10.197Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-12T01:30:10.198Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-12T01:30:10.198Z"}
+{"level":"info","message":"-1 user. Key: Z84ul8gnzrrPvNVRAAAA Total: 1","timestamp":"2018-03-12T01:30:10.218Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-12T01:30:10.222Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-12T01:30:10.222Z"}

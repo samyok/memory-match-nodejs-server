@@ -18,15 +18,26 @@
     </div>
     <body>
         <div id="id"></div>
-        <h1><span id="placeType">Lobby</span>: <span id="placeName">[NULL]</span></h1>
-        <button class="w3-button" id="button1">Button 1</button>
-        <button class="w3-button" id="button2">Button 2</button>
-        <button class="w3-button" id="button3">Button 3</button>
+        <h1 class="w3-left"><span id="placeType">Lobby</span>: <span id="placeName">[NULL]</span></h1>
+        <h1 class="w3-right">Score: <span id="personScoreleader">0</span> to <span id="personScoreplayer2">0</span></h1>
         <div class=w3-modal id=original-modal> <div class=w3-modal-content>
             <header class=w3-container> <span class="w3-button w3-display-topright x-out">×</span><h2></h2></header>
             <div class="w3-container body"> <p></p> <input class="w3-input w3-margin-bottom"style=outline:0> <button class="w3-button w3-right"></button> </div>
             <footer class=w3-container> <p></p> </footer>
         </div> </div>
+        <div id="playingArea" class="w3-row" style="">
+            <div class="card-wrapper w3-col m3 l2 ORIGINAL" style="display: none">
+            <div class="card">
+                <div class="card-front">
+                Card <span class="number">1</span><br>Fahrenheit<br>451
+                </div>
+                    <div class="card-back">
+                        <pre></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="client.js"></script>
+        <script src="cards.js" charset="utf-8"></script>
     </body>
 </html>

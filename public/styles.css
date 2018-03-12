@@ -127,6 +127,11 @@ a:hover { /* mouse over link */
 .card.remove { /*Does not work yet (probably because I don't know what I am doing.*/
 	width: 100%;
 }
+pre {
+	white-space: pre-wrap;
+    word-break: keep-all;
+    padding: 0 5px;
+}
 .card.remove .card-front, .card.remove .card-back{
   display: none; /* when remove class is added, hide front and back */
   cursor: context-menu;
@@ -353,6 +358,7 @@ footer .dark-footer {
     height: 100%;
     width: 100%;
     background-color: #f00;
+    z-index: 5;
 }
 body, html {
     height: 100%;

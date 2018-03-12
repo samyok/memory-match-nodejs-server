@@ -1,0 +1,30 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-11T20:51:14.963Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-11T20:51:15.106Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-11T20:51:15.120Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-11T20:51:15.121Z"}
+{"level":"info","message":"+1 user! Key: AWRv0LUWTDk8YTqgAAAA Total: 1","timestamp":"2018-03-11T20:51:16.246Z"}
+{"AWRv0LUWTDk8YTqgAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T20:51:16.246Z"}
+{"level":"info","message":"+1 user! Key: 4Vu5Ib_pb1hTdapEAAAB Total: 2","timestamp":"2018-03-11T20:51:16.311Z"}
+{"AWRv0LUWTDk8YTqgAAAA":{"logged_in":false},"4Vu5Ib_pb1hTdapEAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T20:51:16.312Z"}
+{"level":"error","message":"Deleted room clean, the room's info was undefined or no other player was in it. ","timestamp":"2018-03-11T20:51:17.210Z"}
+{"level":"silly","message":"","timestamp":"2018-03-11T20:51:17.210Z"}
+{"level":"info","message":"-1 user. Key: AWRv0LUWTDk8YTqgAAAA Total: 2","timestamp":"2018-03-11T20:51:17.211Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-11T20:51:17.211Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-11T20:51:17.211Z"}
+{"level":"info","message":"+1 user! Key: KlQFUYYkb4Z9f6ZSAAAC Total: 2","timestamp":"2018-03-11T20:51:17.712Z"}
+{"4Vu5Ib_pb1hTdapEAAAB":{"logged_in":false},"KlQFUYYkb4Z9f6ZSAAAC":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T20:51:17.712Z"}
+{"4Vu5Ib_pb1hTdapEAAAB":{"logged_in":true,"username":"asdasd"},"KlQFUYYkb4Z9f6ZSAAAC":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-11T20:52:33.226Z"}
+{"level":"info","message":"Login: asdasd","timestamp":"2018-03-11T20:52:33.227Z"}
+{"level":"info","message":"Move asdasd to lobby 'main'.","timestamp":"2018-03-11T20:52:33.227Z"}
+{"main":{"4Vu5Ib_pb1hTdapEAAAB":"asdasd"},"level":"silly","message":"","timestamp":"2018-03-11T20:52:33.227Z"}
+{"room17":{"type":"double","gameInfo":{"leader":"4Vu5Ib_pb1hTdapEAAAB","player2":null},"game":{},"ready":{"leader":false,"player2":false},"started":false,"abandoned":false},"level":"silly","message":"","timestamp":"2018-03-11T20:52:35.178Z"}
+{"level":"error","message":"Deleted room room17, the room's info was undefined or no other player was in it. ","timestamp":"2018-03-11T20:52:35.184Z"}
+{"level":"silly","message":"","timestamp":"2018-03-11T20:52:35.185Z"}
+{"4Vu5Ib_pb1hTdapEAAAB":{"logged_in":true,"username":"asdasd"},"KlQFUYYkb4Z9f6ZSAAAC":{"logged_in":true,"username":"asdasda"},"level":"silly","message":"","timestamp":"2018-03-11T20:52:37.001Z"}
+{"level":"info","message":"Login: asdasda","timestamp":"2018-03-11T20:52:37.002Z"}
+{"level":"info","message":"Move asdasda to lobby 'main'.","timestamp":"2018-03-11T20:52:37.002Z"}
+{"main":{"KlQFUYYkb4Z9f6ZSAAAC":"asdasda"},"level":"silly","message":"","timestamp":"2018-03-11T20:52:37.002Z"}
+{"level":"info","message":"KlQFUYYkb4Z9f6ZSAAAC just tried to go to room room17","timestamp":"2018-03-11T20:52:43.350Z"}
+{"level":"silly","message":"","timestamp":"2018-03-11T20:52:43.351Z"}
+{"level":"warn","message":"Restart code Requested by KlQFUYYkb4Z9f6ZSAAAC","timestamp":"2018-03-11T20:55:21.093Z"}
+{"level":"error","message":"/restart HIT! RESTART NOOoOooOOOOO","timestamp":"2018-03-11T20:55:21.105Z"}

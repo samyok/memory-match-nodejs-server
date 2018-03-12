@@ -1,39 +1,43 @@
-// cards.js
-// used for controlling all aspects of the cards.
+for (var a = 0; a < 36; a++) {
+    var newCard = $("#playingArea .ORIGINAL").clone().attr("number", a).show().appendTo("#playingArea").removeClass("ORIGINAL");
+    newCard.find(".number").html(parseInt(a) + 1);
+}
 
-var $cardOne = ""; // global vars
-var $cardTwo = "";
-(function() {
-	var cards = document.querySelectorAll("#playingArea .card"); // create array of all cards
-	for ( var i  = 0, len = cards.length; i < len; i++ ) {
-		var card = cards[i];
-		listenForClicks( card ); // add listner to all cards by looping through
-	}
+$(".card").on("click", function() {
+	var num = $(this).parent().attr("number");
+	console.log(num);
+    if(num>= 0){
+        socket.emit("click_card", {
+            number: num
+        });
+    }
+});
 
-  function listenForClicks(card) {
-  	card.addEventListener( "click", function() {
-  		var c = this.classList;
-  		var cardHtml = $(this).find("div pre").html();
-  		if($cardOne != "" && $cardTwo != ""){
-    		if( !$(this).hasClass("remove") ){
-           if($cardOne.toLowerCase() === $cardTwo.toLowerCase()) {
-              $('#playingArea .flipped').addClass("remove");
-    		      $('#playingArea .flipped div pre').html("");
-           } else {
-    		      $('#playingArea .card').removeClass('flipped');
-           }
-  		     $cardOne = "";
-    		   $cardTwo = "";
-        }
-  		}else if($cardOne ===""){
-  			c.add("flipped");
-  			$cardOne = cardHtml;
-  		} else if($cardTwo ==="" && $cardOne != cardHtml){
-  			c.add("flipped");
-  			$cardTwo = cardHtml;
-  		} else {
-  			//TO DO TOAST
-  		}
-  	});
-  }
-})();
+socket.on("flip_card", function(data){
+	console.log(data);
+	$(".card-wrapper[number='"+data.number+"']").find(".card").toggleClass("flipped").find("pre").html(data.text);
+});
+socket.on("remove_card", function(data){
+    console.log("remove");
+    console.log(data);
+	$(".card-wrapper[number='"+data.number+"']").attr("number", -1).find(".card").addClass("remove");
+});
+socket.on("message", function(data){
+	toast(data.color, data.message);
+});
+socket.on("gameInfo", function(data){
+    switch(data.type){
+        case "notif":
+            switch(data.message){
+                case "opponent_abandoned":
+                    location.reload();
+                    break;
+                case "score":
+                    $('#personScore'+data.person).html(data.score);
+                default:
+                    toast("red", data.message);
+            }
+        default:
+            console.log(data);
+    }
+});

@@ -1,4 +1,5 @@
 $("body").append('<div id="snackbar">Loading...</div>');
+var showlater= $("h1").hide();
 /**
  * Does the toast function--creates a "toast".
  * @param  {String} [color="red"]     Decides the toast color. Note that the text color is still white.
@@ -125,14 +126,14 @@ var LOGGER = {
 }
 var username = null;
 // connection
-var socket = io.connect('http://localhost:4000');
+var socket = io.connect('http://10.42.0.1:4000');
 var username_modal = null;
+var already_connected = false;
 socket.on("connected", function(data){
-	if(data.connected){
+	if(data.connected && !already_connected){
+		already_connected = true;
 		setTimeout(function(){
-			$("#overlayLoading").fadeOut(750, function(){
-				this.remove();
-			});
+			$("#overlayLoading").fadeOut(750, function(){});
 			modal.data.header.color = "red";
 			modal.data.header.text = "Welcome!";
 			modal.data.body.color = "red";
@@ -153,8 +154,8 @@ socket.on("connected", function(data){
 			});
 		}, 250);
 	} else {
-		$("#overlayLoading .spinner").fadeOut(500, function(){this.remove()});
-		$("#overlayLoading h2").html(data.reason);
+		$("#overlayLoading").fadeIn(500);
+		$("#overlayLoading h2").html("Please refresh. Sorry. ;(");
 	}
 });
 socket.on("username_response", function(data){
@@ -167,6 +168,7 @@ socket.on("username_response", function(data){
 	else{toast("red", data.reason);}
 })
 function changeRooms() {
+	modal.reset();
 	modal.data.header.color = "orange";
 	modal.data.header.text = "Go to a Room!";
 	modal.data.body.color = "orange";
@@ -179,25 +181,96 @@ function changeRooms() {
 	room_modal = modal.create().hide().fadeIn(600);
 	$("<button class='singlePlayer w3-button w3-green w3-hover'>Alone</button>")
 		.appendTo(room_modal.find(".body")).on("click", function(){
-			socket.emit("play", {type: single});
-			this.remove();
+			location.href="http://f451.samyok.us";
 		});
 	$("<button class='doublePlayer w3-margin w3-button w3-green w3-hover'>Against someone</button>")
-		.appendTo(room_modal.find(".body")).on("click", function(){
-			$(".body button").each($(this).remove());
-			$("<button class='join w3-margin w3-button w3-green w3-hover'>Join someone</button>")
-				.appendTo(room_modal.find(".body")).on("click", function(){
-					room_modal.find(".body button").each($(this).remove());
-					$("<input type='text' id='roomJoiner' placeholder='Type the code here'>")
-						.appendTo(room_modal.find(".body"));
-					$("<button class='joinActual w3-margin w3-button w3-green w3-hover'>Join</button>")
-						.appendTo(room_modal.find(".body")).on("click", function(){
-							if($("#roomJoiner").val()!=""){
-								socket.emit("join_room", {room: $("#roomJoiner").val()});
-							} else {
-								toast("red", "blank :/")
-							}
-						});
-				});
-		});
+		.appendTo(room_modal.find(".body")).on("click", function(){ doubleplayers(this, room_modal);});
 }
+function doubleplayers(thing1, room_modal){
+	room_modal.fadeOut(400, function(){this.remove();})
+	modal.reset();
+	modal.data.header.color = "orange";
+	modal.data.header.text = "Go to a Room!";
+	modal.data.body.color = "orange";
+	modal.data.body.helptext = "Do you want to create or join a game?";
+	modal.data.close_button.show = false;
+	modal.data.body.input.show = false
+	modal.data.footer.color = "orange";
+	modal.data.footer.text = 'Logged in as '+username;
+	modal.data.body.button.show = false;
+	room_modal = modal.create().hide().fadeIn(600);
+	$("<button class='w3-button w3-green w3-hover'>Create</button>")
+		.appendTo(room_modal.find(".body")).on("click", function(){
+			create_room();
+			room_modal.fadeOut(600, function(){
+				this.remove()});
+		});
+	$("<button class='w3-margin w3-button w3-green w3-hover'>Join</button>")
+		.appendTo(room_modal.find(".body"))
+		.on("click", function(){ room_modal.fadeOut(600, function(){
+			this.remove()}); join_room(this, room_modal);});
+}
+function join_room(button, oringinal_modal){
+	modal.reset();
+	modal.data.header.color = "orange";
+	modal.data.header.text = "Go to a room!";
+	modal.data.body.color = "orange";
+	modal.data.body.helptext = "What room do you want to join?";
+	modal.data.close_button.show = false;
+	modal.data.body.input.show = true;
+	modal.data.body.input.hover.color = "amber";
+	modal.data.body.input.placeholder="room10213";
+	modal.data.body.input.color = "orange";
+	modal.data.footer.color = "orange";
+	modal.data.footer.text = 'Logged in as '+username;
+	modal.data.body.button.show = true;
+	modal.data.body.button.text = "Enter room &gt;&gt;";
+	new_modal = modal.create().hide().fadeIn(600);
+	new_modal.find(".body button").on("click", function(){joiner_room(new_modal)});
+}
+function create_room(){
+	socket.emit('create_room', {type: "double"});
+	$("#overlayLoading").fadeIn(750);
+}
+socket.on("console", function(data){
+	if(data.href != undefined){
+		location.href=data.href;
+	} else {
+		console.log(data);
+	}
+});
+socket.on("room_created", function(data){
+	$("#placeType").text("Room Code");
+	$("#placeName").text(data.room);
+	$("#overlayLoading").fadeOut(750, function(){	$("h1").show();});
+
+});
+socket.on("player_joined", function(data){
+	$("<span />").html(" &gt; &gt; Opponent: "+data.player).appendTo($("#placeType").parent());
+	socket.emit("ready", {data:null});
+	console.log("ready");
+});
+var join_modal = null;
+function joiner_room(thing){
+	var val = thing.find(".body input").val();
+	console.log(val);
+	socket.emit("join_room", {code: val, type:""});
+	join_modal = thing;
+}
+socket.on("join_response", function(data){
+	if(data.message == "error"){
+		$("#overlayLoading").fadeOut(600, function(){join_modal.fadeIn(600);})
+		toast("red", data.reason);
+	} else {
+		toast("green", "Success!");
+		console.log(data);
+		$(join_modal).fadeOut(600, function(){
+			$("#placeType").html("Room Code");
+			$("#placeName").html(data.code);
+			$("<span />").html(" &gt; &gt; Opponent: "+data.player).appendTo($("#placeType").parent());
+			socket.emit("ready", {data:null});
+			$("h1").show();
+			console.log("ready");
+		}).hide();
+	}
+});
