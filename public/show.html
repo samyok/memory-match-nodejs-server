@@ -1,0 +1,137 @@
+<!--Y s is the labs index page. (How you got here)(!!)--->
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97495394-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-97495394-3');
+</script>
+<?php 
+if(isset($_GET['lab'])) {
+	header("Location: " . $_GET['lab']); /* Redirect browser */
+	exit();
+} else {
+	echo "";
+}
+?>
+<html>
+<head>
+<style>
+body {
+	color: white;
+	background: linear-gradient(133deg, #ffee00, #ff0000, #005df9, #09b400, #b40076, #cdff05, #8da13f, #2d2f27, #6e41b7, #dbf7e5, #aa5379, #97ee66, #00e6ff, #ff0000, #db89f3, #195403, #6039c1);
+	background-size: 3400% 3400%;
+
+	-webkit-animation: background 5s ease infinite alternate;
+	-moz-animation: background 120s ease infinite alternate;
+	-o-animation: background 120s ease infinite alternate;
+	animation: background 120s linear infinite alternate;
+}
+@-webkit-keyframes background {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-moz-keyframes background {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-o-keyframes background {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@keyframes background { 
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid rgba(255,255,255,0.2);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+	color: black;
+	background-color: rgba(255,255,255,0.5);
+}
+
+input[type=text]:focus {
+    border: 3px solid rgba(255,255,255,1);
+}
+.button {
+  display: inline-block;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 350px;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #4CAF50;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  transition-duration: 0;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Labs</title>
+</head>
+<body>
+<div class="w3-display-container" style="height: 100%; width: 100%;">
+	<div class="w3-container w3-center w3-display-middle">
+	  <div class="w3-panel w3-card-4 ">
+		<form>
+			<label for="lab"><b style="font-size= 20px;">Lab Name</b></label>
+			<input type="text" id="lab" name="lab" <?php if(isset($_GET['q'])){	echo "value='".$_GET['q']."'"; }?> placeholder='directory' style="color: white; font-weight: bold;" autofocus required title="Type directory to get started!">
+			<button class="button" style="vertical-align:middle;"><span>Enter Lab </span></button>
+		</form>
+	  </div>
+	</div>
+</div>
+
+</body>
+</html>
+
