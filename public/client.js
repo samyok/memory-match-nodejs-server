@@ -250,6 +250,9 @@ socket.on("player_joined", function(data){
 	socket.emit("ready", {data:null});
 	console.log("ready");
 });
+socket.on("game_start", function(data){
+	$("#playingArea").show();
+});
 var join_modal = null;
 function joiner_room(thing){
 	var val = thing.find(".body input").val();

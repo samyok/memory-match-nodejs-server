@@ -2,7 +2,7 @@ for (var a = 0; a < 36; a++) {
     var newCard = $("#playingArea .ORIGINAL").clone().attr("number", a).show().appendTo("#playingArea").removeClass("ORIGINAL");
     newCard.find(".number").html(parseInt(a) + 1);
 }
-
+$("#playingArea").hide();
 $(".card").on("click", function() {
 	var num = $(this).parent().attr("number");
 	console.log(num);
