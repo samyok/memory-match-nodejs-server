@@ -295,7 +295,7 @@ io.on("connection", (socket) => {
                     } else {
                         rooms[room].scores.player2++;
                         io.to(rooms[room].gameInfo.leader).to(rooms[room].gameInfo.player2)
-                            .emit("gameInfo", {type: "notif", message: "score", person: "leader", score:rooms[room].scores.player2});
+                            .emit("gameInfo", {type: "notif", message: "score", person: "player2", score:rooms[room].scores.player2});
                     }
                     io.to(rooms[room].gameInfo.leader).to(rooms[room].gameInfo.player2)
                         .emit("remove_card", {number: findKey(rooms[room].game.card2, rooms[room].cards)});
