@@ -1,0 +1,6 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-13T01:28:25.681Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-13T01:28:25.825Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-13T01:28:25.841Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-13T01:28:25.844Z"}
+{"level":"info","message":"+1 user! Key: PeRLXOfwVuE8k7FGAAAA Total: 1","timestamp":"2018-03-13T01:28:49.233Z"}
+{"PeRLXOfwVuE8k7FGAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-13T01:28:49.233Z"}

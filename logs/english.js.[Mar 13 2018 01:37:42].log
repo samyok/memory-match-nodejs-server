@@ -1,0 +1,11 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-13T01:37:42.977Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-13T01:37:43.124Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-13T01:37:43.140Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-13T01:37:43.143Z"}
+{"level":"info","message":"+1 user! Key: rig-zPutAYblu4b5AAAA Total: 1","timestamp":"2018-03-13T01:37:46.586Z"}
+{"rig-zPutAYblu4b5AAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-13T01:37:46.586Z"}
+{"level":"info","message":"-1 user. Key: rig-zPutAYblu4b5AAAA Total: 1","timestamp":"2018-03-13T01:37:50.890Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-13T01:37:50.890Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-13T01:37:50.890Z"}
+{"level":"info","message":"+1 user! Key: r4qtinx19MinCwlUAAAB Total: 1","timestamp":"2018-03-13T01:37:51.387Z"}
+{"r4qtinx19MinCwlUAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-13T01:37:51.388Z"}

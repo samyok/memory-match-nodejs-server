@@ -1,0 +1,36 @@
+{"level":"info","message":"success: Samyok.js","timestamp":"2018-03-13T01:33:06.134Z"}
+{"level":"silly","message":"Imports done.","timestamp":"2018-03-13T01:33:06.280Z"}
+{"level":"info","message":"Started English Memory Match's socket server.","timestamp":"2018-03-13T01:33:06.295Z"}
+{"level":"info","message":"Started English Memory Match's express server. Listening to port 4000.","timestamp":"2018-03-13T01:33:06.298Z"}
+{"level":"info","message":"+1 user! Key: mttMDmC6eYugG9gLAAAA Total: 1","timestamp":"2018-03-13T01:33:21.072Z"}
+{"mttMDmC6eYugG9gLAAAA":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-13T01:33:21.072Z"}
+{"level":"info","message":"+1 user! Key: vBLSsl3uOt9XxsjQAAAB Total: 2","timestamp":"2018-03-13T01:34:10.567Z"}
+{"mttMDmC6eYugG9gLAAAA":{"logged_in":false},"vBLSsl3uOt9XxsjQAAAB":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-13T01:34:10.567Z"}
+{"mttMDmC6eYugG9gLAAAA":{"logged_in":false},"vBLSsl3uOt9XxsjQAAAB":{"logged_in":true,"username":"Samyok My minion"},"level":"silly","message":"","timestamp":"2018-03-13T01:34:23.596Z"}
+{"level":"info","message":"Login: Samyok My minion","timestamp":"2018-03-13T01:34:23.597Z"}
+{"level":"info","message":"Move Samyok My minion to lobby 'main'.","timestamp":"2018-03-13T01:34:23.597Z"}
+{"main":{"vBLSsl3uOt9XxsjQAAAB":"Samyok My minion"},"level":"silly","message":"","timestamp":"2018-03-13T01:34:23.597Z"}
+{"level":"info","message":"vBLSsl3uOt9XxsjQAAAB just tried to go to room ","timestamp":"2018-03-13T01:34:33.870Z"}
+{"level":"silly","message":"","timestamp":"2018-03-13T01:34:33.870Z"}
+{"level":"info","message":"vBLSsl3uOt9XxsjQAAAB just tried to go to room room10213","timestamp":"2018-03-13T01:34:41.291Z"}
+{"level":"silly","message":"","timestamp":"2018-03-13T01:34:41.292Z"}
+{"level":"info","message":"-1 user. Key: vBLSsl3uOt9XxsjQAAAB Total: 2","timestamp":"2018-03-13T01:34:43.921Z"}
+{"level":"info","message":"Removed user Samyok My minion from lobby clean","timestamp":"2018-03-13T01:34:43.922Z"}
+{"level":"info","message":"Removed user Samyok My minion from lobby main","timestamp":"2018-03-13T01:34:43.922Z"}
+{"level":"info","message":"Deleting Samyok My minion","timestamp":"2018-03-13T01:34:43.922Z"}
+{"level":"info","message":"+1 user! Key: J9SMpgLMNoTVBGu-AAAC Total: 2","timestamp":"2018-03-13T01:34:44.776Z"}
+{"mttMDmC6eYugG9gLAAAA":{"logged_in":false},"J9SMpgLMNoTVBGu-AAAC":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-13T01:34:44.777Z"}
+{"level":"info","message":"-1 user. Key: J9SMpgLMNoTVBGu-AAAC Total: 2","timestamp":"2018-03-13T01:34:45.801Z"}
+{"level":"info","message":"Removed user undefined from lobby clean","timestamp":"2018-03-13T01:34:45.801Z"}
+{"level":"info","message":"Removed user undefined from lobby main","timestamp":"2018-03-13T01:34:45.802Z"}
+{"level":"info","message":"Deleting undefined","timestamp":"2018-03-13T01:34:45.802Z"}
+{"level":"info","message":"+1 user! Key: ejRK5A2l7ltidjo4AAAD Total: 2","timestamp":"2018-03-13T01:34:46.540Z"}
+{"mttMDmC6eYugG9gLAAAA":{"logged_in":false},"ejRK5A2l7ltidjo4AAAD":{"logged_in":false},"level":"silly","message":"","timestamp":"2018-03-13T01:34:46.541Z"}
+{"mttMDmC6eYugG9gLAAAA":{"logged_in":false},"ejRK5A2l7ltidjo4AAAD":{"logged_in":true,"username":"Samyok is my minion"},"level":"silly","message":"","timestamp":"2018-03-13T01:34:57.916Z"}
+{"level":"info","message":"Login: Samyok is my minion","timestamp":"2018-03-13T01:34:57.917Z"}
+{"level":"info","message":"Move Samyok is my minion to lobby 'main'.","timestamp":"2018-03-13T01:34:57.917Z"}
+{"main":{"ejRK5A2l7ltidjo4AAAD":"Samyok is my minion"},"level":"silly","message":"","timestamp":"2018-03-13T01:34:57.918Z"}
+{"level":"info","message":"-1 user. Key: ejRK5A2l7ltidjo4AAAD Total: 2","timestamp":"2018-03-13T01:35:00.135Z"}
+{"level":"info","message":"Removed user Samyok is my minion from lobby clean","timestamp":"2018-03-13T01:35:00.136Z"}
+{"level":"info","message":"Removed user Samyok is my minion from lobby main","timestamp":"2018-03-13T01:35:00.136Z"}
+{"level":"info","message":"Deleting Samyok is my minion","timestamp":"2018-03-13T01:35:00.136Z"}

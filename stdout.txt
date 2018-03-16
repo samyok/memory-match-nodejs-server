@@ -1,0 +1,1936 @@
+1:50:24 AM - [36minfo[39m: success: Samyok.js
+1:50:24 AM - [9m[34msilly[39m[29m: Imports done.
+1:50:24 AM - [36minfo[39m: Started English Memory Match's socket server.
+1:50:24 AM - [36minfo[39m: Started English Memory Match's express server. Listening to port 4000.
+1:50:26 AM - [36minfo[39m: +1 user! Key: 0rHAVWrvY2LYS9ZTAAAA Total: 1
+1:50:26 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  [32m'0rHAVWrvY2LYS9ZTAAAA'[39m: { logged_in: [33mfalse[39m } }
+1:50:28 AM - [36minfo[39m: +1 user! Key: DB0H7dAC_jPjTftNAAAB Total: 2
+1:50:28 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  [32m'0rHAVWrvY2LYS9ZTAAAA'[39m: { logged_in: [33mfalse[39m },
+  DB0H7dAC_jPjTftNAAAB: { logged_in: [33mfalse[39m } }
+1:51:08 AM - [36minfo[39m: +1 user! Key: kKgZ0_FLJ9r8OeEqAAAC Total: 3
+1:51:08 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  [32m'0rHAVWrvY2LYS9ZTAAAA'[39m: { logged_in: [33mfalse[39m },
+  DB0H7dAC_jPjTftNAAAB: { logged_in: [33mfalse[39m },
+  kKgZ0_FLJ9r8OeEqAAAC: { logged_in: [33mfalse[39m } }
+1:51:13 AM - [36minfo[39m: -1 user. Key: kKgZ0_FLJ9r8OeEqAAAC Total: 3
+1:51:13 AM - [36minfo[39m: Removed user undefined from lobby clean
+1:51:13 AM - [36minfo[39m: Deleting undefined
+1:51:36 AM - [36minfo[39m: -1 user. Key: 0rHAVWrvY2LYS9ZTAAAA Total: 2
+1:51:36 AM - [36minfo[39m: Removed user undefined from lobby clean
+1:51:36 AM - [36minfo[39m: Deleting undefined
+1:51:36 AM - [36minfo[39m: +1 user! Key: zgHENndoSjEkiCKRAAAD Total: 2
+1:51:36 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  DB0H7dAC_jPjTftNAAAB: { logged_in: [33mfalse[39m },
+  zgHENndoSjEkiCKRAAAD: { logged_in: [33mfalse[39m } }
+1:51:40 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  DB0H7dAC_jPjTftNAAAB: { logged_in: [33mfalse[39m },
+  zgHENndoSjEkiCKRAAAD: { logged_in: [33mtrue[39m, username: [32m'samyok'[39m } }
+1:51:40 AM - [36minfo[39m: Login: samyok
+1:51:40 AM - [36minfo[39m: Move samyok to lobby 'main'.
+1:51:40 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  main: { clean: [36m[Function][39m, zgHENndoSjEkiCKRAAAD: [32m'samyok'[39m } }
+1:51:42 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m, player2: [1mnull[22m },
+     game: {},
+     ready: { leader: [33mfalse[39m, player2: [33mfalse[39m },
+     started: [33mfalse[39m,
+     abandoned: [33mfalse[39m } }
+2:05:54 AM - [36minfo[39m: -1 user. Key: DB0H7dAC_jPjTftNAAAB Total: 2
+2:05:54 AM - [36minfo[39m: Removed user undefined from lobby clean
+2:05:54 AM - [36minfo[39m: Removed user undefined from lobby main
+2:05:54 AM - [36minfo[39m: Deleting undefined
+2:05:54 AM - [36minfo[39m: +1 user! Key: so-l5G66x1mc0D6PAAAE Total: 2
+2:05:54 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  zgHENndoSjEkiCKRAAAD: { logged_in: [33mtrue[39m, username: [32m'samyok'[39m },
+  [32m'so-l5G66x1mc0D6PAAAE'[39m: { logged_in: [33mfalse[39m } }
+2:05:57 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  zgHENndoSjEkiCKRAAAD: { logged_in: [33mtrue[39m, username: [32m'samyok'[39m },
+  [32m'so-l5G66x1mc0D6PAAAE'[39m: { logged_in: [33mtrue[39m, username: [32m'sad'[39m } }
+2:05:57 AM - [36minfo[39m: Login: sad
+2:05:57 AM - [36minfo[39m: Move sad to lobby 'main'.
+2:05:57 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  main: { clean: [36m[Function][39m, [32m'so-l5G66x1mc0D6PAAAE'[39m: [32m'sad'[39m } }
+2:06:03 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: {},
+     ready: { leader: [33mfalse[39m, player2: [33mfalse[39m },
+     started: [33mfalse[39m,
+     abandoned: [33mfalse[39m } }
+2:06:03 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: {},
+     ready: { leader: [33mfalse[39m, player2: [33mfalse[39m },
+     started: [33mfalse[39m,
+     abandoned: [33mfalse[39m } }
+2:06:03 AM - [36minfo[39m: Marked samyok as ready to play in room room9.
+2:06:03 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: {},
+     ready: { leader: [33mtrue[39m, player2: [33mfalse[39m },
+     started: [33mfalse[39m,
+     abandoned: [33mfalse[39m } }
+2:06:03 AM - [33mwarn[39m:  
+[ { question: [32m'Main character'[39m, answer: [32m'Guy Montag'[39m },
+  { question: [32m'Montag\'s wife'[39m, answer: [32m'Mildred'[39m },
+  { question: [32m'Last Person killed by Montag'[39m,
+    answer: [32m'Captain Beatty'[39m },
+  { question: [32m'A machine that tries to kill Montag'[39m,
+    answer: [32m'The Hound'[39m },
+  { question: [32m'The book Montag memorized'[39m,
+    answer: [32m'Book of Ecclesiastes'[39m },
+  { question: [32m'Poem that Montag reads'[39m, answer: [32m'Dover Beach'[39m },
+  { question: [32m'Temperature at which paper burns'[39m,
+    answer: [32m'451 degrees Farenheit'[39m },
+  { question: [32m'Most important girl in the story'[39m,
+    answer: [32m'Clarisse McClellan'[39m },
+  { question: [32m'Author of Fahrenheit 451 '[39m,
+    answer: [32m'Ray Bradbury'[39m },
+  { question: [32m'Number of walls in Mildred\'s "family"'[39m,
+    answer: [32m'3'[39m },
+  { question: [32m'Clarisse makes Montag question this feeling'[39m,
+    answer: [32m'Happiness'[39m },
+  { question: [32m'Mildred ___, so techies were called. '[39m,
+    answer: [32m'Ate too many sleeping pills'[39m },
+  { question: [32m'Leader of so-called "criminals" '[39m,
+    answer: [32m'Granger'[39m },
+  { question: [32m'Montag original thoughts on burning'[39m,
+    answer: [32m'Pleasing'[39m },
+  { question: [32m'Montag convinced Faber to help him by...'[39m,
+    answer: [32m'Ripping pages out of the Bible'[39m },
+  { question: [32m'The Hound\'s weapon'[39m, answer: [32m'A procaine needle'[39m },
+  { question: [32m'Name of fireman that Montag reported'[39m,
+    answer: [32m'Black'[39m },
+  { question: [32m'A(n) ___ man is killed instead of Montag'[39m,
+    answer: [32m'Innocent'[39m },
+  clean: [36m[Function][39m ]
+2:06:03 AM - [36minfo[39m: Marked sad as ready to play in room room9.
+2:06:03 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: {},
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33mfalse[39m,
+     abandoned: [33mfalse[39m } }
+2:06:03 AM - [33mwarn[39m:  
+[ { question: [32m'Main character'[39m, answer: [32m'Guy Montag'[39m },
+  { question: [32m'Montag\'s wife'[39m, answer: [32m'Mildred'[39m },
+  { question: [32m'Last Person killed by Montag'[39m,
+    answer: [32m'Captain Beatty'[39m },
+  { question: [32m'A machine that tries to kill Montag'[39m,
+    answer: [32m'The Hound'[39m },
+  { question: [32m'The book Montag memorized'[39m,
+    answer: [32m'Book of Ecclesiastes'[39m },
+  { question: [32m'Poem that Montag reads'[39m, answer: [32m'Dover Beach'[39m },
+  { question: [32m'Temperature at which paper burns'[39m,
+    answer: [32m'451 degrees Farenheit'[39m },
+  { question: [32m'Most important girl in the story'[39m,
+    answer: [32m'Clarisse McClellan'[39m },
+  { question: [32m'Author of Fahrenheit 451 '[39m,
+    answer: [32m'Ray Bradbury'[39m },
+  { question: [32m'Number of walls in Mildred\'s "family"'[39m,
+    answer: [32m'3'[39m },
+  { question: [32m'Clarisse makes Montag question this feeling'[39m,
+    answer: [32m'Happiness'[39m },
+  { question: [32m'Mildred ___, so techies were called. '[39m,
+    answer: [32m'Ate too many sleeping pills'[39m },
+  { question: [32m'Leader of so-called "criminals" '[39m,
+    answer: [32m'Granger'[39m },
+  { question: [32m'Montag original thoughts on burning'[39m,
+    answer: [32m'Pleasing'[39m },
+  { question: [32m'Montag convinced Faber to help him by...'[39m,
+    answer: [32m'Ripping pages out of the Bible'[39m },
+  { question: [32m'The Hound\'s weapon'[39m, answer: [32m'A procaine needle'[39m },
+  { question: [32m'Name of fireman that Montag reported'[39m,
+    answer: [32m'Black'[39m },
+  { question: [32m'A(n) ___ man is killed instead of Montag'[39m,
+    answer: [32m'Innocent'[39m },
+  clean: [36m[Function][39m ]
+2:06:03 AM - [36minfo[39m: Started game in room room9.
+[ { question: 'Main character', answer: 'Guy Montag' },
+  { question: 'Montag\'s wife', answer: 'Mildred' },
+  { question: 'Last Person killed by Montag',
+    answer: 'Captain Beatty' },
+  { question: 'A machine that tries to kill Montag',
+    answer: 'The Hound' },
+  { question: 'The book Montag memorized',
+    answer: 'Book of Ecclesiastes' },
+  { question: 'Poem that Montag reads', answer: 'Dover Beach' },
+  { question: 'Temperature at which paper burns',
+    answer: '451 degrees Farenheit' },
+  { question: 'Most important girl in the story',
+    answer: 'Clarisse McClellan' },
+  { question: 'Author of Fahrenheit 451 ',
+    answer: 'Ray Bradbury' },
+  { question: 'Number of walls in Mildred\'s "family"',
+    answer: '3' },
+  { question: 'Clarisse makes Montag question this feeling',
+    answer: 'Happiness' },
+  { question: 'Mildred ___, so techies were called. ',
+    answer: 'Ate too many sleeping pills' },
+  { question: 'Leader of so-called "criminals" ',
+    answer: 'Granger' },
+  { question: 'Montag original thoughts on burning',
+    answer: 'Pleasing' },
+  { question: 'Montag convinced Faber to help him by...',
+    answer: 'Ripping pages out of the Bible' },
+  { question: 'The Hound\'s weapon', answer: 'A procaine needle' },
+  { question: 'Name of fireman that Montag reported',
+    answer: 'Black' },
+  { question: 'A(n) ___ man is killed instead of Montag',
+    answer: 'Innocent' } ]
+2:06:03 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'leader'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:05 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:05 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'leader'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:05 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:05 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'leader'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:07 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:07 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'leader'[39m, card1: [32m'Ray Bradbury'[39m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:07 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:07 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'leader'[39m,
+        card1: [32m'Ray Bradbury'[39m,
+        card2: [32m'Main character'[39m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:08 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:08 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:09 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:09 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:11 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:11 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'player2'[39m,
+        card1: [32m'Most important girl in the story'[39m,
+        card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:11 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:11 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'player2'[39m,
+        card1: [32m'Most important girl in the story'[39m,
+        card2: [32m'Leader of so-called "criminals" '[39m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:12 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:12 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'leader'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:14 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:14 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'leader'[39m,
+        card1: [32m'Montag convinced Faber to help him by...'[39m,
+        card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:14 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:14 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'leader'[39m,
+        card1: [32m'Montag convinced Faber to help him by...'[39m,
+        card2: [32m'Clarisse makes Montag question this feeling'[39m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:15 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:15 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:17 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:17 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [32m'Guy Montag'[39m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:17 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:17 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [32m'Guy Montag'[39m, card2: [32m'Mildred'[39m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:18 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:18 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'leader'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:20 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:20 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'leader'[39m,
+        card1: [32m'Name of fireman that Montag reported'[39m,
+        card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:21 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:21 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'leader'[39m,
+        card1: [32m'Name of fireman that Montag reported'[39m,
+        card2: [32m'Ray Bradbury'[39m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:22 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:22 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:23 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:23 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [32m'Guy Montag'[39m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:24 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:24 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'player2'[39m,
+        card1: [32m'Guy Montag'[39m,
+        card2: [32m'Ripping pages out of the Bible'[39m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:25 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:25 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'leader'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:32 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:32 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'leader'[39m,
+        card1: [32m'Montag convinced Faber to help him by...'[39m,
+        card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:32 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:32 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'leader'[39m,
+        card1: [32m'Montag convinced Faber to help him by...'[39m,
+        card2: [32m'Leader of so-called "criminals" '[39m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:33 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:33 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:34 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:34 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'player2'[39m,
+        card1: [32m'Montag convinced Faber to help him by...'[39m,
+        card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:35 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:35 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: 
+      { turn: [32m'player2'[39m,
+        card1: [32m'Montag convinced Faber to help him by...'[39m,
+        card2: [32m'Ripping pages out of the Bible'[39m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m0[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:36 AM - [9m[34msilly[39m[29m: card click in room room9
+2:06:36 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m1[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] } }
+2:06:40 AM - [36minfo[39m: -1 user. Key: so-l5G66x1mc0D6PAAAE Total: 2
+2:06:40 AM - [36minfo[39m: Removed user sad from lobby clean
+2:06:40 AM - [36minfo[39m: Removed user sad from lobby main
+2:06:40 AM - [36minfo[39m: Deleting sad
+2:06:40 AM - [36minfo[39m: -1 user. Key: zgHENndoSjEkiCKRAAAD Total: 1
+2:06:40 AM - [36minfo[39m: Removed user samyok from lobby clean
+2:06:40 AM - [36minfo[39m: Removed user samyok from lobby main
+2:06:40 AM - [36minfo[39m: Deleting samyok
+3:07:54 AM - [36minfo[39m: +1 user! Key: IynAcrSn9LLwUA7mAAAF Total: 1
+3:07:54 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  IynAcrSn9LLwUA7mAAAF: { logged_in: [33mfalse[39m } }
+3:17:03 AM - [36minfo[39m: +1 user! Key: o2hYloeirNuO1mBOAAAG Total: 2
+3:17:03 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  IynAcrSn9LLwUA7mAAAF: { logged_in: [33mfalse[39m },
+  o2hYloeirNuO1mBOAAAG: { logged_in: [33mfalse[39m } }
+3:17:08 AM - [36minfo[39m: +1 user! Key: 1JHRR9zKgIPE6gpsAAAH Total: 3
+3:17:08 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  IynAcrSn9LLwUA7mAAAF: { logged_in: [33mfalse[39m },
+  o2hYloeirNuO1mBOAAAG: { logged_in: [33mfalse[39m },
+  [32m'1JHRR9zKgIPE6gpsAAAH'[39m: { logged_in: [33mfalse[39m } }
+3:17:12 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  IynAcrSn9LLwUA7mAAAF: { logged_in: [33mfalse[39m },
+  o2hYloeirNuO1mBOAAAG: { logged_in: [33mfalse[39m },
+  [32m'1JHRR9zKgIPE6gpsAAAH'[39m: { logged_in: [33mtrue[39m, username: [32m'asd'[39m } }
+3:17:12 AM - [36minfo[39m: Login: asd
+3:17:12 AM - [36minfo[39m: Move asd to lobby 'main'.
+3:17:12 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  main: { clean: [36m[Function][39m, [32m'1JHRR9zKgIPE6gpsAAAH'[39m: [32m'asd'[39m } }
+3:17:13 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m1[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] },
+  room23: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: { leader: [32m'1JHRR9zKgIPE6gpsAAAH'[39m, player2: [1mnull[22m },
+     game: {},
+     ready: { leader: [33mfalse[39m, player2: [33mfalse[39m },
+     started: [33mfalse[39m,
+     abandoned: [33mfalse[39m } }
+3:17:16 AM - [36minfo[39m: -1 user. Key: 1JHRR9zKgIPE6gpsAAAH Total: 3
+3:17:16 AM - [36minfo[39m: Removed user asd from lobby clean
+3:17:16 AM - [36minfo[39m: Removed user asd from lobby main
+3:17:16 AM - [36minfo[39m: Deleting asd
+3:17:19 AM - [36minfo[39m: -1 user. Key: o2hYloeirNuO1mBOAAAG Total: 2
+3:17:19 AM - [36minfo[39m: Removed user undefined from lobby clean
+3:17:19 AM - [36minfo[39m: Removed user undefined from lobby main
+3:17:19 AM - [36minfo[39m: Deleting undefined
+3:18:10 AM - [36minfo[39m: -1 user. Key: IynAcrSn9LLwUA7mAAAF Total: 1
+3:18:10 AM - [36minfo[39m: Removed user undefined from lobby clean
+3:18:10 AM - [36minfo[39m: Removed user undefined from lobby main
+3:18:10 AM - [36minfo[39m: Deleting undefined
+3:18:11 AM - [36minfo[39m: +1 user! Key: WnukatruHLmfLINnAAAI Total: 1
+3:18:11 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  WnukatruHLmfLINnAAAI: { logged_in: [33mfalse[39m } }
+3:19:47 AM - [36minfo[39m: -1 user. Key: WnukatruHLmfLINnAAAI Total: 1
+3:19:47 AM - [36minfo[39m: Removed user undefined from lobby clean
+3:19:47 AM - [36minfo[39m: Removed user undefined from lobby main
+3:19:47 AM - [36minfo[39m: Deleting undefined
+3:19:48 AM - [36minfo[39m: +1 user! Key: jCG9OZi1L846RAiEAAAJ Total: 1
+3:19:48 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  jCG9OZi1L846RAiEAAAJ: { logged_in: [33mfalse[39m } }
+3:21:02 AM - [36minfo[39m: +1 user! Key: Yxwr-ZehZvtshAkEAAAK Total: 2
+3:21:02 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  jCG9OZi1L846RAiEAAAJ: { logged_in: [33mfalse[39m },
+  [32m'Yxwr-ZehZvtshAkEAAAK'[39m: { logged_in: [33mfalse[39m } }
+3:21:04 AM - [36minfo[39m: -1 user. Key: Yxwr-ZehZvtshAkEAAAK Total: 2
+3:21:04 AM - [36minfo[39m: Removed user undefined from lobby clean
+3:21:04 AM - [36minfo[39m: Removed user undefined from lobby main
+3:21:04 AM - [36minfo[39m: Deleting undefined
+3:21:08 AM - [36minfo[39m: +1 user! Key: DncWNL-_XgaaOodVAAAL Total: 2
+3:21:08 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  jCG9OZi1L846RAiEAAAJ: { logged_in: [33mfalse[39m },
+  [32m'DncWNL-_XgaaOodVAAAL'[39m: { logged_in: [33mfalse[39m } }
+3:21:15 AM - [36minfo[39m: -1 user. Key: DncWNL-_XgaaOodVAAAL Total: 2
+3:21:15 AM - [36minfo[39m: Removed user undefined from lobby clean
+3:21:15 AM - [36minfo[39m: Removed user undefined from lobby main
+3:21:15 AM - [36minfo[39m: Deleting undefined
+3:21:15 AM - [36minfo[39m: +1 user! Key: DKfWv9sr_AXTVmWsAAAM Total: 2
+3:21:15 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  jCG9OZi1L846RAiEAAAJ: { logged_in: [33mfalse[39m },
+  DKfWv9sr_AXTVmWsAAAM: { logged_in: [33mfalse[39m } }
+3:22:42 AM - [36minfo[39m: -1 user. Key: jCG9OZi1L846RAiEAAAJ Total: 2
+3:22:42 AM - [36minfo[39m: Removed user undefined from lobby clean
+3:22:42 AM - [36minfo[39m: Removed user undefined from lobby main
+3:22:42 AM - [36minfo[39m: Deleting undefined
+3:22:43 AM - [36minfo[39m: +1 user! Key: SJuDENru_wJXd--gAAAN Total: 2
+3:22:43 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  DKfWv9sr_AXTVmWsAAAM: { logged_in: [33mfalse[39m },
+  [32m'SJuDENru_wJXd--gAAAN'[39m: { logged_in: [33mfalse[39m } }
+3:22:50 AM - [36minfo[39m: -1 user. Key: SJuDENru_wJXd--gAAAN Total: 2
+3:22:50 AM - [36minfo[39m: Removed user undefined from lobby clean
+3:22:50 AM - [36minfo[39m: Removed user undefined from lobby main
+3:22:50 AM - [36minfo[39m: Deleting undefined
+3:22:50 AM - [36minfo[39m: +1 user! Key: Nh1FsYasodDiESUWAAAO Total: 2
+3:22:50 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  DKfWv9sr_AXTVmWsAAAM: { logged_in: [33mfalse[39m },
+  Nh1FsYasodDiESUWAAAO: { logged_in: [33mfalse[39m } }
+3:22:52 AM - [36minfo[39m: -1 user. Key: Nh1FsYasodDiESUWAAAO Total: 2
+3:22:52 AM - [36minfo[39m: Removed user undefined from lobby clean
+3:22:52 AM - [36minfo[39m: Removed user undefined from lobby main
+3:22:52 AM - [36minfo[39m: Deleting undefined
+3:22:52 AM - [36minfo[39m: +1 user! Key: 4SjLJD0qP-VN3Ey1AAAP Total: 2
+3:22:52 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  DKfWv9sr_AXTVmWsAAAM: { logged_in: [33mfalse[39m },
+  [32m'4SjLJD0qP-VN3Ey1AAAP'[39m: { logged_in: [33mfalse[39m } }
+3:22:55 AM - [36minfo[39m: -1 user. Key: 4SjLJD0qP-VN3Ey1AAAP Total: 2
+3:22:55 AM - [36minfo[39m: Removed user undefined from lobby clean
+3:22:55 AM - [36minfo[39m: Removed user undefined from lobby main
+3:22:55 AM - [36minfo[39m: Deleting undefined
+3:22:55 AM - [36minfo[39m: +1 user! Key: n47QPKfZEsGedXS2AAAQ Total: 2
+3:22:55 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  DKfWv9sr_AXTVmWsAAAM: { logged_in: [33mfalse[39m },
+  n47QPKfZEsGedXS2AAAQ: { logged_in: [33mfalse[39m } }
+3:22:59 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  DKfWv9sr_AXTVmWsAAAM: { logged_in: [33mfalse[39m },
+  n47QPKfZEsGedXS2AAAQ: { logged_in: [33mtrue[39m, username: [32m'asdda'[39m } }
+3:22:59 AM - [36minfo[39m: Login: asdda
+3:22:59 AM - [36minfo[39m: Move asdda to lobby 'main'.
+3:22:59 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  main: { clean: [36m[Function][39m, n47QPKfZEsGedXS2AAAQ: [32m'asdda'[39m } }
+3:23:01 AM - [9m[34msilly[39m[29m:  
+{ room9: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: 
+      { leader: [32m'zgHENndoSjEkiCKRAAAD'[39m,
+        player2: [32m'so-l5G66x1mc0D6PAAAE'[39m },
+     game: { turn: [32m'player2'[39m, card1: [1mnull[22m, card2: [1mnull[22m },
+     ready: { leader: [33mtrue[39m, player2: [33mtrue[39m },
+     started: [33m1[39m,
+     abandoned: [33mfalse[39m,
+     scores: { leader: [33m0[39m, player2: [33m1[39m },
+     cards: 
+      [ [32m'Most important girl in the story'[39m,
+        [32m'Leader of so-called "criminals" '[39m,
+        [32m'Montag convinced Faber to help him by...'[39m,
+        [32m'Clarisse makes Montag question this feeling'[39m,
+        [32m'Ray Bradbury'[39m,
+        [32m'Name of fireman that Montag reported'[39m,
+        [32m'Guy Montag'[39m,
+        [32m'Mildred'[39m,
+        [32m'Main character'[39m,
+        [32m'Captain Beatty'[39m,
+        [32m'Ripping pages out of the Bible'[39m,
+        [32m'Granger'[39m,
+        [32m'Author of Fahrenheit 451 '[39m,
+        [32m'Poem that Montag reads'[39m,
+        [32m'The book Montag memorized'[39m,
+        [32m'The Hound\'s weapon'[39m,
+        [32m'A(n) ___ man is killed instead of Montag'[39m,
+        [32m'The Hound'[39m,
+        [32m'Number of walls in Mildred\'s "family"'[39m,
+        [32m'A machine that tries to kill Montag'[39m,
+        [32m'451 degrees Farenheit'[39m,
+        [32m'Last Person killed by Montag'[39m,
+        [32m'Innocent'[39m,
+        [32m'Dover Beach'[39m,
+        [32m'Mildred ___, so techies were called. '[39m,
+        [32m'3'[39m,
+        [32m'A procaine needle'[39m,
+        [32m'Montag\'s wife'[39m,
+        [32m'Temperature at which paper burns'[39m,
+        [32m'Clarisse McClellan'[39m,
+        [32m'Black'[39m,
+        [32m'Ate too many sleeping pills'[39m,
+        [32m'Pleasing'[39m,
+        [32m'Happiness'[39m,
+        [32m'Book of Ecclesiastes'[39m,
+        [32m'Montag original thoughts on burning'[39m ] },
+  room23: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: { leader: [32m'1JHRR9zKgIPE6gpsAAAH'[39m, player2: [1mnull[22m },
+     game: {},
+     ready: { leader: [33mfalse[39m, player2: [33mfalse[39m },
+     started: [33mfalse[39m,
+     abandoned: [33mfalse[39m },
+  room42: 
+   { clean: [36m[Function][39m,
+     type: [32m'double'[39m,
+     gameInfo: { leader: [32m'n47QPKfZEsGedXS2AAAQ'[39m, player2: [1mnull[22m },
+     game: {},
+     ready: { leader: [33mfalse[39m, player2: [33mfalse[39m },
+     started: [33mfalse[39m,
+     abandoned: [33mfalse[39m } }
+3:23:09 AM - [36minfo[39m: -1 user. Key: n47QPKfZEsGedXS2AAAQ Total: 2
+3:23:09 AM - [36minfo[39m: Removed user asdda from lobby clean
+3:23:09 AM - [36minfo[39m: Removed user asdda from lobby main
+3:23:09 AM - [36minfo[39m: Deleting asdda
+3:26:52 AM - [36minfo[39m: +1 user! Key: OsYf9vdpacQjcHYPAAAR Total: 2
+3:26:52 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  DKfWv9sr_AXTVmWsAAAM: { logged_in: [33mfalse[39m },
+  OsYf9vdpacQjcHYPAAAR: { logged_in: [33mfalse[39m } }
+3:27:22 AM - [36minfo[39m: -1 user. Key: OsYf9vdpacQjcHYPAAAR Total: 2
+3:27:22 AM - [36minfo[39m: Removed user undefined from lobby clean
+3:27:22 AM - [36minfo[39m: Removed user undefined from lobby main
+3:27:22 AM - [36minfo[39m: Deleting undefined
+3:27:28 AM - [36minfo[39m: +1 user! Key: Os73ulepZTJxWpgBAAAS Total: 2
+3:27:28 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  DKfWv9sr_AXTVmWsAAAM: { logged_in: [33mfalse[39m },
+  Os73ulepZTJxWpgBAAAS: { logged_in: [33mfalse[39m } }
+3:27:39 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  DKfWv9sr_AXTVmWsAAAM: { logged_in: [33mfalse[39m },
+  Os73ulepZTJxWpgBAAAS: { logged_in: [33mtrue[39m, username: [32m'DepressedBacon'[39m } }
+3:27:39 AM - [36minfo[39m: Login: DepressedBacon
+3:27:39 AM - [36minfo[39m: Move DepressedBacon to lobby 'main'.
+3:27:39 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  main: { clean: [36m[Function][39m, Os73ulepZTJxWpgBAAAS: [32m'DepressedBacon'[39m } }
+3:27:41 AM - [36minfo[39m: -1 user. Key: Os73ulepZTJxWpgBAAAS Total: 2
+3:27:41 AM - [36minfo[39m: Removed user DepressedBacon from lobby clean
+3:27:41 AM - [36minfo[39m: Removed user DepressedBacon from lobby main
+3:27:41 AM - [36minfo[39m: Deleting DepressedBacon
+8:31:07 AM - [36minfo[39m: -1 user. Key: DKfWv9sr_AXTVmWsAAAM Total: 1
+8:31:07 AM - [36minfo[39m: Removed user undefined from lobby clean
+8:31:07 AM - [36minfo[39m: Removed user undefined from lobby main
+8:31:07 AM - [36minfo[39m: Deleting undefined
+8:31:33 AM - [36minfo[39m: +1 user! Key: SmLaRgHLeDtCUW8GAAAT Total: 1
+8:31:33 AM - [9m[34msilly[39m[29m:  
+{ clean: [36m[Function][39m,
+  SmLaRgHLeDtCUW8GAAAT: { logged_in: [33mfalse[39m } }
