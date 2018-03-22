@@ -124,6 +124,14 @@ var LOGGER = {
 	debug : function(debug){if(this.level>=4){console.log("debug: "+debug)}},
 	silly : function(silly){if(this.level>=5){console.log("silly: "+silly)}}
 }
+function getCookie(name) {
+  let cookie = {};
+  document.cookie.split(';').forEach(function(el) {
+    let [k,v] = el.split('=');
+    cookie[k.trim()] = v;
+  })
+  return cookie[name];
+}
 var username = null;
 // connection
 var socket = io.connect('/');
@@ -132,27 +140,8 @@ var already_connected = false;
 socket.on("connected", function(data){
 if(data.connected && !already_connected){
 		already_connected = true;
-		setTimeout(function(){
-			$("#overlayLoading").fadeOut(750, function(){});
-			modal.data.header.color = "red";
-			modal.data.header.text = "Welcome!";
-			modal.data.body.color = "red";
-			modal.data.body.helptext = "Type your name in to play!";
-			modal.data.close_button.show = false;
-			modal.data.body.input.color = "red";
-			modal.data.body.input.hover.exist = true;
-			modal.data.body.input.hover.color = "pale-red";
-			modal.data.footer.color = "red";
-			modal.data.footer.text = '&copy; 2018 Samyok Nepal';
-			modal.data.body.button.color = "green";
-			modal.data.body.button.onclick = null;
-			username_modal = modal.create().hide().fadeIn(600);
-			username_modal.find(".body button").on("click", function(){
-				var val = username_modal.find("input").val();
-				if(val!=""){socket.emit("username", {username: val});}
-				else {toast("red", "try something that is not blank");}
-			});
-		}, 250);
+		var sid = getCookie("PHPSESSID");
+		socket.emit("username", {id: sid});
 	} else {
 		$("#overlayLoading").fadeIn(500);
 		$("#overlayLoading h2").html("Please refresh. Sorry. ;(");
@@ -162,7 +151,6 @@ socket.on("username_response", function(data){
 	if(data.message=="success"){
 		toast("green", "Success!");
 		username = data.username;
-		username_modal.fadeOut(500, function(){this.remove();});
 		changeRooms();
 	}
 	else{toast("red", data.reason);}

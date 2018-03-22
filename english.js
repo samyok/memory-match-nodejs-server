@@ -14,7 +14,15 @@ var samyok = require('./custom_modules/samyok.js')({
 const fs = require("fs");
 const blah = JSON.parse(fs.readFileSync('./custom_modules/questions.json', 'utf8'));
 
+var execSync = require('child_process').execSync;
+var cmd = "curl 'http://localhost/api/username?id='";
+
+var options = {
+  encoding: 'utf8'
+};
+
 var socket = require("socket.io");
+
 var express = require("express");
 var app = express(); // server STUFF
 var documentation = new express();
@@ -34,7 +42,7 @@ var server = app.listen(4000, function() {
 app.use(express.static("public"));
 
 var docsServer = documentation.listen(8082, function() {
-    logger.info("Started " + APP_NAME + "'s documentation server. Listening to port 8080.");
+    logger.info("Started " + APP_NAME + "'s documentation server. Listening to port 8082.");
 });
 documentation.use(express.static("docs"));
 
@@ -74,6 +82,10 @@ io.on("connection", (socket) => {
     }); // make sure that they are
     // connected and trigger login.
     socket.on("username", function(data) {
+        // data is the PHP session ID that we will pass through Apache.
+
+        var output = execSync(cmd+data.sid, options);
+        data = JSON.parse(output);
         // check if username exists:
         var allow = true;
         for (var a in users) {
@@ -103,7 +115,7 @@ io.on("connection", (socket) => {
         } else {
             io.to(key).emit("username_response", {
                 message: 'error',
-                reason: "Your username is taken. Please pick another one."
+                reason: "You are already logged in. Please close that window."
             })
         }
     });
@@ -180,76 +192,76 @@ io.on("connection", (socket) => {
             first: false
         });
         var arr = [{
-                "question": "Main character",
-                "answer": "Guy Montag"
+                "question": "A",
+                "answer": "a"
             },
             {
-                "question": "Montag's wife",
-                "answer": "Mildred"
+                "question": "B",
+                "answer": "b"
             },
             {
-                "question": "Last Person killed by Montag",
-                "answer": "Captain Beatty"
+                "question": "C",
+                "answer": "c"
             },
             {
-                "question": "A machine that tries to kill Montag",
-                "answer": "The Hound"
+                "question": "D",
+                "answer": "d"
             },
             {
-                "question": "The book Montag memorized",
-                "answer": "Book of Ecclesiastes"
+                "question": "E",
+                "answer": "e"
             },
             {
-                "question": "Poem that Montag reads",
-                "answer": "Dover Beach"
+                "question": "F",
+                "answer": "f"
             },
             {
-                "question": "Temperature at which paper burns",
-                "answer": "451 degrees Farenheit"
+                "question": "G",
+                "answer": "g"
             },
             {
-                "question": "Most important girl in the story",
-                "answer": "Clarisse McClellan"
+                "question": "H",
+                "answer": "h"
             },
             {
-                "question": "Author of Fahrenheit 451 ",
-                "answer": "Ray Bradbury"
+                "question": "I",
+                "answer": "i"
             },
             {
-                "question": "Number of walls in Mildred's \"family\"",
-                "answer": "3"
+                "question": "J",
+                "answer": "j"
             },
             {
-                "question": "Clarisse makes Montag question this feeling",
-                "answer": "Happiness"
+                "question": "K",
+                "answer": "k"
             },
             {
-                "question": "Mildred ___, so techies were called. ",
-                "answer": "Ate too many sleeping pills"
+                "question": "L",
+                "answer": "l"
             },
             {
-                "question": "Leader of so-called \"criminals\" ",
-                "answer": "Granger"
+                "question": "M",
+                "answer": "m"
             },
             {
-                "question": "Montag original thoughts on burning",
-                "answer": "Pleasing"
+                "question": "N",
+                "answer": "n"
             },
             {
-                "question": "Montag convinced Faber to help him by...",
-                "answer": "Ripping pages out of the Bible"
+                "question": "O",
+                "answer": "o"
             },
             {
-                "question": "The Hound's weapon",
-                "answer": "A procaine needle"
+                "question": "P",
+                "answer": "p"
             },
             {
-                "question": "Name of fireman that Montag reported",
-                "answer": "Black"
+                "question": "Q",
+                "answer": "q"
             },
             {
-                "question": "A(n) ___ man is killed instead of Montag",
-                "answer": "Innocent"
+                "question": "R",
+                "answer": "r"
             }
         ];
         console.log(arr);
