@@ -14,15 +14,7 @@ var samyok = require('./custom_modules/samyok.js')({
 const fs = require("fs");
 const blah = JSON.parse(fs.readFileSync('./custom_modules/questions.json', 'utf8'));
 
-var execSync = require('child_process').execSync;
-var cmd = "curl 'http://localhost/api/username?id='";
-
-var options = {
-  encoding: 'utf8'
-};
-
 var socket = require("socket.io");
-
 var express = require("express");
 var app = express(); // server STUFF
 var documentation = new express();
@@ -42,7 +34,7 @@ var server = app.listen(4000, function() {
 app.use(express.static("public"));
 
 var docsServer = documentation.listen(8082, function() {
-    logger.info("Started " + APP_NAME + "'s documentation server. Listening to port 8082.");
+    logger.info("Started " + APP_NAME + "'s documentation server. Listening to port 8080.");
 });
 documentation.use(express.static("docs"));
 
@@ -82,10 +74,6 @@ io.on("connection", (socket) => {
     }); // make sure that they are
     // connected and trigger login.
     socket.on("username", function(data) {
-        // data is the PHP session ID that we will pass through Apache.
-
-        var output = execSync(cmd+data.sid, options);
-        data = JSON.parse(output);
         // check if username exists:
         var allow = true;
         for (var a in users) {
@@ -115,7 +103,7 @@ io.on("connection", (socket) => {
         } else {
             io.to(key).emit("username_response", {
                 message: 'error',
-                reason: "You are already logged in. Please close that window."
+                reason: "Your username is taken. Please pick another one."
             })
         }
     });
