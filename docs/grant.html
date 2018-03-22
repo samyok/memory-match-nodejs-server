@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>grant.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+      <ul id="jump_to">
+        <li>
+          <a class="large" href="javascript:void(0);">Jump To &hellip;</a>
+          <a class="small" href="javascript:void(0);">+</a>
+          <div id="jump_wrapper">
+          <div id="jump_page_wrapper">
+            <div id="jump_page">
+              
+                
+                <a class="source" href="english.html">
+                  english.js
+                </a>
+              
+                
+                <a class="source" href="grant.html">
+                  grant.js
+                </a>
+              
+                
+                <a class="source" href="gruntfile.html">
+                  gruntfile.js
+                </a>
+              
+                
+                <a class="source" href="index.html">
+                  index.js
+                </a>
+              
+                
+                <a class="source" href="jquery-3.3.1.min.html">
+                  jquery-3.3.1.min.js
+                </a>
+              
+                
+                <a class="source" href="server.html">
+                  server.js
+                </a>
+              
+                
+                <a class="source" href="test.html">
+                  test.js
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      </ul>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>grant.js</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>); <span class="hljs-comment">//Because</span>
+<span class="hljs-keyword">var</span> arrayShuffle = <span class="hljs-built_in">require</span>(<span class="hljs-string">'array-shuffle'</span>); <span class="hljs-comment">//For the array shuffler</span>
+<span class="hljs-keyword">var</span> formidable = <span class="hljs-built_in">require</span>(<span class="hljs-string">'formidable'</span>); <span class="hljs-comment">//For the HTML form (could probably be removed)</span>
+<span class="hljs-comment">/**
+ * Shuffles the string
+ * @param  {string} string The string that you want to shuffle
+ * @return {string}       The shuffled string.
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stringShuffle</span>(<span class="hljs-params">string</span>)</span>{
+    <span class="hljs-keyword">var</span> array = string.split();
+    <span class="hljs-keyword">var</span> randomID = <span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">while</span>(newArray.length != <span class="hljs-number">36</span>){
+        randomID = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * (<span class="hljs-number">37</span>-newArray.length));
+        newArray.push(array[randomID]);
+        array.splice(randomID, <span class="hljs-number">1</span>);
+    }
+    <span class="hljs-keyword">var</span> newString  = newArray.toString().replace(<span class="hljs-regexp">/,/g</span>, <span class="hljs-string">''</span>);
+    <span class="hljs-keyword">return</span> newString;
+}
+
+
+
+http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+    res.writeHead(<span class="hljs-number">200</span>, {<span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'text/html'</span>});</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>Shuffle Array</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="hljs-keyword">const</span> shuffled = arrayShuffle([<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>,<span class="hljs-string">'d'</span>,<span class="hljs-string">'e'</span>,<span class="hljs-string">'f'</span>,<span class="hljs-string">'g'</span>,<span class="hljs-string">'h'</span>,<span class="hljs-string">'i'</span>,<span class="hljs-string">'j'</span>,<span class="hljs-string">'k'</span>,<span class="hljs-string">'l'</span>,<span class="hljs-string">'m'</span>,<span class="hljs-string">'n'</span>,<span class="hljs-string">'o'</span>,<span class="hljs-string">'p'</span>,<span class="hljs-string">'q'</span>,<span class="hljs-string">'r'</span>,<span class="hljs-string">'A'</span>,<span class="hljs-string">'B'</span>,<span class="hljs-string">'C'</span>,<span class="hljs-string">'D'</span>,<span class="hljs-string">'E'</span>,<span class="hljs-string">'F'</span>,<span class="hljs-string">'G'</span>,<span class="hljs-string">'H'</span>,<span class="hljs-string">'I'</span>,<span class="hljs-string">'J'</span>,<span class="hljs-string">'K'</span>,<span class="hljs-string">'L'</span>,<span class="hljs-string">'M'</span>,<span class="hljs-string">'N'</span>,<span class="hljs-string">'O'</span>,<span class="hljs-string">'P'</span>,<span class="hljs-string">'Q'</span>,<span class="hljs-string">'R'</span>]);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>Everything Else</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="hljs-keyword">if</span> (req.url == <span class="hljs-string">'/input'</span>) {
+        <span class="hljs-keyword">var</span> form = <span class="hljs-keyword">new</span> formidable.IncomingForm();
+        form.parse(req, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, fields, files</span>) </span>{
+        <span class="hljs-keyword">var</span> inputOne = fields.inputOne;
+        <span class="hljs-keyword">var</span> inputTwo = fields.inputTwo;
+        res.write(shuffled[inputOne]);
+        res.write(shuffled[inputTwo]);
+        <span class="hljs-keyword">if</span> (shuffled[inputOne] == shuffled[inputTwo]) {
+        res.write(<span class="hljs-string">'Match'</span>);
+        }
+        res.end();
+        });
+
+    } <span class="hljs-keyword">else</span> {
+        res.writeHead(<span class="hljs-number">200</span>, {<span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'text/html'</span>});
+        res.write(<span class="hljs-string">'&lt;form action="input" method="post" enctype="multipart/form-data"&gt;'</span>);
+        res.write(<span class="hljs-string">'Input One:&lt;br&gt;'</span>);
+        res.write(<span class="hljs-string">'&lt;input type="text" name="inputOne"&gt;&lt;br&gt;'</span>);
+        res.write(<span class="hljs-string">'Input Two:&lt;br&gt;'</span>);
+        res.write(<span class="hljs-string">'&lt;input type="text" name="inputTwo"&gt;&lt;br&gt;'</span>);
+        res.write(<span class="hljs-string">'&lt;input type="submit"&gt;'</span>);
+        res.write(<span class="hljs-string">'&lt;/form&gt;'</span>);
+        <span class="hljs-built_in">console</span>.log(shuffled);
+        <span class="hljs-keyword">return</span> res.end();
+    }
+
+}).listen(<span class="hljs-number">8080</span>);</pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>

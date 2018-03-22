@@ -68,19 +68,6 @@ io.on("connection", (socket) => {
     users[key] = null;
     console.log('+1 user. Total: '+users.length+'.');
     // add all sorts of socket.on("thing")s here.
-
-    // first make users
-    socket.on("username", function(data){
-        users[key] = {};
-        users[key] = ["username": data.username];
-        io.to(key).emit("update", {"type":"join_lobby", "update":{"lobby": "Main"}});
-        var update = [];
-
-        for(var a in lobbies.Main){
-            io.to(lobbies.Main[a]).emit("update", {"type": "player_update", "update":lobbies.Main})
-        }
-
-    });
     socket.on("disconnect", function(){
         console.log("-1 user. Total: "+users.length);
         delete users[key];

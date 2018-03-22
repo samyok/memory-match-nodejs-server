@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>test.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+      <ul id="jump_to">
+        <li>
+          <a class="large" href="javascript:void(0);">Jump To &hellip;</a>
+          <a class="small" href="javascript:void(0);">+</a>
+          <div id="jump_wrapper">
+          <div id="jump_page_wrapper">
+            <div id="jump_page">
+              
+                
+                <a class="source" href="english.html">
+                  english.js
+                </a>
+              
+                
+                <a class="source" href="grant.html">
+                  grant.js
+                </a>
+              
+                
+                <a class="source" href="gruntfile.html">
+                  gruntfile.js
+                </a>
+              
+                
+                <a class="source" href="index.html">
+                  index.js
+                </a>
+              
+                
+                <a class="source" href="jquery-3.3.1.min.html">
+                  jquery-3.3.1.min.js
+                </a>
+              
+                
+                <a class="source" href="server.html">
+                  server.js
+                </a>
+              
+                
+                <a class="source" href="test.html">
+                  test.js
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      </ul>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>test.js</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              <p>The code in <code>oninstall</code> and <code>onactivate</code> force the service worker to
+control the clients ASAP.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>self.oninstall = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+  event.waitUntil(self.skipWaiting());
+};
+
+self.onactivate = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+  event.waitUntil(self.clients.claim());
+};</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>When fetching, distinguish if this is a resource fetch. If so,
+apply the server selection algorithm. Else, let the request reach the
+network. Could should be autoexplanatory.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>self.onfetch = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+  <span class="hljs-keyword">var</span> request = event.request;
+  <span class="hljs-keyword">if</span> (isResource(request)) {
+    event.respondWith(fetchFromBestServer(request));
+  } <span class="hljs-keyword">else</span> {
+    event.respondWith(fetch(request));
+  }
+};</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>A request is a resource request if it is a <code>GET</code> for something inside <code>imgs</code>.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isResource</span>(<span class="hljs-params">request</span>) </span>{
+  <span class="hljs-keyword">return</span> request.url.match(<span class="hljs-regexp">/\/imgs\/.*$/</span>) &amp;&amp; request.method === <span class="hljs-string">'GET'</span>;
+}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>Fetching from the best server consists of getting the server loads,
+selecting the server with lowest load, and compose a new request to
+find the resource in the selected server.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fetchFromBestServer</span>(<span class="hljs-params">request</span>) </span>{
+  <span class="hljs-keyword">var</span> session = request.url.match(<span class="hljs-regexp">/\?session=([^&amp;]*)/</span>)[<span class="hljs-number">1</span>];
+  <span class="hljs-keyword">return</span> getServerLoads(session)
+    .then(selectServer)
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">serverUrl</span>) </span>{</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>Get the resource path and combine with <code>serverUrl</code> to get
+the resource URL but <strong>in the selected server</strong>.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>      <span class="hljs-keyword">var</span> resourcePath = request.url.match(<span class="hljs-regexp">/\/imgs\/[^?]*/</span>)[<span class="hljs-number">0</span>];
+      <span class="hljs-keyword">var</span> serverRequest = <span class="hljs-keyword">new</span> Request(serverUrl + resourcePath);
+      <span class="hljs-keyword">return</span> fetch(serverRequest);
+    });
+}</pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>

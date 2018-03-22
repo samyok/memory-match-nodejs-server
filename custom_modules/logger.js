@@ -11,7 +11,7 @@ var logger;
         transports: [
             new Winston.transports.File({
               filename: 'logs/english.js.'+'['+startTime.substr(4, startTime.length-19)+']'+'.log',
-              level: 'silly'
+              level: logLevel
             }),
             new Winston.transports.Console ({
                 level: logLevel,

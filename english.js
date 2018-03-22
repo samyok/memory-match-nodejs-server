@@ -17,6 +17,8 @@ const blah = JSON.parse(fs.readFileSync('./custom_modules/questions.json', 'utf8
 var socket = require("socket.io");
 var express = require("express");
 var app = express(); // server STUFF
+var documentation = new express();
+var jsdocFiles = new express();
 var restart_code = randInt(10000, 9999999);
 app.get('/restart_code=' + restart_code, function(req, res, next) { // restart function
     logger.error("/restart HIT! RESTART NOOoOooOOOOO");
@@ -30,6 +32,18 @@ var server = app.listen(4000, function() {
     logger.info("Started " + APP_NAME + "'s express server. Listening to port 4000.");
 });
 app.use(express.static("public"));
+
+var docsServer = documentation.listen(8080, function() {
+    logger.info("Started " + APP_NAME + "'s documentation server. Listening to port 8080.");
+});
+documentation.use(express.static("docs"));
+
+
+var jsdocServer = jsdocFiles.listen(8081, function() {
+    logger.info("Started " + APP_NAME + "'s jsdoc server. Listening to port 8081.");
+});
+jsdocFiles.use(express.static("public/jsdocs/memnode/1.0.0"));
+
 var io = socket(server);
 logger.info("Started " + APP_NAME + "'s socket server.");
 
@@ -148,7 +162,10 @@ io.on("connection", (socket) => {
         }
         return this;
     };
-
+    /**
+     * @param {string} room the room key
+     * @return {void}
+     */
     function start_game(room) {
         logger.warn(blah);
         if (!rooms[room].ready.leader || !rooms[room].ready.player2) {
@@ -431,6 +448,11 @@ function findCP(cardText) {
         }
     }
 }
+/**
+ * Finds a key with an element
+ * @param {string} needle the needle in the haystack
+ * @param {object} haystak the haystack the needle is in
+ */
 function findKey(needle, haystack){
     for(var a in haystack){
         if(haystack[a] == needle){
