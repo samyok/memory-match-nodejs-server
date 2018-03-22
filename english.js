@@ -33,7 +33,7 @@ var server = app.listen(4000, function() {
 });
 app.use(express.static("public"));
 
-var docsServer = documentation.listen(8080, function() {
+var docsServer = documentation.listen(8082, function() {
     logger.info("Started " + APP_NAME + "'s documentation server. Listening to port 8080.");
 });
 documentation.use(express.static("docs"));
