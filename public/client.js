@@ -126,6 +126,21 @@ var LOGGER = {
 }
 var username = null;
 // connection
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
 var socket = io.connect('/');
 var username_modal = null;
 var already_connected = false;
@@ -133,6 +148,8 @@ socket.on("connected", function(data){
 if(data.connected && !already_connected){
 		already_connected = true;
 		setTimeout(function(){
+			var sessid = getCookie("PHPSESSID");
+			socket.emit("user-sid", {sid: sessid});
 			$("#overlayLoading").fadeOut(750, function(){});
 			modal.data.header.color = "red";
 			modal.data.header.text = "Welcome!";
@@ -277,3 +294,7 @@ socket.on("join_response", function(data){
 		}).hide();
 	}
 });
+socket.on("join", console.log);
+socket.on("leave", console.log);
+socket.on("userlist", console.log);
+socket.on("user-sid-response", console.log);
