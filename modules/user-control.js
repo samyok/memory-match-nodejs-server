@@ -35,7 +35,7 @@ module.exports = {
     },
     changeLocation: function(key, newLocation){
         this.users[key].location= newLocation;
-    }
+    },
     changeRooms: function(key, firstroom, secondroom, io, socket){
         this.changeLocation(key, secondroom);
         socket.join(secondroom);
