@@ -26,7 +26,7 @@ module.exports = {
     addLocation: function(key, location){
         this.users[key].location = location;
     },
-    deleteLocation: function(location, newlocation=null){
+    deleteLocation: function(location, newlocation){
         for(a in this.users){
             if(this.users[a].location == location){
                 this.users[a].location = newlocation;
@@ -36,7 +36,7 @@ module.exports = {
     changeLocation: function(key, newLocation){
         this.users[key].location= newLocation;
     }
-    changeRooms: function(key, firstroom=null, secondroom, io, socket){
+    changeRooms: function(key, firstroom, secondroom, io, socket){
         this.changeLocation(key, secondroom);
         socket.join(secondroom);
         if(firstroom==null){
