@@ -36,7 +36,7 @@ var docServers = {
 }
 
 var server = require("./socket_server");
-var uc = requre("./user-control");
+var uc = require("./user-control");
 
 function validateSID(sid){
     http.get("localhost/api/username.php", (res) =>{
