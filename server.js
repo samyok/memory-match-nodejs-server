@@ -36,7 +36,7 @@ io.on("connection", (socket)=>{
         }
     });
     io.on("join", function(data){
-        mm.uc.changeRooms(key, var firstroom = null, var secondroom = data.placeName, io, socket);
+        mm.uc.changeRooms(key,  null, data.placeName, io, socket);
     });
 })
 
