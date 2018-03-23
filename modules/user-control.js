@@ -1,5 +1,5 @@
 function place(){}
-function lobby(type=public){
+function lobby(type="public"){
     this.type = type;
     this.users = [];
     this.games = [];
