@@ -59,12 +59,13 @@ io.on("connection", (socket)=>{
                 logger.warn("please log in" + key + ' : sid : ' + data.sid);
             } else {
                 io.to(key).emit("user-sid-response",  {message: "success", username:uname});
-                // check if username already exists
-                // for(var a in users){
-                //     if(users.username == uname){
-                //         delete users[a];
-                //     }
-                // }
+                check if username already exists
+                for(var a in users){
+                    if(users.username == uname){
+                        kill_key(a);
+                        delete users[a];
+                    }
+                }
                 users[key] = {};
                 users[key].username = uname;
                 // mm.uc.addUser(key, uname);
