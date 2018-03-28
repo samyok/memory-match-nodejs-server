@@ -145,7 +145,7 @@ var socket = io.connect('/');
 var username_modal = null;
 var already_connected = false;
 socket.on("connected", function(data){
-if(data.connected && !already_connected){
+	if(data.connected && !already_connected){
 		already_connected = true;
 		setTimeout(function(){
 			var sessid = getCookie("PHPSESSID");
@@ -249,12 +249,16 @@ function create_room(){
 	socket.emit('create_room', {type: "double"});
 	$("#overlayLoading").fadeIn(750);
 }
-socket.on("console", function(data){
+socket.on("console2", function(data){
 	if(data.href != undefined){
 		location.href=data.href;
 	} else {
 		console.log(data);
 	}
+});
+socket.on("gameUpdate", function(data){
+	console.log(data);
+	location.reload();
 });
 socket.on("room_created", function(data){
 	$("#placeType").text("Room Code");
@@ -294,7 +298,3 @@ socket.on("join_response", function(data){
 		}).hide();
 	}
 });
-socket.on("join", console.log);
-socket.on("leave", console.log);
-socket.on("userlist", console.log);
-socket.on("user-sid-response", console.log);

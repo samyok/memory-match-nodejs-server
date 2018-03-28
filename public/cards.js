@@ -29,11 +29,9 @@ socket.on("gameInfo", function(data){
     switch(data.type){
         case "notif":
             switch(data.message){
-                case "opponent_abandoned":
-                    location.reload();
-                    break;
                 case "score":
                     $('#personScore'+data.person).html(data.score);
+                    break;
                 default:
                     toast("red", data.message);
             }

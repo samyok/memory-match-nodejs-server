@@ -39,21 +39,30 @@ var server = require("./socket_server");
 var uc = require("./user-control");
 
 function validateSID(sid){
-    http.get("localhost/api/username.php", (res) =>{
-        res.setEncoding('utf8');
-        res.on('data', function (body) {
-            data = JSON.parse(body);
-            if(data.logged_in){
-                return data.username;
-            } else {
-                return null;
-            }
+    return new Promise(function(resolve, reject) {
+        http.get("http://test.memory.samyok.us/api/username.php?id="+sid, (res) =>{
+            res.setEncoding('utf8');
+            res.on('data', function (body) {
+                data = JSON.parse(body);
+                if(data.logged_in){
+                    logger.debug(sid + " validated. ");
+                    logger.debug(data.username);
+                    resolve(data.username);
+                } else {
+                    resolve(null);
+                }
+            });
         });
     });
 }
-
+const cards = require("./cards.js");
 module.exports = {
     "docServers": docServers,
     "server": server,
-    "uc": uc
+    "uc": uc,
+    "validateSID": validateSID,
+    "cards": cards,
+    "cardMaker": function(){
+        this.cards = cards;
+    }
 }

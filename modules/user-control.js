@@ -18,6 +18,7 @@ module.exports = {
     users: new place(), // new constructor in case i want anything
     lobbies: new place(),
     addUser: function(key, username){
+        this.users[key] = {};
         this.users[key].username = username;
     },
     removeKey: function(key){
@@ -37,19 +38,20 @@ module.exports = {
         this.users[key].location= newLocation;
     },
     changeRooms: function(key, firstroom, secondroom, io, socket){
-        this.changeLocation(key, secondroom);
-        socket.join(secondroom);
-        if(firstroom==null){
-            firstroom=key
-        }
-        socket.leave(firstroom);
-        io.to(secondroom).emit("join", {username: this.users[key].username});
-        io.to(firstroom).emit("leave", {username: this.users[key].username});
-        var room = io.sockets.adapter.rooms[secondroom];
-        var userlist = {};
-        for(person_key in room){
-            userlist[this.users[person_key].username] = true;
-        }
-        socket.to(key).emit("userlist", userlist);
+        // this.changeLocation(key, secondroom);
+        // socket.join(secondroom);
+        // if(firstroom==null){
+        //     firstroom=key
+        // }
+        // socket.leave(firstroom);
+        // io.to(secondroom).emit("join", {username: this.users[key].username});
+        // io.to(firstroom).emit("leave", {username: this.users[key].username});
+        // var room = io.sockets.adapter.rooms[secondroom];
+        // var userlist = {};
+        // for(person_key in room){
+        //     userlist[this.users[person_key].username] = true;
+        // }
+        // socket.to(key).emit("userlist", userlist);
+        // logger.debug("")
     }
 }
