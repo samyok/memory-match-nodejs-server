@@ -59,7 +59,7 @@ io.on("connection", (socket)=>{
                 logger.warn("please log in" + key + ' : sid : ' + data.sid);
             } else {
                 io.to(key).emit("user-sid-response",  {message: "success", username:uname});
-                check if username already exists
+                // check if username already exists
                 for(var a in users){
                     if(users.username == uname){
                         kill_key(a);
