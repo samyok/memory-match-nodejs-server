@@ -101,7 +101,7 @@ function create_room(){
 	socket.emit('create_room', {type: "double"});
 	$("#overlayLoading").fadeIn(750);
 }
-socket.on("console2", function(data){
+socket.on("console", function(data){
 	if(data.href != undefined){
 		location.href=data.href;
 	} else {
