@@ -350,7 +350,7 @@ socket.on('force-end', function(data){
     socket.on('samyok_says_restart', function(data) {
         logger.warn("Restart code Requested by " + key);
         socket.emit("console", {
-            href: "/restart_code=" + restart_code
+            href: "/restart_code=" + mm.server.restart_code
         });
     })
     socket.on("join_room", function(data) {
