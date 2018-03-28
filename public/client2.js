@@ -146,6 +146,9 @@ socket.on("join_response", function(data){
 	if(data.message == "error"){
 		$("#overlayLoading").fadeOut(600, function(){join_modal.fadeIn(600);})
 		toast("red", data.reason);
+		if(data.reason=="Please log in."){
+			location.href = "/index?login";
+		}
 	} else {
 		toast("green", "Success!");
 		console.log(data);
