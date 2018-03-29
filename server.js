@@ -41,6 +41,16 @@ io.on("connection", (socket)=>{
     users[key] = {};
     // console.log(users);
 
+    function updateUsersFile(){
+        var usernames = [];
+        for(var a in users){
+            if(users[a]!=null){
+                usernames.push(users[a].username);
+            }
+        }
+        fs.writeFile('./public/onlineUsers.json', json_encode(usernames), "w");
+        return usernames;
+    }
     // console.log(socket.adapter);
     // console.log("ASD");
     logger.silly("Join!" + key);
@@ -270,6 +280,7 @@ socket.on('force-end', function(data){
         var username = users[key].username;
         console.log(username + " just disconnected");
         delete users[key];
+        updateUsersFile();
         for(var a in rooms){
             if(rooms[a].gameInfo.leader==key){
                 rooms[a].gameInfo.leader= null;
