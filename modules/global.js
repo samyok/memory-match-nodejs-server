@@ -55,11 +55,23 @@ function validateSID(sid){
         });
     });
 }
+function get_rebus_answer(imageID, answer){
+    return new Promise(function(resolve, reject) {
+        http.get("http://test.memory.samyok.us/rebus.php?imageID="+id+"&answer="+answer, (res) =>{
+            res.setEncoding('utf8');
+            res.on('data', function (body) {
+                data = JSON.parse(body);
+                resolve(data.percentage);
+            });
+        });
+    });
+}
 const cards = require("./cards.js");
 module.exports = {
     "docServers": docServers,
     "server": server,
     "uc": uc,
+    "getRebusAnswer": get_rebus_answer,
     "validateSID": validateSID,
     "cards": cards,
     "cardMaker": function(){

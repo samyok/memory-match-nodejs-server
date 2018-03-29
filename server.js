@@ -382,45 +382,9 @@ socket.on('force-end', function(data){
             }
         }
     });
+
     socket.on("rebus_answer", function(data1){
-        console.log(data1);
-        // get PHPSESSID
-        var rebusPromise = new Promise(function(resolve, reject) {
-            console.log("Promise started to " +"http://memory.samyok.us/rebus?imageID="+rooms[findRoomName(key)].rebus_link+"&answer="+data1.answer)
-            http.get("http://memory.samyok.us/rebus?imageID="+rooms[findRoomName(key)].rebus_link+"&answer="+data1.answer, (res) =>{
-                res.setEncoding('utf8');
-                res.on('data', function (body) {
-                    console.log(body);
-                    console.log(res);
-                    resolve(JSON.parse(body));
-                });
-            });
-        });
-        rebusPromise.then(function(data){
-            logger.silly(uname);
-            console.log(data);
-            if(data.percentage >= 80){
-                io.to(key).emit("rebus_response", {
-                    game: {
-                        winner: {
-                            username: users[key].username,
-                            score: rooms[findRoomName(key)].scores.leader,
-                            got_rebus: true
-                        }
-                    }
-                });
-            } else {
-                io.to(key).emit("rebus_response", {
-                    game: {
-                        winner: {
-                            username: users[key].username,
-                            score: rooms[findRoomName(key)].scores.leader,
-                            got_rebus: false
-                        }
-                    }
-                });
-            }
-        });
+        console.log(mm.getRebusAnswer(rooms[findRoomName(key)].rebus_link, data1.answer));
     });
     socket.on("disconnect", function(){
         // console.log(users);
