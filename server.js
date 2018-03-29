@@ -300,7 +300,7 @@ socket.on('force-end', function(data){
                     },
                     loser: {
                         username: rooms[room].abandoned,
-                        score: 0socket
+                        score:socket
                     }
                 }
             });
