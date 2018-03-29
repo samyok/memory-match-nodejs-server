@@ -16,6 +16,7 @@ socket.on("connected", function(data){
 			console.log("USER-SID");
 		}, 250);
 	} else {
+		$("#playingArea").html("<br> <br> <h2>Please refresh. The server just restarted. Sorry!</h2>")
 		$("#overlayLoading").fadeIn(500);
 		$("#overlayLoading h2").html("Please refresh. Sorry. ;(");
 	}
