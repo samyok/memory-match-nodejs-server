@@ -55,7 +55,7 @@ function validateSID(sid){
         });
     });
 }
-function postScore(type, username, wtl, score, rebus=false){
+function postScore(type, username, wtl, score, rebus){
     http.get("http://localhost/api/leaderboard.php?type="+type + "&username="+username+ "&wtl=" +wtl + "&score="+score+ "&rebus="+rebus);
 }
 
