@@ -49,7 +49,7 @@ io.on("connection", (socket)=>{
                 usernames.push(users[a].username);
             }
         }
-        var file = fs.writeFile('./public/onlineUsers.json', JSON.stringify(usernames), "w");
+        var file = fs.writeFile('./public/onlineUsers.json', JSON.stringify(usernames));
         return usernames;
     }
     // console.log(socket.adapter);
@@ -80,7 +80,7 @@ io.on("connection", (socket)=>{
                 users[key] = {};
                 users[key].username = uname;
                 // mm.uc.addUser(key, uname);
-
+                updateUsersFile();
                 logger.debug("added "+key+" as " + uname);
             }
         });
