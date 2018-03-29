@@ -135,6 +135,9 @@ io.on("connection", (socket)=>{
     socket.on("click_card", function(data){;
         var room = findRoomName(key);
         logger.silly('card click in room '+room);
+        if(rooms[room]==null){
+            return true;
+        }
         if(key == rooms[room].gameInfo[rooms[room].game.turn]){ // if it is your turn ...
             if(rooms[room].game.card1 ==null){ // if no cards have been chosen ...
                 rooms[room].game.card1 = rooms[room].cards[data.number]; // then set the card clicked to card1
