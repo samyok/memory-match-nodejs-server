@@ -253,6 +253,7 @@ io.on("connection", (socket)=>{
         }
     }
 socket.on('force-end', function(data){
+    socket.to(key).emit("console", {message: "yay"});
     console.log("FORCE END ROOM" + findRoomName(key));
     end_game(findRoomName(key));
 })
