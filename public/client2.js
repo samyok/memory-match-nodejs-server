@@ -194,6 +194,31 @@ socket.on("gameUpdate", function(data){
 		modal.data.body.button.text = "Continue &gt;&gt;";
 		new_modal = modal.create().hide().fadeIn(600);
 		new_modal.find(".body button").on("click", function(){location.reload();});
+	} else if(data.game.loser.username == username){
+		var reason = "";
+		switch(data.type){
+			case "abandon":
+				reason = "You abandoned the game scared of your card tricks. LOL!";
+				break;
+			case "force":
+				reason = "You logged in from another location and cannot continire this. ;("
+				break;
+			default:
+				reason = "";
+		}
+		modal.reset();
+		modal.data.header.color = "red";
+		modal.data.header.text = "Wow.";
+		modal.data.body.color = "red";
+		modal.data.body.helptext = "You lost "+data.game.winner.score + " to " + data.game.loser.score+"! "+reason;
+		modal.data.close_button.show = false;
+		modal.data.body.input.show = false;
+		modal.data.footer.color = "red";
+		modal.data.footer.text = 'Logged in as '+username;
+		modal.data.body.button.show = true;
+		modal.data.body.button.text = "Continue &gt;&gt;";
+		new_modal = modal.create().hide().fadeIn(600);
+		new_modal.find(".body button").on("click", function(){location.reload();});
 	}
 });
 socket.on("rebus_time", function(data1){
