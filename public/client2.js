@@ -206,7 +206,7 @@ socket.on("rebus_time", function(data1){
 		modal.data.body.button.show = true;
 		modal.data.body.button.text = "Submit Score &gt; &gt;";
 		rebus_modal = modal.create().hide().fadeIn(600);
-		$("<img />").attr("src", "//memory.samyok.us/rebus?imageID="+data1.image_link).prependTo(rebus_modal.find(".body"));
+		$("<img />").attr("src", "//memory.samyok.us/rebus?imageID="+data1.rebus_link).prependTo(rebus_modal.find(".body"));
 		rebus_modal.find(".body button").click(function(){
             var value = rebus_modal.find("input").val();
 			socket.emit("rebus_answer", {answer: value});
