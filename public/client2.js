@@ -174,7 +174,7 @@ socket.on("gameUpdate", function(data){
 		modal.data.header.color = "yellow";
 		modal.data.header.text = "Neato!";
 		modal.data.body.color = "yellow";
-		modal.data.body.helptext = "You tied "+data.game.winner.score + " to " + data.game.loser.score+"! "+reason;
+		modal.data.body.helptext = "You tied "+data.game.winner.score + " to " + data.game.loser.score+"!";
 		modal.data.close_button.show = false;
 		modal.data.body.input.show = false;
 		modal.data.footer.color = "yellow";
