@@ -387,9 +387,11 @@ socket.on('force-end', function(data){
         console.log(percentage);
         percentage.then(function(closeness){
             console.log(closeness);
+            console.log("Launching. ")
             // logger.silly(uname);
             // console.log(data);
             if(closeness >= 80){
+                console.log("Launching. Win! ")
                 io.to(key).emit("rebus_response", {
                     game: {
                         winner: {
@@ -400,6 +402,7 @@ socket.on('force-end', function(data){
                     }
                 });
             } else {
+                console.log("Launching. Lose! ")
                 io.to(key).emit("rebus_response", {
                     game: {
                         winner: {
