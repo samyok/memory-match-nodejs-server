@@ -303,7 +303,7 @@ socket.on('force-end', function(data){
                     },
                     loser: {
                         username: rooms[room].abandoned,
-                        score:socket
+                        score: "X" 
                     }
                 }
             });
