@@ -42,13 +42,14 @@ io.on("connection", (socket)=>{
     // console.log(users);
 
     function updateUsersFile(){
+        console.log("update");
         var usernames = [];
         for(var a in users){
             if(users[a]!=null){
                 usernames.push(users[a].username);
             }
         }
-        fs.writeFile('./public/onlineUsers.json', JSON.stringify(usernames), "w");
+        var file = fs.writeFile('./public/onlineUsers.json', JSON.stringify(usernames), "w");
         return usernames;
     }
     // console.log(socket.adapter);
