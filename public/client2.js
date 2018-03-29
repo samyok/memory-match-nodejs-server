@@ -222,15 +222,15 @@ socket.on("rebus_response", function(data){
 	console.log(data);
 	if(data.game.winner.username == username){
 		if(data.game.winner.got_rebus){
-			var rebus = ", and you got the rebus!";
+			var rebus = ", and you got the rebus! ";
 		} else {
-			var rebus = "! Unfortunately, you got the rebus wrong."
+			var rebus = "! Unfortunately, you got the rebus wrong. "
 		}
 		modal.reset();
 		modal.data.header.color = "green";
 		modal.data.header.text = "Congrats!";
 		modal.data.body.color = "green";
-		modal.data.body.helptext = "You finished the game with "+data.game.winner.score + " points"+rebus;
+		modal.data.body.helptext = "You finished the game with "+data.game.winner.score + " points"+rebus+"Thanks to fun-with-words.com for providing such rebuses!";
 		modal.data.close_button.show = false;
 		modal.data.body.input.show = false;
 		modal.data.footer.color = "green";
