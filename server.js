@@ -242,10 +242,14 @@ io.on("connection", (socket)=>{
                     }
                 });
             }
+            // disconnect players so like no more notifs.
+            io.sockets.connected[rooms[room].gameInfo.leader].disconnect();
+            io.sockets.connected[rooms[room].gameInfo.player2].disconnect();
         } else {
             console.log("Emit to "+ rooms[room].gameInfo.leader);
             io.to(rooms[room].gameInfo.leader).emit("rebus_time", {rebus_link: rooms[room].rebus_link});
         }
+
     }
     function findRoomName(key){
         for(var a in rooms){
@@ -303,7 +307,7 @@ socket.on('force-end', function(data){
                     },
                     loser: {
                         username: rooms[room].abandoned,
-                        score: "X" 
+                        score: "X"
                     }
                 }
             });
