@@ -1,1 +1,0 @@
-2:06:03 AM - [4m[1m[31merror[39m[22m[24m: Deleted room clean, the room's info was undefined.

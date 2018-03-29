@@ -1,190 +1,39 @@
-$("body").append('<div id="snackbar">Loading...</div>');
-var showlater= $("h1").hide();
-/**
- * Does the toast function--creates a "toast".
- * @param  {String} [color="red"]     Decides the toast color. Note that the text color is still white.
- * @param  {String} [msg="Error! Please report this."] The message in the toast.
- * @param  {String} [elem="snackbar"] Which snackbar?
- * @return {void}
- */
-function toast(color="red",msg="Error! Please report this.",elem="snackbar"){// creates the snackbar at top.
-	var x=document.getElementById(elem); // get element
-	x.className="show"; // add class show
-	x.style.backgroundColor=color;  // set the color to whatever
-	$("#"+elem).html(msg);  // set message
-	setTimeout(function(){
-    x.className=x.className.replace("show","");
-  },3000); // remove class after 3 seconds.
-}
-var modal_default = {
-  "close_button": {
-    "show": true,
-    "onclick": "$(this).parent().parent().parent().remove()"
-  },
-  "header": {
-    "color": "teal",
-    "text": "Modal header"
-  },
-  "body": {
-    "input": {
-      "show": true,
-      "color": "white",
-      "placeholder": "Your Name",
-      "type": "text",
-      "hover": {
-        "exist": false,
-        "color": "teal"
-      }
-    },
-    "button": {
-      "color": "teal",
-      "show": true,
-      "text": "Submit &gt;&gt;",
-      "onclick": "$(this).parent().parent().parent().hide()",
-      "hover": {
-        "exist": false,
-        "color": "teal"
-      }
-    },
-    "color": "white",
-    "helptext": "Please enter your name to continue: "
-  },
-  "footer": {
-    "color": "teal",
-    "show": true,
-    "text": "This is a footer"
-  }
-};
-var modal = {
-  data: modal_default,
-  create: function() {
-    var newmodal = $("#original-modal").clone().appendTo("body").show();
-    newmodal.find('header').addClass("w3-" + this.data.header.color);
-    // do data.close_button.show
-    if (this.data.close_button.show) {
-      newmodal.find('span.x-out').show();
-    } else {
-      newmodal.find('span.x-out').hide();
-    }
-    newmodal.find('span.x-out').attr("onclick", this.data.close_button.onclick);
-    newmodal.find('header h2').text(this.data.header.text);
-    newmodal.find('div.body').addClass("w3-" + this.data.body.color);
-    newmodal.find('div.body p').html(this.data.body.helptext);
-    if (this.data.body.input.show) { // do input show
-      newmodal.find('div.body input').show();
-    } else {
-      newmodal.find('div.body input').hide();
-    }
-    newmodal.find('div.body input')
-      .attr("type", this.data.body.input.type)
-      .addClass("w3-" + this.data.body.input.color)
-      .attr('placeholder', this.data.body.input.placeholder);
-    if (this.data.body.input.hover.exist) {
-      newmodal.find('div.body input')
-        .addClass("w3-hover-" + this.data.body.input.hover.color);
-    }
-    if (this.data.body.button.hover.exist) {
-      newmodal.find('div.body button')
-        .addClass("w3-hover-" + this.data.body.button.hover.color);
-    }
-    if (this.data.body.button.show) { // do input show
-      newmodal.find('div.body button').show();
-    } else {
-      newmodal.find('div.body button').hide();
-    }
-    newmodal.find('div.body button')
-      .html(this.data.body.button.text)
-      .attr("onclick", this.data.body.button.onclick)
-      .addClass("w3-" + this.data.body.button.color);
-    newmodal.find("footer p").html(this.data.footer.text);
-    if (this.data.footer.show) { // do input show
-      newmodal.find('footer')
-        .addClass("w3-" + this.data.footer.color)
-        .show();
-    } else {
-      newmodal.find('footer').hide();
-    }
-    return newmodal;
-  },
-  reset: function() {
-    this.data = modal_default;
-  }
-}
-var LOGGER = {
-	level : 5,
-	setLevel : function(string){
-		const levels = {  error: 0,   warn: 1,   info: 2,   verbose: 3,   debug: 4,   silly: 5 };
-		if(levels[string]!== undefined){this.level = levels[string];}
-		else {this.level = -1;}
-	},
-	error : function(error){if(this.level >= 0){console.error("ERROR" + error);}},
-	warn : function(warn){if(this.level>=1){console.warn("Warning: "+warn)}},
-	info : function(info){if(this.level>=2){console.log("INFO: "+info)}},
-	verbose : function(verbose){if(this.level>=3){console.log("Verbose: "+verbose)}},
-	debug : function(debug){if(this.level>=4){console.log("debug: "+debug)}},
-	silly : function(silly){if(this.level>=5){console.log("silly: "+silly)}}
-}
-var username = null;
-// connection
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
+
 var socket = io.connect('/');
-var username_modal = null;
 var already_connected = false;
+socket.on("kill", function(){
+	$("#overlayLoading").fadeIn(500);
+	$("#overlayLoading h2").html("Please refresh.<br>You logged in from another location or you disconnected.");
+})
 socket.on("connected", function(data){
+	console.log(data);
+	console.log(already_connected);
 	if(data.connected && !already_connected){
 		already_connected = true;
 		setTimeout(function(){
 			var sessid = getCookie("PHPSESSID");
 			socket.emit("user-sid", {sid: sessid});
-			$("#overlayLoading").fadeOut(750, function(){});
-			modal.data.header.color = "red";
-			modal.data.header.text = "Welcome!";
-			modal.data.body.color = "red";
-			modal.data.body.helptext = "Type your name in to play!";
-			modal.data.close_button.show = false;
-			modal.data.body.input.color = "red";
-			modal.data.body.input.hover.exist = true;
-			modal.data.body.input.hover.color = "pale-red";
-			modal.data.footer.color = "red";
-			modal.data.footer.text = '&copy; 2018 Samyok Nepal';
-			modal.data.body.button.color = "green";
-			modal.data.body.button.onclick = null;
-			username_modal = modal.create().hide().fadeIn(600);
-			username_modal.find(".body button").on("click", function(){
-				var val = username_modal.find("input").val();
-				if(val!=""){socket.emit("username", {username: val});}
-				else {toast("red", "try something that is not blank");}
-			});
+			console.log("USER-SID");
 		}, 250);
 	} else {
+		$("#playingArea").html("<br> <br> <h2>Please refresh. The server just restarted. Sorry!</h2>")
 		$("#overlayLoading").fadeIn(500);
 		$("#overlayLoading h2").html("Please refresh. Sorry. ;(");
 	}
 });
-socket.on("username_response", function(data){
-	if(data.message=="success"){
-		toast("green", "Success!");
+socket.on("user-sid-response", function(data){
+	console.log(data);
+
+	if(data.message == "error"){
+		toast('red', data.reason);
+	} else {
 		username = data.username;
-		username_modal.fadeOut(500, function(){this.remove();});
+		$("#overlayLoading").fadeOut(500, function(){this.remove();});
 		changeRooms();
 	}
-	else{toast("red", data.reason);}
 })
 function changeRooms() {
+	console.log("changeRooms");
 	modal.reset();
 	modal.data.header.color = "orange";
 	modal.data.header.text = "Go to a Room!";
@@ -198,10 +47,18 @@ function changeRooms() {
 	room_modal = modal.create().hide().fadeIn(600);
 	$("<button class='singlePlayer w3-button w3-green w3-hover'>Alone</button>")
 		.appendTo(room_modal.find(".body")).on("click", function(){
-			location.href="http://f451.samyok.us";
+			singlePlayer();
+			$(room_modal).remove();
 		});
 	$("<button class='doublePlayer w3-margin w3-button w3-green w3-hover'>Against someone</button>")
 		.appendTo(room_modal.find(".body")).on("click", function(){ doubleplayers(this, room_modal);});
+}
+function singlePlayer(){
+	$("#scoreTo").hide();
+	$("#personScoreplayer2").hide();
+	console.log("ssss");
+	socket.emit('create_room', {type: "single"});
+	$("#overlayLoading").fadeIn(750);
 }
 function doubleplayers(thing1, room_modal){
 	room_modal.fadeOut(400, function(){this.remove();})
@@ -246,33 +103,39 @@ function join_room(button, oringinal_modal){
 	new_modal.find(".body button").on("click", function(){joiner_room(new_modal)});
 }
 function create_room(){
+	// console.log("ssss");
 	socket.emit('create_room', {type: "double"});
 	$("#overlayLoading").fadeIn(750);
 }
-socket.on("console2", function(data){
+socket.on("console", function(data){
 	if(data.href != undefined){
 		location.href=data.href;
 	} else {
 		console.log(data);
 	}
 });
-socket.on("gameUpdate", function(data){
-	console.log(data);
-	location.reload();
-});
 socket.on("room_created", function(data){
+	console.log(data);
 	$("#placeType").text("Room Code");
 	$("#placeName").text(data.room);
+	$("h1").show();
 	$("#overlayLoading").fadeOut(750, function(){	$("h1").show();});
-
+	if(data.type=="single"){
+		$("#scoreTo").hide();
+		$("#personScoreplayer2").hide();
+	}
 });
 socket.on("player_joined", function(data){
-	$("<span />").html(" &gt; &gt; Opponent: "+data.player).appendTo($("#placeType").parent());
+	console.log(data);
+	$("<span />").html(" &gt; &gt; Opponent: <img class='opponent' src='/profile_pics/"+data.player+"' > "+data.player).appendTo($("#placeType").parent());
 	socket.emit("ready", {data:null});
 	console.log("ready");
 });
 socket.on("game_start", function(data){
 	$("#playingArea").show();
+	if(data.first){
+		toast("green", "You are first!");
+	}
 });
 var join_modal = null;
 function joiner_room(thing){
@@ -281,20 +144,144 @@ function joiner_room(thing){
 	socket.emit("join_room", {code: val, type:""});
 	join_modal = thing;
 }
+socket.on("toast", function(data){
+	toast(data.color, data.message);
+});
 socket.on("join_response", function(data){
+	console.log(data);
 	if(data.message == "error"){
 		$("#overlayLoading").fadeOut(600, function(){join_modal.fadeIn(600);})
 		toast("red", data.reason);
+		if(data.reason=="Please log in."){
+			location.href = "/index?login";
+		}
 	} else {
 		toast("green", "Success!");
 		console.log(data);
 		$(join_modal).fadeOut(600, function(){
 			$("#placeType").html("Room Code");
 			$("#placeName").html(data.code);
-			$("<span />").html(" &gt; &gt; Opponent: "+data.player).appendTo($("#placeType").parent());
+			$("<span />").html(" &gt; &gt; Opponent: <img class='opponent' src='/profile_pics/"+data.player+"' > "+data.player).appendTo($("#placeType").parent());
 			socket.emit("ready", {data:null});
 			$("h1").show();
 			console.log("ready");
 		}).hide();
+	}
+});
+socket.on("gameUpdate", function(data){
+	if(data.type=="tie" && (data.game.winner.username ==username || data.game.loser.username == username)){
+		socket.close();
+		modal.reset();
+		modal.data.header.color = "yellow";
+		modal.data.header.text = "Neato!";
+		modal.data.body.color = "yellow";
+		modal.data.body.helptext = "You tied "+data.game.winner.score + " to " + data.game.loser.score+"!";
+		modal.data.close_button.show = false;
+		modal.data.body.input.show = false;
+		modal.data.footer.color = "yellow";
+		modal.data.footer.text = 'Logged in as '+username;
+		modal.data.body.button.show = true;
+		modal.data.body.button.text = "Continue &gt;&gt;";
+		new_modal = modal.create().hide().fadeIn(600);
+		new_modal.find(".body button").on("click", function(){location.reload();});
+	} else {
+		if(data.game.winner.username == username){
+			socket.close();
+			var reason = "";
+			switch(data.type){
+				case "abandon":
+					reason = "The opponent abandoned the game scared of your card tricks. LOL!";
+					break;
+				case "force":
+					reason = "The opponent logged in from another location and cannot continire this. ;("
+					break;
+				default:
+					reason = "";
+			}
+			modal.reset();
+			modal.data.header.color = "green";
+			modal.data.header.text = "Congrats!";
+			modal.data.body.color = "green";
+			modal.data.body.helptext = "You won "+data.game.winner.score + " to " + data.game.loser.score+"! "+reason;
+			modal.data.close_button.show = false;
+			modal.data.body.input.show = false;
+			modal.data.footer.color = "green";
+			modal.data.footer.text = 'Logged in as '+username;
+			modal.data.body.button.show = true;
+			modal.data.body.button.text = "Continue &gt;&gt;";
+			new_modal = modal.create().hide().fadeIn(600);
+			new_modal.find(".body button").on("click", function(){location.reload();});
+		} else if(data.game.loser.username == username){
+			socket.close();
+			var reason = "";
+			switch(data.type){
+				case "abandon":
+					reason = "You abandoned the game scared of your card tricks. LOL!";
+					break;
+				case "force":
+					reason = "You logged in from another location and cannot continire this. ;("
+					break;
+				default:
+					reason = "";
+			}
+			modal.reset();
+			modal.data.header.color = "red";
+			modal.data.header.text = "Wow.";
+			modal.data.body.color = "red";
+			modal.data.body.helptext = "You lost "+data.game.winner.score + " to " + data.game.loser.score+"! "+reason;
+			modal.data.close_button.show = false;
+			modal.data.body.input.show = false;
+			modal.data.footer.color = "red";
+			modal.data.footer.text = 'Logged in as '+username;
+			modal.data.body.button.show = true;
+			modal.data.body.button.text = "Continue &gt;&gt;";
+			new_modal = modal.create().hide().fadeIn(600);
+			new_modal.find(".body button").on("click", function(){location.reload();});
+		}
+	}
+});
+socket.on("rebus_time", function(data1){
+	modal.reset();
+		modal.data.header.color = "orange";
+		modal.data.header.text = "Rebus Time!";
+		modal.data.body.color = "orange";
+		modal.data.body.helptext = "What does the rebus say?";
+		modal.data.close_button.show = false;
+		modal.data.body.input.show = true;
+		modal.data.body.input.hover.color = "amber";
+		modal.data.body.input.placeholder="Type your answer here.";
+		modal.data.body.input.color = "orange";
+		modal.data.footer.color = "orange";
+		modal.data.footer.text = 'Logged in as '+username;
+		modal.data.body.button.show = true;
+		modal.data.body.button.text = "Submit Score &gt; &gt;";
+		rebus_modal = modal.create().hide().fadeIn(600);
+		$("<img />").attr("src", "//memory.samyok.us/rebus?imageID="+data1.rebus_link).prependTo(rebus_modal.find(".body"));
+		rebus_modal.find(".body button").click(function(){
+            var value = rebus_modal.find("input").val();
+			socket.emit("rebus_answer", {answer: value});
+		});
+});
+socket.on("rebus_response", function(data){
+	console.log(data);
+	if(data.game.winner.username == username){
+		if(data.game.winner.got_rebus){
+			var rebus = ", and you got the rebus!";
+		} else {
+			var rebus = "! Unfortunately, you got the rebus wrong."
+		}
+		modal.reset();
+		modal.data.header.color = "green";
+		modal.data.header.text = "Congrats!";
+		modal.data.body.color = "green";
+		modal.data.body.helptext = "You finished the game with "+data.game.winner.score + " points"+rebus;
+		modal.data.close_button.show = false;
+		modal.data.body.input.show = false;
+		modal.data.footer.color = "green";
+		modal.data.footer.text = 'Logged in as '+username;
+		modal.data.body.button.show = true;
+		modal.data.body.button.text = "Continue &gt;&gt;";
+		new_modal = modal.create().hide().fadeIn(600);
+		new_modal.find(".body button").on("click", function(){location.reload();});
 	}
 });

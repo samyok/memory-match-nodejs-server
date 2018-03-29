@@ -1,8 +1,8 @@
 while true;
-	do nodejs english.j ;
+	do nodejs server.js ;
 	echo "";
 	echo "-----";
 	echo "Crashed. Restarting...";
-	echo "-----"; 
+	echo "-----";
 	echo "";
 done;

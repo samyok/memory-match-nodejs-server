@@ -1,31 +1,99 @@
 Rooms:
-{
-    "room13":{
-        "type":"double",
-        "gameInfo":{
-            "leader":"5v3GsjuLdE5Wxy_UAAAC",
-            "player2": "dyKkX6AthUbsmF26AAAB"
-        },
-        "started":false,
-        "abandoned":false
-    },
-    "room28":{
-        "type":"double",
-        "gameInfo":{
-            "leader":"o7eYp9p40kQM2UXTAAAD",
-            "player2":null
-        },
-        "started":false,
-        "abandoned":false
-    }
-}
+{ room19:
+   { type: 'single',
+     gameInfo: { leader: o7eYp9p40kQM2UXTAAAD },
+     game: { turn: 'leader', card1: null, card2: null },
+     ready: { leader: true },
+     started: 1,
+     abandoned: false,
+     scores: { leader: -6 },
+     cards:
+      [ 'Q',
+        'a',
+        'A',
+        'B',
+        'P',
+        'H',
+        'E',
+        'F',
+        'L',
+        'j',
+        'J',
+        'm',
+        'q',
+        'o',
+        'n',
+        'p',
+        'b',
+        'D',
+        'r',
+        'M',
+        'k',
+        'i',
+        'I',
+        'O',
+        'G',
+        'K',
+        'R',
+        'l',
+        'N',
+        'h',
+        'e',
+        'f',
+        'C',
+        'd',
+        'g',
+        'c' ] },
+  room49:
+   { type: 'double',
+     gameInfo: { leader: 'yrwjzux3YoD--izzAAAE',  p;ayer2: '5v3GsjuLdE5Wxy_UAAAC' },
+     game: { turn: 'leader', card1: null, card2: null },
+     ready: { leader: true, player2: true },
+     started: 1,
+     abandoned: false,
+     scores: { leader: 1, player2: 0 },
+     cards:
+      [ 'h',
+        'D',
+        'M',
+        'r',
+        'i',
+        'd',
+        'H',
+        'a',
+        'o',
+        'j',
+        'P',
+        'F',
+        'e',
+        'n',
+        'J',
+        'A',
+        'G',
+        'q',
+        'g',
+        'p',
+        'K',
+        'E',
+        'I',
+        'N',
+        'L',
+        'k',
+        'C',
+        'R',
+        'f',
+        'B',
+        'm',
+        'O',
+        'b',
+        'c',
+        'l',
+        'Q' ] } }
+
 users :
 {
     "5v3GsjuLdE5Wxy_UAAAC":{
-        "logged_in":true,
         "username":"asdasd"
     },
-    "o7eYp9p40kQM2UXTAAAD":{
-        "logged_in":false
-    }
+    "o7eYp9p40kQM2UXTAAAD":{}
 }

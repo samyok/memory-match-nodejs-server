@@ -39,8 +39,7 @@ io.on("connection", (socket)=>{
     var key = socket.id;
     socket.to(key).emit("console", {message: "Connected!"});
     users[key] = {};
-    // console.log(users);
-
+    // update users file function
     function updateUsersFile(){
         console.log("update");
         var usernames = [];
@@ -53,15 +52,16 @@ io.on("connection", (socket)=>{
         var file = fs.writeFile('./public/onlineUsers.json', JSON.stringify(usernames));
         return usernames;
     }
-    // console.log(socket.adapter);
-    // console.log("ASD");
+
     logger.silly("Join!" + key);
+    // send connected message
     io.to(key).emit("connected", {
         connected: true
     });
     logger.debug("TO "+key+" MSG: connected");
+    // on user sid ....
     socket.on("user-sid", function(data){
-        // get PHPSESSID
+        // get username assoc...
         var usernamePromise = mm.validateSID(data.sid);
         usernamePromise.then(function(uname){
             logger.silly(uname);
@@ -71,16 +71,8 @@ io.on("connection", (socket)=>{
                 logger.warn("please log in" + key + ' : sid : ' + data.sid);
             } else {
                 io.to(key).emit("user-sid-response",  {message: "success", username:uname});
-                // check if username already exists
-                for(var a in users){
-                    if(users.username == uname){
-                        kill_key(a);
-                        delete users[a];
-                    }
-                }
                 users[key] = {};
                 users[key].username = uname;
-                // mm.uc.addUser(key, uname);
                 updateUsersFile();
                 logger.debug("added "+key+" as " + uname);
             }
@@ -90,6 +82,7 @@ io.on("connection", (socket)=>{
      * @param {string} room the room key
      * @return {void}
      */
+    // start game function
     function start_game(room) {
         logger.warn(mm.cards);
         var okay = true;
@@ -123,9 +116,9 @@ io.on("connection", (socket)=>{
            var randomID = -1;
            var newArray = [];
            while(newArray.length != 36){
-               // console.log(newArray);
+
                randomID = Math.floor(Math.random() * (36-newArray.length));
-               // console.log(randomID);
+
                newArray.push(array[randomID]);
                array.splice(randomID, 1);
                // console.log(array);
@@ -271,11 +264,11 @@ io.on("connection", (socket)=>{
             }
         }
     }
-socket.on('force-end', function(data){
+socket.on('force-end', function(data){ // for display purposes only. 
     console.log("FORCE END ROOM" + findRoomName(key));
     end_game(findRoomName(key));
 })
-    function kill_key(key){
+    function kill_key(key){ // Kill Key
         io.to(key).emit("kill", {});
         console.log(key);
         console.log(users[key]);
@@ -343,7 +336,6 @@ socket.on('force-end', function(data){
         }
         console.log(rooms);
     }
-    /////////////////////////
     socket.on("create_room", function(data) {
         switch (data.type) {
             case "double":
@@ -409,8 +401,6 @@ socket.on('force-end', function(data){
         percentage.then(function(closeness){
             console.log(closeness);
             console.log("Launching. ")
-            // logger.silly(uname);
-            // console.log(data);
             if(closeness >= 80){
                 console.log("Launching. Win! ")
                 io.to(key).emit("rebus_response", {
@@ -422,7 +412,6 @@ socket.on('force-end', function(data){
                         }
                     }
                 });
-                mm.postScore("single", users[key].username, "w", rooms[findRoomName(key)].scores.leader, true);
             } else {
                 console.log("Launching. Lose! ")
                 io.to(key).emit("rebus_response", {
@@ -434,28 +423,19 @@ socket.on('force-end', function(data){
                         }
                     }
                 });
-                                mm.postScore("single", users[key].username, "w", rooms[findRoomName(key)].scores.leader, true);
             }
         });
     });
     socket.on("disconnect", function(){
-        // console.log(users);
         kill_key(key);
-        // console.log(key + " : + users[key].username");
-        // console.log(users);
     })
 })
 
-//
-// on connection--send msg to either refresh or do something
 
-
-
-
-function create_room(type, key) {
+function create_room(type, key) { // create room
     for (var a in lobbies) {
         delete lobbies[a][key];
-    } // remove from lobby
+    }
     roomNumber += randInt(9, 20);
     var room_name = "room" + roomNumber.toString();
     rooms[room_name] = new place();
@@ -475,7 +455,7 @@ function create_room(type, key) {
     return room_name;
 }
 
-function join_room(code, key) {
+function join_room(code, key) { // join room
     if (rooms[code] == null || rooms[code].abandoned) {
         io.to(key).emit("join_response", {
             message: "error",
@@ -498,14 +478,6 @@ function join_room(code, key) {
     }
 }
 
-function findCP(cardText) {
-    // console.log(perm_cards);
-    // for (var number in perm_cards) {
-    //     if (perm_cards[number].question == cardText) {
-    //         return perm_cards[number].answer;
-    //     } else if (perm_cards[number].answer == cardText) {
-    //         return perm_cards[number].question;
-    //     }
-    // }
+function findCP(cardText) { // find coubter part
     return cardText.toLowerCase();
 }
