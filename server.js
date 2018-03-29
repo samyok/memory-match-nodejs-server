@@ -389,6 +389,7 @@ socket.on('force-end', function(data){
             http.get("http://memory.samyok.us/rebus?imageID="+rooms[findRoomName(key)].rebus_link+"&answer="+data1.answer, (res) =>{
                     res.setEncoding('utf8');
                     res.on('data', function (body) {
+                        console.log(body);
                         resolve(JSON.parse(body));
                     });
                 });
