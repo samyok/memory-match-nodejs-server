@@ -395,7 +395,7 @@ socket.on('force-end', function(data){
         rebusPromise.then(function(data){
             logger.silly(uname);
             if(data.percentage >= 80){
-                socket.emit("rebus_response", {
+                io.to(key).emit("rebus_response", {
                     game: {
                         winner: {
                             username: users[key].username,
@@ -405,7 +405,7 @@ socket.on('force-end', function(data){
                     }
                 });
             } else {
-                socket.emit("rebus_response", {
+                io.to(key).emit("rebus_response", {
                     game: {
                         winner: {
                             username: users[key].username,
