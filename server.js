@@ -241,7 +241,7 @@ io.on("connection", (socket)=>{
             }
         } else {
             console.log("Emit to "+ rooms[room].gameInfo.leader);
-            socket.to(rooms[room].gameInfo.leader).emit("rebus_time", {rebus_link: rooms[room].rebus_link});
+            io.to(rooms[room].gameInfo.leader).emit("rebus_time", {rebus_link: rooms[room].rebus_link});
         }
         /* TODO POST SCORES */
     }
@@ -253,7 +253,6 @@ io.on("connection", (socket)=>{
         }
     }
 socket.on('force-end', function(data){
-    io.to(key).emit("console", {message: "yay"});
     console.log("FORCE END ROOM" + findRoomName(key));
     end_game(findRoomName(key));
 })
@@ -301,7 +300,7 @@ socket.on('force-end', function(data){
                     },
                     loser: {
                         username: rooms[room].abandoned,
-                        score: 0
+                        score: 0socket
                     }
                 }
             });
