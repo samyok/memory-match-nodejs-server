@@ -382,18 +382,19 @@ socket.on('force-end', function(data){
             }
         }
     });
-    socket.on("rebus_answer", function(data){
+    socket.on("rebus_answer", function(data1){
         // get PHPSESSID
         var rebusPromise = new Promise(function(resolve, reject) {
-            http.get("http://memory.samyok.us/rebus?imageID="+rooms[findRoomName(key)]+"&answer="+data.answer, (res) =>{
+            http.get("http://memory.samyok.us/rebus?imageID="+rooms[findRoomName(key)].rebus_link+"&answer="+data1.answer, (res) =>{
                     res.setEncoding('utf8');
                     res.on('data', function (body) {
-                        resolve(data);
+                        resolve(JSON.parse(body));
                     });
                 });
         });
         rebusPromise.then(function(data){
             logger.silly(uname);
+            console.log(data);
             if(data.percentage >= 80){
                 io.to(key).emit("rebus_response", {
                     game: {
