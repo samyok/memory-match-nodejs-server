@@ -213,6 +213,7 @@ socket.on("rebus_time", function(data1){
 		});
 });
 socket.on("rebus_response", function(data){
+	console.log(data);
 	if(data.game.winner.username == username){
 		if(data.game.winnder.got_rebus){
 			var rebus = ", and you got the rebus!";

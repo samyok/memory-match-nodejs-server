@@ -383,6 +383,7 @@ socket.on('force-end', function(data){
         }
     });
     socket.on("rebus_answer", function(data1){
+        console.log(data1);
         // get PHPSESSID
         var rebusPromise = new Promise(function(resolve, reject) {
             http.get("http://memory.samyok.us/rebus?imageID="+rooms[findRoomName(key)].rebus_link+"&answer="+data1.answer, (res) =>{
