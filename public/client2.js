@@ -169,7 +169,7 @@ socket.on("join_response", function(data){
 	}
 });
 socket.on("gameUpdate", function(data){
-	if(data.type=="tie" && (data.game.winner.username ==username || data.game.loser.username == username){
+	if(data.type=="tie" && (data.game.winner.username ==username || data.game.loser.username == username)){
 		socket.close();
 		modal.reset();
 		modal.data.header.color = "yellow";
