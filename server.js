@@ -125,7 +125,8 @@ io.on("connection", (socket)=>{
             leader: 0,
             player2: 0
         }
-        rooms[room].rebus_link = randInt(1,100);
+        // 92 total
+        rooms[room].rebus_link = randInt(0,91);
         rooms[room].cardPairsLeft = 18;
         rooms[room].game.card1 = null;
         rooms[room].game.card2 = null;

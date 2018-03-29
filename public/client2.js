@@ -161,7 +161,7 @@ socket.on("join_response", function(data){
 		$(join_modal).fadeOut(600, function(){
 			$("#placeType").html("Room Code");
 			$("#placeName").html(data.code);
-			$("<span />").html(" &gt; &gt; Opponent: "+data.player).appendTo($("#placeType").parent());
+			$("<span />").html(" &gt; &gt; Opponent: <img class='opponent' src='/profile_pics/"+data.player+"' > "+data.player).appendTo($("#placeType").parent());
 			socket.emit("ready", {data:null});
 			$("h1").show();
 			console.log("ready");
