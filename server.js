@@ -382,13 +382,35 @@ socket.on('force-end', function(data){
             }
         }
     });
-
     socket.on("rebus_answer", function(data1){
         var percentage = mm.getRebusAnswer(rooms[findRoomName(key)].rebus_link, data1.answer);
         console.log(percentage);
         percentage.then(function(closeness){
             console.log(closeness);
-        })
+            // logger.silly(uname);
+            // console.log(data);
+            if(closeness >= 80){
+                io.to(key).emit("rebus_response", {
+                    game: {
+                        winner: {
+                            username: users[key].username,
+                            score: rooms[findRoomName(key)].scores.leader,
+                            got_rebus: true
+                        }
+                    }
+                });
+            } else {
+                io.to(key).emit("rebus_response", {
+                    game: {
+                        winner: {
+                            username: users[key].username,
+                            score: rooms[findRoomName(key)].scores.leader,
+                            got_rebus: false
+                        }
+                    }
+                });
+            }
+        });
     });
     socket.on("disconnect", function(){
         // console.log(users);
