@@ -274,7 +274,7 @@ socket.on("rebus_response", function(data){
 		modal.data.header.color = "green";
 		modal.data.header.text = "Congrats!";
 		modal.data.body.color = "green";
-		modal.data.body.helptext = "You finished the game with "+data.game.winner.score + " points"+rebus;
+		modal.data.body.helptext = "You finished the game with "+data.game.winner.score + " points"+rebus+" Rebuses are provided by www.fun-with-words.com";
 		modal.data.close_button.show = false;
 		modal.data.body.input.show = false;
 		modal.data.footer.color = "green";
