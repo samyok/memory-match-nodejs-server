@@ -78,7 +78,7 @@ module.exports = {
     "getRebusAnswer": get_rebus_answer,
     "validateSID": validateSID,
     "cards": cards,
-    "postScore": postScore
+    "postScore": postScore,
     "cardMaker": function(){
         this.cards = cards;
     }
