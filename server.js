@@ -200,7 +200,7 @@ io.on("connection", (socket)=>{
     function end_game(room){
         if(rooms[room].type=="double"){
             if(rooms[room].scores.leader > rooms[room].scores.player2){
-                socket.of('/').emit("gameUpdate", {
+                io.of('/').emit("gameUpdate", {
                     type: "fair",
                     game: {
                         winner: {
@@ -214,7 +214,7 @@ io.on("connection", (socket)=>{
                     }
                 });
             } else if (rooms[room].scores.leader < rooms[room].scores.player2) {
-                socket.of('/').emit("gameUpdate", {
+                io.of('/').emit("gameUpdate", {
                     type: "fair",
                     game: {
                         loser: {
@@ -228,7 +228,7 @@ io.on("connection", (socket)=>{
                     }
                 });
             } else {
-                socket.of('/').emit("gameUpdate", {
+                io.of('/').emit("gameUpdate", {
                     type: "tie",
                     game: {
                         winner: { // not really but w/e continuity

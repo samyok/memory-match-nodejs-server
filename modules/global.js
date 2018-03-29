@@ -40,7 +40,7 @@ var uc = require("./user-control");
 
 function validateSID(sid){
     return new Promise(function(resolve, reject) {
-        http.get("http://test.memory.samyok.us/api/username.php?id="+sid, (res) =>{
+        http.get("http://localhost/api/username.php?id="+sid, (res) =>{
             res.setEncoding('utf8');
             res.on('data', function (body) {
                 data = JSON.parse(body);
@@ -55,9 +55,13 @@ function validateSID(sid){
         });
     });
 }
+function postScore(type, username, wtl, score, rebus=false){
+    http.get("http://localhost/api/leaderboard.php?type="+type + "&username="+username+ "&wtl=" +wtl + "&score="+score+ "&rebus="+rebus);
+}
+
 function get_rebus_answer(imageID, answer){
     return new Promise(function(resolve, reject) {
-        http.get("http://test.memory.samyok.us/rebus.php?imageID="+imageID+"&answer="+answer, (res) =>{
+        http.get("http://localhost/rebus.php?imageID="+imageID+"&answer="+answer, (res) =>{
             res.setEncoding('utf8');
             res.on('data', function (body) {
                 data = JSON.parse(body);
@@ -74,6 +78,7 @@ module.exports = {
     "getRebusAnswer": get_rebus_answer,
     "validateSID": validateSID,
     "cards": cards,
+    "postScore": postScore,
     "cardMaker": function(){
         this.cards = cards;
     }
