@@ -240,6 +240,7 @@ io.on("connection", (socket)=>{
                 });
             }
         } else {
+            consle.log("Emit to " rooms[room].leader);
             socket.to(rooms[room].leader).emit("rebus_time", {rebus_link: rooms[room].rebus_link});
         }
         /* TODO POST SCORES */
