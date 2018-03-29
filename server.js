@@ -384,7 +384,11 @@ socket.on('force-end', function(data){
     });
 
     socket.on("rebus_answer", function(data1){
-        console.log(mm.getRebusAnswer(rooms[findRoomName(key)].rebus_link, data1.answer));
+        var percentage = mm.getRebusAnswer(rooms[findRoomName(key)].rebus_link, data1.answer);
+        console.log(percentage);
+        percentage.then(function(closeness){
+            console.log(closeness);
+        })
     });
     socket.on("disconnect", function(){
         // console.log(users);
