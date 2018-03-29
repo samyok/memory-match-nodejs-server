@@ -213,8 +213,8 @@ io.on("connection", (socket)=>{
                         }
                     }
                 });
-                postScore("double", users[rooms[room].gameInfo.leader].username, "w", rooms[room].scores.leader, false);
-                postScore("double", users[rooms[room].gameInfo.player2].username, "l", rooms[room].scores.player2, false);
+                mm.postScore("double", users[rooms[room].gameInfo.leader].username, "w", rooms[room].scores.leader, false);
+                mm.postScore("double", users[rooms[room].gameInfo.player2].username, "l", rooms[room].scores.player2, false);
             } else if (rooms[room].scores.leader < rooms[room].scores.player2) {
                 io.of('/').emit("gameUpdate", {
                     type: "fair",
@@ -229,8 +229,8 @@ io.on("connection", (socket)=>{
                         }
                     }
                 });
-                postScore("double", users[rooms[room].gameInfo.leader].username, "l", rooms[room].scores.leader, false);
-                postScore("double", users[rooms[room].gameInfo.player2].username, "w", rooms[room].scores.player2, false);
+                mm.postScore("double", users[rooms[room].gameInfo.leader].username, "l", rooms[room].scores.leader, false);
+                mm.postScore("double", users[rooms[room].gameInfo.player2].username, "w", rooms[room].scores.player2, false);
             } else {
                 io.of('/').emit("gameUpdate", {
                     type: "tie",
@@ -245,8 +245,8 @@ io.on("connection", (socket)=>{
                         }
                     }
                 });
-                postScore("double", users[rooms[room].gameInfo.leader].username, "t", rooms[room].scores.leader, false);
-                postScore("double", users[rooms[room].gameInfo.player2].username, "t", rooms[room].scores.player2, false);
+                mm.postScore("double", users[rooms[room].gameInfo.leader].username, "t", rooms[room].scores.leader, false);
+                mm.postScore("double", users[rooms[room].gameInfo.player2].username, "t", rooms[room].scores.player2, false);
             }
         } else {
             console.log("Emit to "+ rooms[room].gameInfo.leader);
@@ -411,7 +411,7 @@ socket.on('force-end', function(data){
                         }
                     }
                 });
-                postScore("single", users[key].username, "w", rooms[findRoomName(key)].scores.leader, true);
+                mm.postScore("single", users[key].username, "w", rooms[findRoomName(key)].scores.leader, true);
             } else {
                 console.log("Launching. Lose! ")
                 io.to(key).emit("rebus_response", {
@@ -423,7 +423,7 @@ socket.on('force-end', function(data){
                         }
                     }
                 });
-                postScore("single", users[key].username, "w", rooms[findRoomName(key)].scores.leader, false);
+                                mm.postScore("single", users[key].username, "w", rooms[findRoomName(key)].scores.leader, true);
             }
         });
     });
