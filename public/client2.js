@@ -1,6 +1,10 @@
 
 var socket = io.connect('/');
 var already_connected = false;
+socket.on("kill", function(){
+	$("#overlayLoading").fadeIn(500);
+	$("#overlayLoading h2").html("Please refresh.<br>You logged in from another location or you disconnected.");
+})
 socket.on("connected", function(data){
 	console.log(data);
 	if(data.connected && !already_connected){

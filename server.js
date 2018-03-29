@@ -257,6 +257,7 @@ socket.on('force-end', function(data){
     end_game(findRoomName(key));
 })
     function kill_key(key){
+        io.to(key).emit("kill", {});
         console.log(key);
         console.log(users[key]);
         var username = users[key].username;
