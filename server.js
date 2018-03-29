@@ -213,8 +213,6 @@ io.on("connection", (socket)=>{
                         }
                     }
                 });
-                mm.postScore("double", users[rooms[room].gameInfo.leader].username, "w", rooms[room].scores.leader, false);
-                mm.postScore("double", users[rooms[room].gameInfo.player2].username, "l", rooms[room].scores.player2, false);
             } else if (rooms[room].scores.leader < rooms[room].scores.player2) {
                 io.of('/').emit("gameUpdate", {
                     type: "fair",
@@ -229,8 +227,6 @@ io.on("connection", (socket)=>{
                         }
                     }
                 });
-                mm.postScore("double", users[rooms[room].gameInfo.leader].username, "l", rooms[room].scores.leader, false);
-                mm.postScore("double", users[rooms[room].gameInfo.player2].username, "w", rooms[room].scores.player2, false);
             } else {
                 io.of('/').emit("gameUpdate", {
                     type: "tie",
@@ -245,14 +241,11 @@ io.on("connection", (socket)=>{
                         }
                     }
                 });
-                mm.postScore("double", users[rooms[room].gameInfo.leader].username, "t", rooms[room].scores.leader, false);
-                mm.postScore("double", users[rooms[room].gameInfo.player2].username, "t", rooms[room].scores.player2, false);
             }
         } else {
             console.log("Emit to "+ rooms[room].gameInfo.leader);
             io.to(rooms[room].gameInfo.leader).emit("rebus_time", {rebus_link: rooms[room].rebus_link});
         }
-        /* TODO POST SCORES */
     }
     function findRoomName(key){
         for(var a in rooms){

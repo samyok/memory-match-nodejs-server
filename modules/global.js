@@ -55,9 +55,6 @@ function validateSID(sid){
         });
     });
 }
-function postScore(type, username, wtl, score, rebus){
-    http.get("http://localhost/api/leaderboard.php?type="+type + "&username="+username+ "&wtl=" +wtl + "&score="+score+ "&rebus="+rebus);
-}
 
 function get_rebus_answer(imageID, answer){
     return new Promise(function(resolve, reject) {
@@ -78,7 +75,6 @@ module.exports = {
     "getRebusAnswer": get_rebus_answer,
     "validateSID": validateSID,
     "cards": cards,
-    "postScore": postScore,
     "cardMaker": function(){
         this.cards = cards;
     }
