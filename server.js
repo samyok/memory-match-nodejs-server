@@ -240,7 +240,7 @@ io.on("connection", (socket)=>{
                 });
             }
         } else {
-            socket.to(rooms[room].leader).emit("rebus_time", {rebus_link: rooms[room].rebus_link});
+            socket.to(key).emit("rebus_time", {rebus_link: rooms[room].rebus_link});
         }
         /* TODO POST SCORES */
     }
@@ -252,6 +252,7 @@ io.on("connection", (socket)=>{
         }
     }
 socket.on('force-end', function(data){
+    console.log("FORCE END ROOM" + findRoomName(key)); 
     end_game(findRoomName(key));
 })
     function kill_key(key){
