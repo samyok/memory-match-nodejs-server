@@ -57,7 +57,7 @@ function validateSID(sid){
 }
 function get_rebus_answer(imageID, answer){
     return new Promise(function(resolve, reject) {
-        http.get("http://test.memory.samyok.us/rebus.php?imageID="+id+"&answer="+answer, (res) =>{
+        http.get("http://test.memory.samyok.us/rebus.php?imageID="+imageID+"&answer="+answer, (res) =>{
             res.setEncoding('utf8');
             res.on('data', function (body) {
                 data = JSON.parse(body);
