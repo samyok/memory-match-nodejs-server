@@ -8,7 +8,7 @@ socket.on("kill", function(){
 socket.on("connected", function(data){
 	console.log(data);
 	console.log(already_connected);
-	if(data.connected and !already_connected){
+	if(data.connected && !already_connected){
 		already_connected = true;
 		setTimeout(function(){
 			var sessid = getCookie("PHPSESSID");
