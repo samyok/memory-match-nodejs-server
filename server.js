@@ -386,13 +386,15 @@ socket.on('force-end', function(data){
         console.log(data1);
         // get PHPSESSID
         var rebusPromise = new Promise(function(resolve, reject) {
+            console.log("Promise started to " +"http://memory.samyok.us/rebus?imageID="+rooms[findRoomName(key)].rebus_link+"&answer="+data1.answer)
             http.get("http://memory.samyok.us/rebus?imageID="+rooms[findRoomName(key)].rebus_link+"&answer="+data1.answer, (res) =>{
-                    res.setEncoding('utf8');
-                    res.on('data', function (body) {
-                        console.log(body);
-                        resolve(JSON.parse(body));
-                    });
+                res.setEncoding('utf8');
+                res.on('data', function (body) {
+                    console.log(body);
+                    console.log(res);
+                    resolve(JSON.parse(body));
                 });
+            });
         });
         rebusPromise.then(function(data){
             logger.silly(uname);
