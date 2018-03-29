@@ -169,56 +169,72 @@ socket.on("join_response", function(data){
 	}
 });
 socket.on("gameUpdate", function(data){
-	if(data.game.winner.username == username){
-		var reason = "";
-		switch(data.type){
-			case "abandon":
-				reason = "The opponent abandoned the game scared of your card tricks. LOL!";
-				break;
-			case "force":
-				reason = "The opponent logged in from another location and cannot continire this. ;("
-				break;
-			default:
-				reason = "";
-		}
+	if(data.type=="tie"){
 		modal.reset();
-		modal.data.header.color = "green";
-		modal.data.header.text = "Congrats!";
-		modal.data.body.color = "green";
-		modal.data.body.helptext = "You won "+data.game.winner.score + " to " + data.game.loser.score+"! "+reason;
+		modal.data.header.color = "yellow";
+		modal.data.header.text = "Neato!";
+		modal.data.body.color = "yellow";
+		modal.data.body.helptext = "You tied "+data.game.winner.score + " to " + data.game.loser.score+"! "+reason;
 		modal.data.close_button.show = false;
 		modal.data.body.input.show = false;
-		modal.data.footer.color = "green";
+		modal.data.footer.color = "yellow";
 		modal.data.footer.text = 'Logged in as '+username;
 		modal.data.body.button.show = true;
 		modal.data.body.button.text = "Continue &gt;&gt;";
 		new_modal = modal.create().hide().fadeIn(600);
 		new_modal.find(".body button").on("click", function(){location.reload();});
-	} else if(data.game.loser.username == username){
-		var reason = "";
-		switch(data.type){
-			case "abandon":
-				reason = "You abandoned the game scared of your card tricks. LOL!";
-				break;
-			case "force":
-				reason = "You logged in from another location and cannot continire this. ;("
-				break;
-			default:
-				reason = "";
+	} else {
+		if(data.game.winner.username == username){
+			var reason = "";
+			switch(data.type){
+				case "abandon":
+					reason = "The opponent abandoned the game scared of your card tricks. LOL!";
+					break;
+				case "force":
+					reason = "The opponent logged in from another location and cannot continire this. ;("
+					break;
+				default:
+					reason = "";
+			}
+			modal.reset();
+			modal.data.header.color = "green";
+			modal.data.header.text = "Congrats!";
+			modal.data.body.color = "green";
+			modal.data.body.helptext = "You won "+data.game.winner.score + " to " + data.game.loser.score+"! "+reason;
+			modal.data.close_button.show = false;
+			modal.data.body.input.show = false;
+			modal.data.footer.color = "green";
+			modal.data.footer.text = 'Logged in as '+username;
+			modal.data.body.button.show = true;
+			modal.data.body.button.text = "Continue &gt;&gt;";
+			new_modal = modal.create().hide().fadeIn(600);
+			new_modal.find(".body button").on("click", function(){location.reload();});
+		} else if(data.game.loser.username == username){
+			var reason = "";
+			switch(data.type){
+				case "abandon":
+					reason = "You abandoned the game scared of your card tricks. LOL!";
+					break;
+				case "force":
+					reason = "You logged in from another location and cannot continire this. ;("
+					break;
+				default:
+					reason = "";
+			}
+			modal.reset();
+			modal.data.header.color = "red";
+			modal.data.header.text = "Wow.";
+			modal.data.body.color = "red";
+			modal.data.body.helptext = "You lost "+data.game.winner.score + " to " + data.game.loser.score+"! "+reason;
+			modal.data.close_button.show = false;
+			modal.data.body.input.show = false;
+			modal.data.footer.color = "red";
+			modal.data.footer.text = 'Logged in as '+username;
+			modal.data.body.button.show = true;
+			modal.data.body.button.text = "Continue &gt;&gt;";
+			new_modal = modal.create().hide().fadeIn(600);
+			new_modal.find(".body button").on("click", function(){location.reload();});
 		}
-		modal.reset();
-		modal.data.header.color = "red";
-		modal.data.header.text = "Wow.";
-		modal.data.body.color = "red";
-		modal.data.body.helptext = "You lost "+data.game.winner.score + " to " + data.game.loser.score+"! "+reason;
-		modal.data.close_button.show = false;
-		modal.data.body.input.show = false;
-		modal.data.footer.color = "red";
-		modal.data.footer.text = 'Logged in as '+username;
-		modal.data.body.button.show = true;
-		modal.data.body.button.text = "Continue &gt;&gt;";
-		new_modal = modal.create().hide().fadeIn(600);
-		new_modal.find(".body button").on("click", function(){location.reload();});
 	}
 });
 socket.on("rebus_time", function(data1){
