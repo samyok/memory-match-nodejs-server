@@ -215,7 +215,7 @@ socket.on("rebus_time", function(data1){
 socket.on("rebus_response", function(data){
 	console.log(data);
 	if(data.game.winner.username == username){
-		if(data.game.winnder.got_rebus){
+		if(data.game.winner.got_rebus){
 			var rebus = ", and you got the rebus!";
 		} else {
 			var rebus = "! Unfortunately, you got the rebus wrong."
