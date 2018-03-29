@@ -121,7 +121,7 @@ socket.on("room_created", function(data){
 });
 socket.on("player_joined", function(data){
 	console.log(data);
-	$("<span />").html(" &gt; &gt; Opponent: "+data.player).appendTo($("#placeType").parent());
+	$("<span />").html("<img class='opponent' src='/profile_pics/"+data.username+"' > &gt; &gt; Opponent: "+data.player).appendTo($("#placeType").parent());
 	socket.emit("ready", {data:null});
 	console.log("ready");
 });
