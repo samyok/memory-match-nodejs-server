@@ -169,7 +169,8 @@ socket.on("join_response", function(data){
 	}
 });
 socket.on("gameUpdate", function(data){
-	if(data.type=="tie"){
+	if(data.type=="tie" && (data.game.winner.username ==username || data.game.loser.username == username){
+		socket.close();
 		modal.reset();
 		modal.data.header.color = "yellow";
 		modal.data.header.text = "Neato!";
@@ -185,6 +186,7 @@ socket.on("gameUpdate", function(data){
 		new_modal.find(".body button").on("click", function(){location.reload();});
 	} else {
 		if(data.game.winner.username == username){
+			socket.close();
 			var reason = "";
 			switch(data.type){
 				case "abandon":
@@ -210,6 +212,7 @@ socket.on("gameUpdate", function(data){
 			new_modal = modal.create().hide().fadeIn(600);
 			new_modal.find(".body button").on("click", function(){location.reload();});
 		} else if(data.game.loser.username == username){
+			socket.close();
 			var reason = "";
 			switch(data.type){
 				case "abandon":
