@@ -48,7 +48,7 @@ io.on("connection", (socket)=>{
                 usernames.push(users[a].username);
             }
         }
-        fs.writeFile('./public/onlineUsers.json', json_encode(usernames), "w");
+        fs.writeFile('./public/onlineUsers.json', JSON.stringify(usernames), "w");
         return usernames;
     }
     // console.log(socket.adapter);
