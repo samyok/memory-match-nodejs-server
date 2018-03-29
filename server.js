@@ -46,6 +46,7 @@ io.on("connection", (socket)=>{
         var usernames = [];
         for(var a in users){
             if(users[a]!=null){
+                if(users[a].username != null)
                 usernames.push(users[a].username);
             }
         }
